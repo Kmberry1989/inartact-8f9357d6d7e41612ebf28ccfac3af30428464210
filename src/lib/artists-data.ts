@@ -33,7 +33,7 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice, Activism",
-      "imageUrl": "/theeighteenartcollective.jpg",
+      "imageUrl": "/artist-1.png",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -62,7 +62,7 @@ export const artists: Artist[] = [
       "date": "2020",
       "location": "Indianapolis (Archived by IndyPL)",
       "cause": "Civil Rights, Police Brutality",
-      "imageUrl": "/wethepeople.webp",
+      "imageUrl": "/artist-2.png",
       "categories": [
         "street art",
         "public art"
@@ -88,7 +88,7 @@ export const artists: Artist[] = [
       "date": "2020",
       "location": "Indianapolis (Archived by IndyPL)",
       "cause": "Racial Justice, Police Brutality",
-      "imageUrl": "/blkkklivesdontmatter.jpg",
+      "imageUrl": "/artist-3.svg",
       "categories": [
         "controversial",
         "political"
@@ -115,7 +115,7 @@ export const artists: Artist[] = [
       "date": "2020",
       "location": "Indianapolis",
       "cause": "Social Justice (General)",
-      "imageUrl": "/americanduality.webp",
+      "imageUrl": "/artist-4.jpg",
       "categories": [
         "mural",
         "public art"
@@ -168,7 +168,7 @@ export const artists: Artist[] = [
       "date": "1965",
       "location": "Various Collections",
       "cause": "Civil Rights",
-      "imageUrl": "/mississippi.jpeg",
+      "imageUrl": "/artist-6.png",
       "categories": [
         "print",
         "pop art"
@@ -194,7 +194,7 @@ export const artists: Artist[] = [
       "date": "2015",
       "location": "IU Eskenazi Museum of Art (Bloomington)",
       "cause": "Racial Justice",
-      "imageUrl": "/Poplar_Trees_2015.webp",
+      "imageUrl": "/artist-7.jpg",
       "categories": [
         "mixed media"
       ],
@@ -220,7 +220,7 @@ export const artists: Artist[] = [
       "date": "Ongoing (Since 2005)",
       "location": "Indianapolis (Garfield Park)",
       "cause": "Community Building",
-      "imageUrl": "/socialalchemy.jpg",
+      "imageUrl": "/artist-8.jpg",
       "latitude": 39.7326,
       "longitude": -86.1415,
       "categories": [
@@ -330,7 +330,7 @@ export const artists: Artist[] = [
       "date": "June 2021",
       "location": "Fort Wayne (1514 St. Joseph Blvd)",
       "cause": "Racial Justice, Inclusive Community",
-      "imageUrl": "/facesofthefortbenjaminduke.jfif",
+      "imageUrl": "/artist-12.jpg",
       "categories": [
         "mural",
         "public art"
@@ -353,7 +353,7 @@ export const artists: Artist[] = [
       "date": "June 2021",
       "location": "Fort Wayne (1818 Bluffton Road)",
       "cause": "Social Justice (General)",
-      "imageUrl": "/facesofthefortmitchellegly.jfif",
+      "imageUrl": "/artist-13.png",
       "categories": [
         "mural",
         "public art"
@@ -376,7 +376,7 @@ export const artists: Artist[] = [
       "date": "1883",
       "location": "Indianapolis",
       "cause": "Women's Suffrage, Education",
-      "imageUrl": "/maywrightsewall.jpg",
+      "imageUrl": "/artist-14.jpg",
       "categories": [
         "portrait",
         "historical"
@@ -425,7 +425,7 @@ export const artists: Artist[] = [
       "date": "2020",
       "location": "Indianapolis (Indiana Statehouse)",
       "cause": "Women's Suffrage, Racial Justice",
-      "imageUrl": "/together.jpg",
+      "imageUrl": "/artist-16.png",
       "categories": [
         "quilt",
         "textile",
@@ -500,7 +500,7 @@ export const artists: Artist[] = [
       "date": "1967 / 1976",
       "location": "Various Collections",
       "cause": "Women's Suffrage",
-      "imageUrl": "/themotherofusall.jpg",
+      "imageUrl": "/artist-19.png",
       "categories": [
         "poster",
         "pop art"
@@ -526,7 +526,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Borden, Indiana",
       "cause": "Environmental Justice",
-      "imageUrl": "/karenboonenaturalpigment.webp",
+      "imageUrl": "/artist-20.png",
       "categories": [
         "photo",
         "studio",
@@ -553,7 +553,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Southern Indiana",
       "cause": "Environmental Justice, Zero Waste",
-      "imageUrl": "/walkthewillow.png",
+      "imageUrl": "/artist-21.jpg",
       "categories": [
         "sculpture",
         "public art"
@@ -602,7 +602,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "South Bend",
       "cause": "Immigration, Detention Abolition",
-      "imageUrl": "/nerdybrownkid.jpeg",
+      "imageUrl": "/artist-23.jpg",
       "categories": [
         "digital art",
         "portrait"
@@ -727,7 +727,7 @@ export const artists: Artist[] = [
       "date": "1941",
       "location": "Pendleton (U.S. Post Office)",
       "cause": "Labor Rights",
-      "imageUrl": "/loggers.png",
+      "imageUrl": "/artist-29.jpg",
       "categories": [
         "mural",
         "historical"
@@ -773,7 +773,7 @@ export const artists: Artist[] = [
       "date": "Ongoing (Since 2023)",
       "location": "Indianapolis",
       "cause": "Labor Rights for Artists",
-      "imageUrl": "/artistsatwork.png",
+      "imageUrl": "/artist-31.png",
       "categories": [
         "logo",
         "graphic design"
@@ -796,7 +796,7 @@ export const artists: Artist[] = [
       "date": "2008",
       "location": "Various Collections (Global)",
       "cause": "Political Change/Satire",
-      "imageUrl": "/hope.jpg",
+      "imageUrl": "/artist-32.png",
       "categories": [
         "pop art",
         "icon"
@@ -822,7 +822,7 @@ export const artists: Artist[] = [
       "date": "1990s\u20132000s",
       "location": "IU Bloomington",
       "cause": "Social Justice, Holocaust Memory",
-      "imageUrl": "/writteninmemory.jpg",
+      "imageUrl": "/artist-33.jpg",
       "categories": [
         "photography",
         "documentary"
@@ -848,7 +848,7 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-34.jpg",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -904,7 +904,7 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice, Youth Empowerment",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-36.jpeg",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -932,7 +932,7 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-37.svg",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -988,7 +988,7 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice, Gender Equity",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-39.jpg",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -1154,7 +1154,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Racial Justice, Historical Memory",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-45.jpg",
       "categories": [
         "textile",
         "social practice",
@@ -1204,7 +1204,7 @@ export const artists: Artist[] = [
       "date": "2016",
       "location": "Indianapolis (Mass Ave)",
       "cause": "Civil Rights, Literature",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-47.jpg",
       "latitude": 39.7728,
       "longitude": -86.1506,
       "categories": [
@@ -1229,7 +1229,7 @@ export const artists: Artist[] = [
       "date": "1968",
       "location": "Indianapolis",
       "cause": "Prison Reform, Racial Justice",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-48.jpg",
       "categories": [
         "literature",
         "activism"
@@ -1252,7 +1252,7 @@ export const artists: Artist[] = [
       "date": "1907",
       "location": "Nashville, IN",
       "cause": "Environmental Justice, Conservation",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-49.webp",
       "latitude": 39.1842,
       "longitude": -86.2979,
       "categories": [
@@ -1277,7 +1277,7 @@ export const artists: Artist[] = [
       "date": "Early 1900s",
       "location": "Geneva, IN",
       "cause": "Environmental Justice, Conservation",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-50.webp",
       "latitude": 40.5911,
       "longitude": -84.9602,
       "categories": [
@@ -1325,7 +1325,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Hammond / Northwest Indiana",
       "cause": "Environmental Justice, Political Satire",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-52.jpg",
       "categories": [
         "painting",
         "political"
@@ -1351,7 +1351,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Bloomington",
       "cause": "Racial Identity, Cultural Equity",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-53.jpg",
       "categories": [
         "ceramics",
         "sculpture"
@@ -1400,7 +1400,7 @@ export const artists: Artist[] = [
       "date": "2022",
       "location": "Indianapolis International Airport",
       "cause": "Racial Justice, Representation",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-55.gif",
       "categories": [
         "installation",
         "public art"
@@ -1555,7 +1555,7 @@ export const artists: Artist[] = [
       "date": "2010s",
       "location": "Indianapolis (White River)",
       "cause": "Environmental Justice, Urban Ecology",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-61.png",
       "categories": [
         "environmental",
         "conceptual"
@@ -1581,7 +1581,7 @@ export const artists: Artist[] = [
       "date": "2021",
       "location": "Indianapolis (Downtown)",
       "cause": "Racial Justice, Historical Correction",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-62.png",
       "latitude": 39.7684,
       "longitude": -86.1581,
       "categories": [
@@ -1606,7 +1606,7 @@ export const artists: Artist[] = [
       "date": "Various",
       "location": "Indianapolis",
       "cause": "Cultural Preservation",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-63.jpg",
       "categories": [
         "mural",
         "historical"
@@ -1651,7 +1651,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Spiritual Activism, Feminism",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-65.gif",
       "categories": [
         "painting",
         "sculpture"
@@ -1674,7 +1674,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Cultural History, Recycling",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-66.jpg",
       "categories": [
         "collage",
         "music"
@@ -1794,7 +1794,7 @@ export const artists: Artist[] = [
       "date": "1940s",
       "location": "Europe (Fort Wayne native)",
       "cause": "Anti-Fascism",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-71.png",
       "categories": [
         "design",
         "historical"
@@ -1817,7 +1817,7 @@ export const artists: Artist[] = [
       "date": "2000s",
       "location": "Global (Indy native)",
       "cause": "Disability Rights, Accessibility",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-72.svg",
       "categories": [
         "architecture",
         "design"
@@ -1866,7 +1866,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Environmental Justice",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-74.jpg",
       "categories": [
         "landscape",
         "activism"
@@ -2024,7 +2024,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Identity Politics",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-81.jpg",
       "categories": [
         "painting",
         "portrait"
@@ -2050,7 +2050,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Representation",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-82.webp",
       "categories": [
         "mural",
         "portrait"
@@ -2120,7 +2120,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Mental Health, Public Joy",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-85.jpg",
       "categories": [
         "mural",
         "abstract"
@@ -2345,7 +2345,7 @@ export const artists: Artist[] = [
       "date": "Recent",
       "location": "Indianapolis",
       "cause": "Community Building",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-94.svg",
       "categories": [
         "sculpture",
         "public art"
@@ -2391,7 +2391,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "New Albany / Indianapolis",
       "cause": "Perception Awareness",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-96.png",
       "categories": [
         "mixed media",
         "abstract"
@@ -2417,7 +2417,7 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Cultural Critique",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-97.jpg",
       "categories": [
         "sculpture",
         "conceptual"
@@ -2440,7 +2440,7 @@ export const artists: Artist[] = [
       "date": "2023",
       "location": "Kokomo (IU Kokomo Campus)",
       "cause": "Industrial History, Classical Reinterpretation",
-      "imageUrl": "/placeholder-art.jpg",
+      "imageUrl": "/artist-98.jpg",
       "categories": [
         "sculpture",
         "minimalism"

@@ -96,7 +96,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Indiana Art Activism Directory",
+  title: "ACT.IN.ART. - Directory of Indiana Activism and Artistryiana Activism and Artistry",
   description: "A directory of artists and murals shaping social justice in Indiana.",
 };
 

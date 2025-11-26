@@ -6,7 +6,7 @@ import { Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { ThemeSwitcher } from "@/components/theme-switcher"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { motion, useScroll, useMotionValueEvent } from "framer-motion"
+import { motion } from "framer-motion"
 
 const navigation = [
   { name: "Directory", href: "/" },
@@ -18,36 +18,20 @@ const navigation = [
 ]
 
 export function Header() {
-  const { scrollY } = useScroll()
-  const [hidden, setHidden] = React.useState(false)
-
-  // Hide header on scroll down, show on scroll up
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious() ?? 0
-    if (latest > previous && latest > 150) {
-      setHidden(true)
-    } else {
-      setHidden(false)
-    }
-  })
-
   return (
     <motion.header
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -100, opacity: 0 },
-      }}
-      animate={hidden ? "hidden" : "visible"}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4"
     >
       <div className="w-full max-w-5xl rounded-full border border-white/20 bg-background/70 backdrop-blur-xl shadow-lg transition-all duration-300">
         <div className="flex h-14 items-center justify-between px-6">
-          
+
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold font-heading tracking-tight text-foreground">
-              Act.IN.Art
+              Home
             </span>
           </Link>
 
@@ -81,7 +65,7 @@ export function Header() {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-6 mt-10">
                   <Link href="/" className="text-2xl font-bold font-heading mb-4">
-                    InArtAct
+                    Home
                   </Link>
                   {navigation.map((item) => (
                     <Link

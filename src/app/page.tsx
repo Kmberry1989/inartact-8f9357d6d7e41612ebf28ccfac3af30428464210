@@ -239,6 +239,9 @@ export default function Home() {
         {/* Hero Section - UPDATED to support themes */}
         <HeroParallax />
 
+        {/* Current Events Widget */}
+        <CurrentEventsWidget />
+
         {/* Directory Section */}
         <section id="directory-section" className="py-12 md:py-20 bg-muted/20">
           <div className="container mx-auto px-4">
@@ -407,8 +410,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Current Events Widget */}
-        <CurrentEventsWidget />
+
 
       </main>
       <Footer />
