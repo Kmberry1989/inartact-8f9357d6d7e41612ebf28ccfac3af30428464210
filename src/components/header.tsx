@@ -47,7 +47,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold font-heading tracking-tight text-foreground">
-              InArtAct
+              Act.IN.Art
             </span>
           </Link>
 
