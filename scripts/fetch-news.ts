@@ -44,7 +44,8 @@ async function fetchNews() {
                     console.log(`    -> Found OG Image: ${imageUrl}`);
                 }
             } catch (e) {
-                console.log(`    -> Failed to fetch OG image: ${e.message}`);
+                const errorMessage = e instanceof Error ? e.message : String(e);
+                console.log(`    -> Failed to fetch OG image: ${errorMessage}`);
             }
         }
 
