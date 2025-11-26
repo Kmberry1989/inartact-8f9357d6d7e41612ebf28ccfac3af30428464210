@@ -34,6 +34,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice, Activism",
       "imageUrl": "/artist-1.png",
+      "credit": "static.wixstatic.com",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -63,6 +64,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Archived by IndyPL)",
       "cause": "Civil Rights, Police Brutality",
       "imageUrl": "/artist-2.png",
+      "credit": "i0.wp.com",
       "categories": [
         "street art",
         "public art"
@@ -89,6 +91,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Archived by IndyPL)",
       "cause": "Racial Justice, Police Brutality",
       "imageUrl": "/artist-3.svg",
+      "credit": "ganggangculture.com",
       "categories": [
         "controversial",
         "political"
@@ -116,6 +119,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Social Justice (General)",
       "imageUrl": "/artist-4.jpg",
+      "credit": "images.squarespace-cdn.com",
       "categories": [
         "mural",
         "public art"
@@ -142,6 +146,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Not Installed)",
       "cause": "Racial Justice, Historical Reconciliation",
       "imageUrl": "/EPluribusUnum.webp",
+      "credit": "pacegallery.com",
       "categories": [
         "public art",
         "proposal",
@@ -169,6 +174,7 @@ export const artists: Artist[] = [
       "location": "Various Collections",
       "cause": "Civil Rights",
       "imageUrl": "/artist-6.png",
+      "credit": "s3.amazonaws.com",
       "categories": [
         "print",
         "pop art"
@@ -195,6 +201,7 @@ export const artists: Artist[] = [
       "location": "IU Eskenazi Museum of Art (Bloomington)",
       "cause": "Racial Justice",
       "imageUrl": "/artist-7.jpg",
+      "credit": "images.squarespace-cdn.com",
       "categories": [
         "mixed media"
       ],
@@ -221,6 +228,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Garfield Park)",
       "cause": "Community Building",
       "imageUrl": "/artist-8.jpg",
+      "credit": "bigcar.org",
       "latitude": 39.7326,
       "longitude": -86.1415,
       "categories": [
@@ -331,6 +339,7 @@ export const artists: Artist[] = [
       "location": "Fort Wayne (1514 St. Joseph Blvd)",
       "cause": "Racial Justice, Inclusive Community",
       "imageUrl": "/artist-12.jpg",
+      "credit": "bendukeart.com",
       "categories": [
         "mural",
         "public art"
@@ -354,6 +363,7 @@ export const artists: Artist[] = [
       "location": "Fort Wayne (1818 Bluffton Road)",
       "cause": "Social Justice (General)",
       "imageUrl": "/artist-13.png",
+      "credit": "static.wixstatic.com",
       "categories": [
         "mural",
         "public art"
@@ -377,6 +387,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Women's Suffrage, Education",
       "imageUrl": "/artist-14.jpg",
+      "credit": "indyencyclopedia.org",
       "categories": [
         "portrait",
         "historical"
@@ -426,6 +437,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Statehouse)",
       "cause": "Women's Suffrage, Racial Justice",
       "imageUrl": "/artist-16.png",
+      "credit": "static.wixstatic.com",
       "categories": [
         "quilt",
         "textile",
@@ -450,6 +462,7 @@ export const artists: Artist[] = [
       "location": "Decatur / Indiana Statehouse",
       "cause": "Women's Suffrage",
       "imageUrl": "/nINeteenth.webp",
+      "credit": "static1.squarespace.com",
       "categories": [
         "textile",
         "quilt",
@@ -478,6 +491,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Work travels nationally)",
       "cause": "Women's Suffrage",
       "imageUrl": "/herflag.webp",
+      "credit": "static1.squarespace.com",
       "categories": [
         "textile",
         "public art"
@@ -501,6 +515,7 @@ export const artists: Artist[] = [
       "location": "Various Collections",
       "cause": "Women's Suffrage",
       "imageUrl": "/artist-19.png",
+      "credit": "s3.amazonaws.com",
       "categories": [
         "poster",
         "pop art"
@@ -527,6 +542,7 @@ export const artists: Artist[] = [
       "location": "Borden, Indiana",
       "cause": "Environmental Justice",
       "imageUrl": "/artist-20.png",
+      "credit": "img1.wsimg.com",
       "categories": [
         "photo",
         "studio",
@@ -554,6 +570,7 @@ export const artists: Artist[] = [
       "location": "Southern Indiana",
       "cause": "Environmental Justice, Zero Waste",
       "imageUrl": "/artist-21.jpg",
+      "credit": "walkthewillow.wordpress.com",
       "categories": [
         "sculpture",
         "public art"
@@ -603,6 +620,7 @@ export const artists: Artist[] = [
       "location": "South Bend",
       "cause": "Immigration, Detention Abolition",
       "imageUrl": "/artist-23.jpg",
+      "credit": "s0.wp.com",
       "categories": [
         "digital art",
         "portrait"
@@ -629,6 +647,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Immigration, Community Safety",
       "imageUrl": "/beatrizvasquez.jpg",
+      "credit": "static1.squarespace.com",
       "categories": [
         "public art",
         "paper art",
@@ -728,6 +747,7 @@ export const artists: Artist[] = [
       "location": "Pendleton (U.S. Post Office)",
       "cause": "Labor Rights",
       "imageUrl": "/artist-29.jpg",
+      "credit": "livingnewdeal.org",
       "categories": [
         "mural",
         "historical"
@@ -774,6 +794,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Labor Rights for Artists",
       "imageUrl": "/artist-31.png",
+      "credit": "cicf.org",
       "categories": [
         "logo",
         "graphic design"
@@ -797,6 +818,7 @@ export const artists: Artist[] = [
       "location": "Various Collections (Global)",
       "cause": "Political Change/Satire",
       "imageUrl": "/artist-32.png",
+      "credit": "s3.amazonaws.com",
       "categories": [
         "pop art",
         "icon"
@@ -823,6 +845,7 @@ export const artists: Artist[] = [
       "location": "IU Bloomington",
       "cause": "Social Justice, Holocaust Memory",
       "imageUrl": "/artist-33.jpg",
+      "credit": "jeffreywolin.com",
       "categories": [
         "photography",
         "documentary"
@@ -849,6 +872,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice",
       "imageUrl": "/artist-34.jpg",
+      "credit": "static.wixstatic.com",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -905,6 +929,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice, Youth Empowerment",
       "imageUrl": "/artist-36.jpeg",
+      "credit": "static.wixstatic.com",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -933,6 +958,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice",
       "imageUrl": "/artist-37.svg",
+      "credit": "ganggangculture.com",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -961,6 +987,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice, Education",
       "imageUrl": "/placeholder-art.jpg",
+      "credit": "static1.squarespace.com",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -989,6 +1016,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice, Gender Equity",
       "imageUrl": "/artist-39.jpg",
+      "credit": "static.wixstatic.com",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -1155,6 +1183,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Racial Justice, Historical Memory",
       "imageUrl": "/artist-45.jpg",
+      "credit": "static.wixstatic.com",
       "categories": [
         "textile",
         "social practice",
@@ -1205,6 +1234,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Mass Ave)",
       "cause": "Civil Rights, Literature",
       "imageUrl": "/artist-47.jpg",
+      "credit": "indyencyclopedia.org",
       "latitude": 39.7728,
       "longitude": -86.1506,
       "categories": [
@@ -1230,6 +1260,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Prison Reform, Racial Justice",
       "imageUrl": "/artist-48.jpg",
+      "credit": "indyencyclopedia.org",
       "categories": [
         "literature",
         "activism"
@@ -1253,6 +1284,7 @@ export const artists: Artist[] = [
       "location": "Nashville, IN",
       "cause": "Environmental Justice, Conservation",
       "imageUrl": "/artist-49.webp",
+      "credit": "indianamuseum.org",
       "latitude": 39.1842,
       "longitude": -86.2979,
       "categories": [
@@ -1278,6 +1310,7 @@ export const artists: Artist[] = [
       "location": "Geneva, IN",
       "cause": "Environmental Justice, Conservation",
       "imageUrl": "/artist-50.webp",
+      "credit": "indianamuseum.org",
       "latitude": 40.5911,
       "longitude": -84.9602,
       "categories": [
@@ -1326,6 +1359,7 @@ export const artists: Artist[] = [
       "location": "Hammond / Northwest Indiana",
       "cause": "Environmental Justice, Political Satire",
       "imageUrl": "/artist-52.jpg",
+      "credit": "tomtorluemke.com",
       "categories": [
         "painting",
         "political"
@@ -1352,6 +1386,7 @@ export const artists: Artist[] = [
       "location": "Bloomington",
       "cause": "Racial Identity, Cultural Equity",
       "imageUrl": "/artist-53.jpg",
+      "credit": "malcolmmobutusmith.com",
       "categories": [
         "ceramics",
         "sculpture"
@@ -1401,6 +1436,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis International Airport",
       "cause": "Racial Justice, Representation",
       "imageUrl": "/artist-55.gif",
+      "credit": "boxxtheartist.com",
       "categories": [
         "installation",
         "public art"
@@ -1429,6 +1465,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Environmental Justice, Indigenous Knowledge",
       "imageUrl": "/placeholder-art.jpg",
+      "credit": "static1.squarespace.com",
       "categories": [
         "textile",
         "environmental"
@@ -1455,6 +1492,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (IUPUI)",
       "cause": "Environmental Awareness, Systems Thinking",
       "imageUrl": "/placeholder-art.jpg",
+      "credit": "static1.squarespace.com",
       "categories": [
         "sculpture",
         "kinetic"
@@ -1481,6 +1519,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Community Building, Anti-Gentrification",
       "imageUrl": "/placeholder-art.jpg",
+      "credit": "static1.squarespace.com",
       "categories": [
         "mural",
         "community"
@@ -1556,6 +1595,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (White River)",
       "cause": "Environmental Justice, Urban Ecology",
       "imageUrl": "/artist-61.png",
+      "credit": "marymiss.com",
       "categories": [
         "environmental",
         "conceptual"
@@ -1582,6 +1622,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Downtown)",
       "cause": "Racial Justice, Historical Correction",
       "imageUrl": "/artist-62.png",
+      "credit": "shawnmichaelwarren.com",
       "latitude": 39.7684,
       "longitude": -86.1581,
       "categories": [
@@ -1607,6 +1648,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Cultural Preservation",
       "imageUrl": "/artist-63.jpg",
+      "credit": "img1.wsimg.com",
       "categories": [
         "mural",
         "historical"
@@ -1652,6 +1694,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Spiritual Activism, Feminism",
       "imageUrl": "/artist-65.gif",
+      "credit": "resources.blogblog.com",
       "categories": [
         "painting",
         "sculpture"
@@ -1675,6 +1718,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Cultural History, Recycling",
       "imageUrl": "/artist-66.jpg",
+      "credit": "studiomuseum.imgix.net",
       "categories": [
         "collage",
         "music"
@@ -1701,6 +1745,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice",
       "imageUrl": "/placeholder-art.jpg",
+      "credit": "static1.squarespace.com",
       "latitude": 39.7753,
       "longitude": -86.1649,
       "categories": [
@@ -1795,6 +1840,7 @@ export const artists: Artist[] = [
       "location": "Europe (Fort Wayne native)",
       "cause": "Anti-Fascism",
       "imageUrl": "/artist-71.png",
+      "credit": "cdn.shopify.com",
       "categories": [
         "design",
         "historical"
@@ -1818,6 +1864,7 @@ export const artists: Artist[] = [
       "location": "Global (Indy native)",
       "cause": "Disability Rights, Accessibility",
       "imageUrl": "/artist-72.svg",
+      "credit": "michaelgraves.com",
       "categories": [
         "architecture",
         "design"
@@ -1867,6 +1914,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Environmental Justice",
       "imageUrl": "/artist-74.jpg",
+      "credit": "static.wixstatic.com",
       "categories": [
         "landscape",
         "activism"
@@ -2025,6 +2073,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Identity Politics",
       "imageUrl": "/artist-81.jpg",
+      "credit": "cdn.myportfolio.com",
       "categories": [
         "painting",
         "portrait"
@@ -2051,6 +2100,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Representation",
       "imageUrl": "/artist-82.webp",
+      "credit": "img1.wsimg.com",
       "categories": [
         "mural",
         "portrait"
@@ -2121,6 +2171,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Mental Health, Public Joy",
       "imageUrl": "/artist-85.jpg",
+      "credit": "static.wixstatic.com",
       "categories": [
         "mural",
         "abstract"
@@ -2219,6 +2270,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "STEAM Education",
       "imageUrl": "/placeholder-art.jpg",
+      "credit": "static1.squarespace.com",
       "categories": [
         "design",
         "technology"
@@ -2320,6 +2372,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Science Education, Unity",
       "imageUrl": "/placeholder-art.jpg",
+      "credit": "owensandcrawley.com",
       "categories": [
         "sculpture",
         "science"
@@ -2346,6 +2399,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Community Building",
       "imageUrl": "/artist-94.svg",
+      "credit": "arlonbayliss.com",
       "categories": [
         "sculpture",
         "public art"
@@ -2392,6 +2446,7 @@ export const artists: Artist[] = [
       "location": "New Albany / Indianapolis",
       "cause": "Perception Awareness",
       "imageUrl": "/artist-96.png",
+      "credit": "letitiaquesenberry.com",
       "categories": [
         "mixed media",
         "abstract"
@@ -2418,6 +2473,7 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Cultural Critique",
       "imageUrl": "/artist-97.jpg",
+      "credit": "static.wixstatic.com",
       "categories": [
         "sculpture",
         "conceptual"
@@ -2441,6 +2497,7 @@ export const artists: Artist[] = [
       "location": "Kokomo (IU Kokomo Campus)",
       "cause": "Industrial History, Classical Reinterpretation",
       "imageUrl": "/artist-98.jpg",
+      "credit": "s3.amazonaws.com",
       "categories": [
         "sculpture",
         "minimalism"

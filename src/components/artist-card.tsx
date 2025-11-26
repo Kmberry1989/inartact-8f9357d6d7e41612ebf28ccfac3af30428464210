@@ -43,6 +43,12 @@ export function ArtistCard({ artist }: ArtistCardProps) {
               {artist.artwork.title}
             </p>
           </div>
+
+          {artist.artwork.credit && (
+            <div className="absolute bottom-0 right-0 bg-black/60 text-white text-[10px] px-2 py-1 rounded-tl-md backdrop-blur-sm z-10">
+              Source: {artist.artwork.credit}
+            </div>
+          )}
         </div>
       </Link>
 

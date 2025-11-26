@@ -27,5 +27,6 @@ export interface Artist {
     longitude?: number;
     mixcloudEmbed?: string;
     vimeoUrl?: string;
+    credit?: string;
   };
 }
