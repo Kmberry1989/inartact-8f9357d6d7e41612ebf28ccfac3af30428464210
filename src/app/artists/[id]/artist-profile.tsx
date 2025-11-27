@@ -9,7 +9,6 @@ import { Separator } from '@/components/ui/separator';
 import { ArrowLeft, ExternalLink, MapPin, Info, Globe, Newspaper, Instagram, Facebook } from 'lucide-react';
 import { Artist } from '@/lib/types';
 import { LikeButton } from '@/components/LikeButton';
-import { FavoriteButton } from '@/components/FavoriteButton';
 import { ShareButton } from '@/components/ShareButton';
 import { parseSocialMediaLink } from '@/lib/social-media-utils';
 import { ImageLightbox } from '@/components/ImageLightbox';
@@ -61,14 +60,6 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
             </div>
           </div>
 
-          {/* Image Credit (if available) */}
-          {/* Note: You can add the imageCredit field to your type definition to use this */}
-          {/* {artist.artwork.imageCredit && (
-            <p className="text-xs text-muted-foreground mt-1 text-right italic">
-              Image credit: {artist.artwork.imageCredit}
-            </p>
-          )} */}
-
           <div className="rounded-xl border bg-card text-card-foreground shadow-sm p-6">
             <h3 className="font-semibold mb-4 flex items-center text-lg">
               <Info className="w-5 h-5 mr-2 text-primary" />
@@ -103,8 +94,10 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                   <div className="grid grid-cols-3 gap-1 items-baseline">
                     <dt className="font-medium text-muted-foreground">Location</dt>
                     <dd className="col-span-2 flex items-start">
-                      <MapPin className="w-3.5 h-3.5 mr-1.5 mt-0.5 text-muted-foreground shrink-0" />
-                      {artist.artwork.location}
+                      <Link href="/activists/map" className="flex items-center hover:text-primary hover:underline transition-colors">
+                        <MapPin className="w-3.5 h-3.5 mr-1.5 mt-0.5 text-muted-foreground shrink-0" />
+                        {artist.artwork.location} (View on Map)
+                      </Link>
                     </dd>
                   </div>
                 </>
@@ -150,7 +143,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
         </div>
 
         {/* Right Column: Bio & Description */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col">
           <div className="mb-8">
             <div className="flex flex-wrap gap-3 mb-4">
               {artist.artwork.cause && (
@@ -202,11 +195,30 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
               </>
             )}
 
-            {artist.artist.social_media && artist.artist.social_media.length > 0 && (
-              <div className="mt-6">
-                <h4 className="text-sm font-semibold mb-2 uppercase tracking-wider">Follow</h4>
-                <div className="flex flex-wrap gap-2">
-                  {artist.artist.social_media.map((link, index) => {
+            {/* Online Links & Contact Info - Moved Up */}
+            <div className="mt-8 p-6 bg-muted/30 rounded-xl border">
+               <h4 className="text-sm font-semibold mb-4 uppercase tracking-wider flex items-center text-primary">
+                  <Globe className="mr-2 h-4 w-4" />
+                  Connect & Explore
+               </h4>
+               <div className="flex flex-wrap gap-3">
+                  {artist.artist.website && (
+                    <Button variant="default" size="sm" asChild>
+                      <a href={artist.artist.website} target="_blank" rel="noopener noreferrer">
+                        Official Website
+                      </a>
+                    </Button>
+                  )}
+                  
+                  {artist.artwork.portfolio_url && (
+                    <Button variant="secondary" size="sm" asChild>
+                      <a href={artist.artwork.portfolio_url} target="_blank" rel="noopener noreferrer">
+                        View Portfolio
+                      </a>
+                    </Button>
+                  )}
+
+                  {artist.artist.social_media && artist.artist.social_media.map((link, index) => {
                     const socialLink = parseSocialMediaLink(link);
                     const IconComponent =
                       socialLink.icon === 'instagram'
@@ -223,9 +235,9 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                       </Button>
                     );
                   })}
-                </div>
-              </div>
-            )}
+               </div>
+            </div>
+
 
             {artist.artwork.news_media_coverage &&
               artist.artwork.news_media_coverage.length > 0 && (
@@ -280,7 +292,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
 
           <div className="flex flex-wrap gap-4 mt-auto pt-8 border-t">
             {/* <LikeButton artistId={artist.id} /> */}
-            <FavoriteButton artistId={artist.id} />
+            {/* Favorite Button Removed as per request */}
             <ShareButton
               url={currentUrl}
               title={`${artist.artist.name} - ${artist.artwork.title}`}
@@ -297,29 +309,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                   rel="noopener noreferrer"
                 >
                   <ExternalLink className="mr-2 h-4 w-4" />
-                  Research
-                </a>
-              </Button>
-            )}
-
-            {artist.artist.website && (
-              <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
-                <a href={artist.artist.website} target="_blank" rel="noopener noreferrer">
-                  <Globe className="mr-2 h-4 w-4" />
-                  Official Website
-                </a>
-              </Button>
-            )}
-
-            {artist.artwork.portfolio_url && (
-              <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
-                <a
-                  href={artist.artwork.portfolio_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Portfolio
+                  Research Artist
                 </a>
               </Button>
             )}

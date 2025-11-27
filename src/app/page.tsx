@@ -1,6 +1,6 @@
 // src/app/page.tsx
 'use client';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import { useEffect, useState, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -46,8 +46,27 @@ export default function Home() {
   const [visibleCount, setVisibleCount] = useState(12);
   const [isClient, setIsClient] = useState(false);
 
+  // Nav Visibility
+  const [hideNav, setHideNav] = useState(false);
+
   // Refs for click-outside detection
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const directorySectionRef = useRef<HTMLElement>(null);
+
+  // Scroll tracking
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (directorySectionRef.current) {
+      const directoryTop = directorySectionRef.current.offsetTop;
+      // Hide nav when we scroll past the directory start minus some buffer
+      if (latest > directoryTop - 60) {
+        setHideNav(true);
+      } else {
+        setHideNav(false);
+      }
+    }
+  });
 
   // --- Effects ---
 
@@ -234,7 +253,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col font-sans transition-colors duration-300">
-      <Header />
+      <Header hideNav={hideNav} />
       <main className="flex-1">
         {/* Hero Section - UPDATED to support themes */}
         <HeroParallax />
@@ -243,7 +262,7 @@ export default function Home() {
         <CurrentEventsWidget />
 
         {/* Directory Section */}
-        <section id="directory-section" className="py-12 md:py-20 bg-muted/20">
+        <section id="directory-section" ref={directorySectionRef} className="py-12 md:py-20 bg-muted/20">
           <div className="container mx-auto px-4">
 
             {/* Controls Bar */}

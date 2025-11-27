@@ -2,11 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import ogs from 'open-graph-scraper';
 
-const RSS_URL = 'https://news.google.com/rss/search?q=Indiana+Art+Activism+OR+Indy+Arts+Council+OR+Indiana+Arts+Commission&hl=en-US&gl=US&ceid=US:en';
+const RSS_URL = 'https://www.bing.com/news/search?q=Indiana+Arts&format=rss';
 const OUTPUT_FILE = path.join(__dirname, '../src/lib/news-data.json');
 
 async function fetchNews() {
-    console.log('Fetching RSS feed...');
+    console.log('Fetching RSS feed from Bing...');
     const response = await fetch(RSS_URL);
     const xml = await response.text();
 
@@ -22,23 +22,38 @@ async function fetchNews() {
         const titleMatch = item.match(/<title>(.*?)<\/title>/);
         const linkMatch = item.match(/<link>(.*?)<\/link>/);
         const pubDateMatch = item.match(/<pubDate>(.*?)<\/pubDate>/);
-        const sourceMatch = item.match(/<source url=".*?">(.*?)<\/source>/);
+        const sourceMatch = item.match(/<source url=".*?">(.*?)<\/source>/); // Bing might not have source tag same way
 
-        // Clean title
         let title = titleMatch ? titleMatch[1] : 'News Update';
-        title = title.replace(/ - .*$/, ''); // Remove source suffix
-
-        const link = linkMatch ? linkMatch[1] : '';
+        let link = linkMatch ? linkMatch[1] : '';
         const date = pubDateMatch ? new Date(pubDateMatch[1]).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : 'Recent';
-        const source = sourceMatch ? sourceMatch[1] : 'News Source';
+
+        // Extract real URL from Bing link
+        // Link format: http://www.bing.com/news/apiclick.aspx?...&url=https%3a%2f%2f...&...
+        let realUrl = link;
+        const urlParamMatch = link.match(/url=(.*?)(&|$)/);
+        if (urlParamMatch) {
+            try {
+                realUrl = decodeURIComponent(urlParamMatch[1]);
+            } catch (e) {
+                console.log('Failed to decode Bing URL param');
+            }
+        }
+
+        // Bing doesn't always provide <source>, so we might need to extract domain from realUrl
+        let source = 'News Source';
+        try {
+            source = new URL(realUrl).hostname.replace('www.', '');
+        } catch (e) { }
 
         console.log(`[${i}] Processing: ${title}`);
+        console.log(`    -> Real URL: ${realUrl}`);
 
         let imageUrl = '';
 
-        if (link) {
+        if (realUrl) {
             try {
-                const { result } = await ogs({ url: link });
+                const { result } = await ogs({ url: realUrl });
                 if (result.success && result.ogImage && result.ogImage.length > 0) {
                     imageUrl = result.ogImage[0].url;
                     console.log(`    -> Found OG Image: ${imageUrl}`);
@@ -53,12 +68,12 @@ async function fetchNews() {
             id: `news-${i}`,
             title,
             date,
-            organization: source, // Using source as organization/credit
+            organization: source,
             category: 'News',
-            summary: 'Click to read full story.', // We'll let the user click through
-            imageUrl: imageUrl || '', // Empty if not found
-            link,
-            credit: source // Explicit credit field
+            summary: 'Click to read full story.',
+            imageUrl: imageUrl || '',
+            link: realUrl, // Use real URL for the link too
+            credit: source
         });
     }
 

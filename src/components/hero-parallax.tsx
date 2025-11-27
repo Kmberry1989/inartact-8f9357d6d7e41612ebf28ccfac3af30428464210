@@ -48,7 +48,7 @@ export function HeroParallax() {
       {/* LAYER 2: Indiana Outline (SVG or Image) */}
       <motion.div
         style={{ y: yIndiana }}
-        className="absolute top-[5%] left-1/2 -translate-x-1/2 z-0 w-[80vw] h-[60vh] md:w-[600px] md:h-[800px] opacity-10 dark:opacity-20 pointer-events-none"
+        className="absolute top-[10%] left-1/2 -translate-x-1/2 z-0 w-[90vw] h-[70vh] md:w-[700px] md:h-[900px] opacity-30 dark:opacity-40 pointer-events-none"
       >
         <Image
           src="/hero/indiana-outline.png"
@@ -113,20 +113,24 @@ export function HeroParallax() {
       {/* LAYER 6: Fist (Foreground) */}
       <motion.div
         style={{ y: yFist }}
-        animate={{ y: [0, -15, 0] }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
         className="absolute -bottom-[5%] left-[5%] md:left-[10%] z-20 w-[300px] h-[500px] md:w-[500px] md:h-[800px] pointer-events-none"
       >
-        <Image
-          src="/hero/raised-fist.png"
-          alt="Raised Fist"
-          fill
-          className="object-contain object-bottom drop-shadow-2xl mask-image-gradient"
-        />
+        <motion.div
+          animate={{ y: [0, -15, 0] }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="w-full h-full relative"
+        >
+          <Image
+            src="/hero/raised-fist.png"
+            alt="Raised Fist"
+            fill
+            className="object-contain object-bottom drop-shadow-2xl mask-image-gradient"
+          />
+        </motion.div>
       </motion.div>
 
       {/* Gradient Fade at bottom */}

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { artists } from '@/lib/artists-data';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import {
@@ -13,6 +12,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
+import Image from 'next/image';
 
 export default function ZinePage() {
     const [selectedCause, setSelectedCause] = useState<string>('all');
@@ -42,7 +42,7 @@ export default function ZinePage() {
     return (
         <div className="container mx-auto py-8 px-4 print:p-0">
             {/* No-print controls */}
-            <div className="print:hidden mb-8 space-y-6">
+            <div className="print:hidden mb-8 space-y-6 mt-16">
                 <div>
                     <h1 className="text-3xl font-bold mb-2">Zine Generator</h1>
                     <p className="text-muted-foreground">
@@ -84,6 +84,14 @@ export default function ZinePage() {
                                 checked={selectedArtists.includes(artist.id)}
                                 onCheckedChange={() => toggleArtist(artist.id)}
                             />
+                            <div className="relative h-16 w-16 shrink-0 rounded bg-muted overflow-hidden">
+                                <Image 
+                                    src={artist.artwork.imageUrl || '/placeholder.jpg'} 
+                                    alt=""
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                             <div className="grid gap-1.5 leading-none">
                                 <label
                                     htmlFor={`artist-${artist.id}`}
@@ -91,7 +99,7 @@ export default function ZinePage() {
                                 >
                                     {artist.artist.name}
                                 </label>
-                                <p className="text-xs text-muted-foreground">{artist.artwork.title}</p>
+                                <p className="text-xs text-muted-foreground line-clamp-1">{artist.artwork.title}</p>
                                 <p className="text-xs text-muted-foreground">{artist.artwork.cause}</p>
                             </div>
                         </div>
@@ -104,7 +112,7 @@ export default function ZinePage() {
                 <div className="grid grid-cols-2 gap-8">
                     {/* Cover Page */}
                     <div className="h-[50vh] flex flex-col justify-center items-center text-center border-b-2 border-dashed pb-8">
-                        <h1 className="text-4xl font-bold mb-4">Zine</h1>
+                        <h1 className="text-4xl font-bold mb-4">ACT.IN.ART</h1>
                         <p className="text-xl mb-2">Art & Activism in Indiana</p>
                         <p className="text-sm text-muted-foreground">
                             Generated on {new Date().toLocaleDateString()}
@@ -119,14 +127,28 @@ export default function ZinePage() {
                                 key={artist.id}
                                 className="h-[50vh] flex flex-col p-8 border-b-2 border-dashed break-inside-avoid"
                             >
-                                <h2 className="text-2xl font-bold mb-2">{artist.artist.name}</h2>
-                                <p className="font-medium mb-4">{artist.artwork.title}</p>
-                                <p className="text-sm mb-4 flex-grow">{artist.artist.bio}</p>
-                                <div className="mt-auto">
-                                    <p className="text-xs font-bold uppercase tracking-wider mb-1">
-                                        Cause
-                                    </p>
-                                    <p className="text-sm">{artist.artwork.cause}</p>
+                                <div className="flex justify-between items-start mb-4">
+                                    <div>
+                                        <h2 className="text-2xl font-bold mb-1">{artist.artist.name}</h2>
+                                        <p className="font-medium text-sm italic">{artist.artwork.title}</p>
+                                    </div>
+                                    <div className="relative h-24 w-24 shrink-0 border bg-muted overflow-hidden">
+                                        {/* Images are grayscale for print optimization */}
+                                        <Image 
+                                            src={artist.artwork.imageUrl || '/placeholder.jpg'} 
+                                            alt={artist.artwork.title}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                </div>
+                                
+                                <p className="text-sm mb-4 flex-grow leading-relaxed">{artist.artist.bio}</p>
+                                <div className="mt-auto pt-4 border-t border-black/20">
+                                    <div className="flex justify-between text-xs">
+                                        <span className="font-bold uppercase">{artist.artwork.cause}</span>
+                                        <span>{artist.artwork.location}</span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
