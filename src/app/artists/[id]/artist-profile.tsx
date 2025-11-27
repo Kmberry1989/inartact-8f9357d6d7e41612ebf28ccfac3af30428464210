@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { ArrowLeft, ExternalLink, MapPin, Info, Globe, Newspaper, Instagram, Facebook } from 'lucide-react';
 import { Artist } from '@/lib/types';
-import { LikeButton } from '@/components/LikeButton';
+// import { LikeButton } from '@/components/LikeButton'; // Keeping original commented import
 import { ShareButton } from '@/components/ShareButton';
 import { parseSocialMediaLink } from '@/lib/social-media-utils';
 import { ImageLightbox } from '@/components/ImageLightbox';
@@ -40,26 +40,35 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
       </Link>
 
       <div className="grid gap-12 md:grid-cols-2">
-        {/* Left Column: Image & Key Details */}
+        {/* Left Column: Artwork Image */}
         <div className="space-y-8">
-          <div
-            className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border shadow-md cursor-pointer group"
-            onClick={() => setShowLightbox(true)}
-          >
-            <Image
-              src={artist.artwork.imageUrl || '/placeholder.svg?height=800&width=600'}
-              alt={artist.artwork.alt || `Artwork by ${artist.artist.name}`}
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-              <p className="text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity bg-black/50 px-4 py-2 rounded-md">
-                Click to view fullscreen
-              </p>
+          <div>
+            <div
+              className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border shadow-md cursor-pointer group"
+              onClick={() => setShowLightbox(true)}
+            >
+              <Image
+                src={artist.artwork.imageUrl || '/placeholder.svg?height=800&width=600'}
+                alt={artist.artwork.alt || `Artwork by ${artist.artist.name}`}
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+                priority
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                <p className="text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity bg-black/50 px-4 py-2 rounded-md">
+                  Click to view fullscreen
+                </p>
+              </div>
             </div>
+            {/* NEW: Artwork Source Credit */}
+            {artist.artwork.credit && (
+              <p className="text-xs text-muted-foreground text-center mt-2">
+                Image Source: {artist.artwork.credit}
+              </p>
+            )}
           </div>
 
+          {/* Key Details Card */}
           <div className="rounded-xl border bg-card text-card-foreground shadow-sm p-6">
             <h3 className="font-semibold mb-4 flex items-center text-lg">
               <Info className="w-5 h-5 mr-2 text-primary" />
@@ -130,7 +139,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                       <div className="flex flex-wrap gap-2">
                         {artist.artwork.tags.map((tag) => (
                           <Badge key={tag} variant="outline" className="text-xs">
-                            {tag}
+                            #{tag}
                           </Badge>
                         ))}
                       </div>
@@ -158,6 +167,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
               )}
             </div>
             
+            {/* NEW: Flex Container for Name + Portrait */}
             <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
@@ -169,10 +179,22 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                   </p>
                 )}
               </div>
-              {/* Text to Speech Button */}
-              <div className="mt-2 shrink-0">
-                <TextToSpeech text={readableText} label="Listen to Profile" />
-              </div>
+
+              {/* NEW: Artist Portrait Display */}
+              {artist.artist.portraitUrl && (
+                <div className="shrink-0 relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/20 shadow-sm">
+                  <Image 
+                    src={artist.artist.portraitUrl} 
+                    alt={artist.artist.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )}
+            </div>
+            
+            <div className="mt-4">
+              <TextToSpeech text={readableText} label="Listen to Profile" />
             </div>
           </div>
 
@@ -195,7 +217,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
               </>
             )}
 
-            {/* Online Links & Contact Info - Moved Up */}
+            {/* Online Links & Contact Info */}
             <div className="mt-8 p-6 bg-muted/30 rounded-xl border">
                <h4 className="text-sm font-semibold mb-4 uppercase tracking-wider flex items-center text-primary">
                   <Globe className="mr-2 h-4 w-4" />
@@ -238,49 +260,53 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                </div>
             </div>
 
-
-            {artist.artwork.news_media_coverage &&
-              artist.artwork.news_media_coverage.length > 0 && (
-                <div className="mt-6">
-                  <h4 className="text-sm font-semibold mb-2 uppercase tracking-wider flex items-center">
-                    <Newspaper className="mr-2 h-4 w-4" />
-                    News & Media Coverage
-                  </h4>
-                  <ul className="space-y-2">
-                    {artist.artwork.news_media_coverage.map((link, index) => (
-                      <li key={index}>
-                        <a
-                          href={link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm text-primary hover:underline flex items-center"
-                        >
-                          <ExternalLink className="mr-2 h-3 w-3" />
-                          {new URL(link).hostname}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+            {/* Media Coverage Section */}
+            {artist.artwork.news_media_coverage && artist.artwork.news_media_coverage.length > 0 && (
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4 flex items-center">
+                  <Newspaper className="w-5 h-5 mr-2" />
+                  In the Media
+                </h3>
+                <div className="grid gap-3">
+                  {artist.artwork.news_media_coverage.map((link, i) => (
+                    <a
+                      key={i}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-medium truncate mr-4">{link}</span>
+                        <ExternalLink className="h-4 w-4 text-muted-foreground shrink-0" />
+                      </div>
+                    </a>
+                  ))}
                 </div>
-              )}
+              </div>
+            )}
 
+            {/* Embeds Section */}
             {(artist.artwork.mixcloudEmbed || artist.artwork.vimeoUrl) && (
               <div className="mt-8 space-y-6">
-                <h3 className="text-xl font-semibold mb-3">Media</h3>
                 {artist.artwork.mixcloudEmbed && (
-                  <div
-                    className="w-full overflow-hidden rounded-lg shadow-sm"
-                    dangerouslySetInnerHTML={{ __html: artist.artwork.mixcloudEmbed }}
-                  />
+                  <div className="rounded-xl overflow-hidden border bg-card shadow-sm">
+                    <div className="p-4 border-b bg-muted/30">
+                      <h3 className="font-semibold flex items-center">
+                        <span className="w-2 h-2 rounded-full bg-red-500 mr-2" />
+                        Audio Feature
+                      </h3>
+                    </div>
+                    <div className="p-4" dangerouslySetInnerHTML={{ __html: artist.artwork.mixcloudEmbed }} />
+                  </div>
                 )}
+
                 {artist.artwork.vimeoUrl && (
-                  <div className="aspect-video w-full overflow-hidden rounded-lg shadow-sm">
+                  <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg border">
                     <iframe
-                      src={`https://player.vimeo.com/video/${artist.artwork.vimeoUrl
-                        .split('/')
-                        .pop()
-                        ?.split('?')[0]}`}
+                      src={artist.artwork.vimeoUrl}
                       className="w-full h-full"
+                      frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture"
                       allowFullScreen
                     />

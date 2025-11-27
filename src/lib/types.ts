@@ -8,6 +8,8 @@ export interface Artist {
     isAlive?: boolean;
     born?: string;
     died?: string;
+    portraitUrl?: string; // New field for artist image
+    portraitCredit?: string; // New field for artist image credit
   };
   artwork: {
     title: string;
