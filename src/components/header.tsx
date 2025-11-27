@@ -37,8 +37,8 @@ export function Header({ hideNav = false }: HeaderProps) {
           transition={{ duration: 0.35, ease: "easeInOut" }}
           className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4"
         >
-          <div className="w-full max-w-5xl rounded-full border border-white/20 bg-background/70 backdrop-blur-xl shadow-lg transition-all duration-300">
-            <div className="flex h-14 items-center justify-between px-6">
+          <div className="w-auto rounded-full border border-white/20 bg-background/70 backdrop-blur-xl shadow-lg transition-all duration-300">
+            <div className="flex h-14 items-center gap-6 px-6">
 
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-2">
