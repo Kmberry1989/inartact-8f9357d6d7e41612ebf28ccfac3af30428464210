@@ -16,7 +16,7 @@ export type EventItem = {
 export async function getCurrentEvents(): Promise<EventItem[]> {
     const parser = new Parser({
         customFields: {
-            item: ['media:content', 'media:thumbnail'],
+            item: ['media:content', 'media:thumbnail', 'source'],
         },
     });
 
@@ -52,7 +52,7 @@ export async function getCurrentEvents(): Promise<EventItem[]> {
                 id: `rss-${index}`,
                 title: item.title || 'News Update',
                 date: date,
-                organization: item.source || 'News Source',
+                organization: (item as any).source || 'News Source',
                 category: 'News',
                 summary: summary || 'Click to read the full story.',
                 imageUrl: imageUrl,
