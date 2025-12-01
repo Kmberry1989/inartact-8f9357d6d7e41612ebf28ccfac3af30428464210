@@ -3,15 +3,14 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Loader2 } from 'lucide-react';
+import { trackEvent } from '@/app/actions/analytics'; // Import tracking
 
 interface LikeButtonProps {
     artistId: string;
 }
 
-// Generate or retrieve client ID
 function getClientId(): string {
     if (typeof window === 'undefined') return '';
-
     let clientId = localStorage.getItem('clientId');
     if (!clientId) {
         clientId = crypto.randomUUID();
@@ -27,14 +26,11 @@ export function LikeButton({ artistId }: LikeButtonProps) {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     useEffect(() => {
-        // Fetch current like count
         async function fetchLikes() {
             try {
                 const response = await fetch(`/api/likes/${artistId}`);
                 const data = await response.json();
                 setLikes(data.count);
-
-                // Check if user already liked
                 const likedArtists = JSON.parse(localStorage.getItem('likedArtists') || '{}');
                 setHasLiked(likedArtists[artistId] || false);
             } catch (error) {
@@ -43,7 +39,6 @@ export function LikeButton({ artistId }: LikeButtonProps) {
                 setIsLoading(false);
             }
         }
-
         fetchLikes();
     }, [artistId]);
 
@@ -61,15 +56,16 @@ export function LikeButton({ artistId }: LikeButtonProps) {
             });
 
             const data = await response.json();
-
             setLikes(data.count);
 
             if (!data.alreadyLiked) {
                 setHasLiked(true);
-                // Store locally
                 const likedArtists = JSON.parse(localStorage.getItem('likedArtists') || '{}');
                 likedArtists[artistId] = true;
                 localStorage.setItem('likedArtists', JSON.stringify(likedArtists));
+
+                // Track the event
+                trackEvent('artist_like');
             }
         } catch (error) {
             console.error('Error liking:', error);
@@ -93,7 +89,7 @@ export function LikeButton({ artistId }: LikeButtonProps) {
             size="lg"
             onClick={handleLike}
             disabled={hasLiked || isSubmitting}
-            className="group relative"
+            className="group relative transition-all"
         >
             <span className="text-2xl mr-2 transition-transform group-hover:scale-110">
                 👊

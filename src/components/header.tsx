@@ -4,19 +4,19 @@ import { usePathname } from "next/navigation"
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu } from 'lucide-react'
+import { Menu, Home, Map, Clock, BookOpen, BarChart, Info } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { ThemeSwitcher } from "@/components/theme-switcher"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { motion, AnimatePresence } from "framer-motion"
 
 const navigation = [
-  { name: "Directory", href: "/" },
-  { name: "Map", href: "/activists/map" },
-  { name: "Timeline", href: "/activists/timeline" },
-  { name: "Zine", href: "/activists/zine" },
-  { name: "Analytics", href: "/activists/analytics" },
-  { name: "About", href: "/about" },
+  { name: "Directory", href: "/", icon: Home },
+  { name: "Map", href: "/activists/map", icon: Map },
+  { name: "Timeline", href: "/activists/timeline", icon: Clock },
+  { name: "Zine", href: "/activists/zine", icon: BookOpen },
+  { name: "Analytics", href: "/activists/analytics", icon: BarChart },
+  { name: "About", href: "/about", icon: Info },
 ]
 
 interface HeaderProps {
@@ -72,7 +72,10 @@ export function Header({ hideNav = false }: HeaderProps) {
                         />
                       )}
 
-                      <span className="relative z-10">{item.name}</span>
+                      <span className="relative z-10 flex items-center gap-2">
+                        <item.icon className="w-4 h-4" />
+                        {item.name}
+                      </span>
                     </Link>
                   )
                 })}
@@ -100,8 +103,9 @@ export function Header({ hideNav = false }: HeaderProps) {
                         <Link
                           key={item.name}
                           href={item.href}
-                          className="text-xl font-medium hover:text-primary transition-colors"
+                          className="text-xl font-medium hover:text-primary transition-colors flex items-center gap-3"
                         >
+                          <item.icon className="w-5 h-5" />
                           {item.name}
                         </Link>
                       ))}
