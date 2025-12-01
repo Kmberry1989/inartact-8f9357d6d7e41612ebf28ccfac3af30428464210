@@ -63,33 +63,42 @@ def parse_csv(csv_text):
             except ValueError:
                 return None
 
+        # Gather all searchable text
+        name = row.get('artist_name', '')
+        title = row.get('artwork_title', '')
+        bio = row.get('bio', '')
+        desc = row.get('description', '')
+        location = row.get('location', '')
+        cause = row.get('cause', '')
+        categories = row.get('categories', '') # Raw string for search
+        
+        # Create a comprehensive search string (lowercase for easier searching later if needed, 
+        # though we usually lower-case in the frontend)
+        search_index = f"{name} {title} {bio} {desc} {location} {cause} {categories}".strip()
+
         artist_entry = {
             "id": row.get('id'),
             "artist": {
-                "name": row.get('artist_name', ''),
+                "name": name,
                 "isAlive": parse_bool(row.get('is_alive')),
-                "bio": row.get('bio', ''),
+                "bio": bio,
                 "website": row.get('website') or None,
                 "social_media": split_list(row.get('social_media'))
             },
             "artwork": {
-                "title": row.get('artwork_title', ''),
-                "description": row.get('description', ''),
+                "title": title,
+                "description": desc,
                 "medium": row.get('medium', ''),
                 "date": row.get('date', ''),
-                "location": row.get('location', ''),
-                "cause": row.get('cause', ''),
+                "location": location,
+                "cause": cause,
                 "imageUrl": row.get('image_url', ''),
                 "latitude": parse_float(row.get('latitude')),
                 "longitude": parse_float(row.get('longitude')),
                 "categories": split_list(row.get('categories')),
-                "searchQuery": f"{row.get('artist_name', '')} {row.get('artwork_title', '')}"
+                "searchQuery": search_index 
             }
         }
-        
-        # Clean up None values to match TS optional types (JSON doesn't support undefined, but null is okay for now, 
-        # though strictly TS might prefer missing keys. We'll stick to null or filter them out.)
-        # Actually, let's filter out None values from the dictionaries to make it cleaner
         
         def clean_dict(d):
             return {k: v for k, v in d.items() if v is not None}
