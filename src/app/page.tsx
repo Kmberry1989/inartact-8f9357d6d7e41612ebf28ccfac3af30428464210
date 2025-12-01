@@ -1,8 +1,7 @@
 // src/app/page.tsx
 'use client';
-import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
+import { useScroll, useMotionValueEvent } from 'framer-motion';
 import { useEffect, useState, useMemo, useRef } from 'react';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -20,6 +19,7 @@ import { Footer } from '@/components/footer';
 import { CurrentEventsWidget } from '@/components/current-events-widget';
 import { Search, SlidersHorizontal, ArrowDownAZ, Clock, X, RotateCcw, User, Palette } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useDebounce } from '@/hooks/use-debounce';
 
 // Type for our suggestions
 type Suggestion = {
@@ -34,6 +34,7 @@ export default function Home() {
 
   // Search State
   const [searchInput, setSearchInput] = useState(''); // What the user types
+  const debouncedSearchInput = useDebounce(searchInput, 300); // 300ms delay
   const [appliedSearch, setAppliedSearch] = useState(''); // What actually filters the grid
   const [showSuggestions, setShowSuggestions] = useState(false);
 
@@ -83,6 +84,14 @@ export default function Home() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Update suggestions when DEBOUNCED input changes (performance optimization)
+  useEffect(() => {
+    if (debouncedSearchInput) {
+      // Optional: You could auto-apply search here if you want "Search as you type" 
+      // instead of "Search on Enter". For now, we just update suggestions efficiently.
+    }
+  }, [debouncedSearchInput]);
+
   // Restore scroll position logic
   useEffect(() => {
     const savedScrollPos = sessionStorage.getItem('directoryScrollPos');
@@ -122,11 +131,11 @@ export default function Home() {
     return Array.from(causes).sort();
   }, []);
 
-  // Generate Suggestions based on 'searchInput'
+  // Generate Suggestions based on 'debouncedSearchInput'
   const suggestions: Suggestion[] = useMemo(() => {
-    if (!searchInput || searchInput.length < 2) return [];
+    if (!debouncedSearchInput || debouncedSearchInput.length < 2) return [];
 
-    const query = searchInput.toLowerCase();
+    const query = debouncedSearchInput.toLowerCase();
     const matches: Suggestion[] = [];
 
     artists.forEach(item => {
@@ -158,7 +167,7 @@ export default function Home() {
       if (!aStarts && bStarts) return 1;
       return 0;
     }).slice(0, 6); // Limit to 6 suggestions
-  }, [searchInput]);
+  }, [debouncedSearchInput]);
 
   // Main Gallery Filtering (Uses 'appliedSearch')
   const filteredAndSortedArtists = useMemo(() => {
@@ -255,7 +264,7 @@ export default function Home() {
     <div className="min-h-screen bg-background flex flex-col font-sans transition-colors duration-300">
       <Header hideNav={hideNav} />
       <main className="flex-1">
-        {/* Hero Section - UPDATED to support themes */}
+        {/* Hero Section */}
         <HeroParallax />
 
         {/* Current Events Widget */}
@@ -309,8 +318,6 @@ export default function Home() {
                       </div>
                     )}
                   </div>
-
-
 
                   {/* Dropdowns */}
                   <div className="flex gap-2 w-full md:w-auto">
@@ -428,8 +435,6 @@ export default function Home() {
             )}
           </div>
         </section>
-
-
 
       </main>
       <Footer />
