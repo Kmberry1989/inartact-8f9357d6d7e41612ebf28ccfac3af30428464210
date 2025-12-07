@@ -42,7 +42,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
       <div className="grid gap-12 md:grid-cols-2">
         {/* Left Column: Artwork Image */}
         <div className="space-y-8">
-          <div>
+          <figure>
             <div
               className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border shadow-md cursor-pointer group"
               onClick={() => setShowLightbox(true)}
@@ -59,14 +59,26 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                   Click to view fullscreen
                 </p>
               </div>
+              {artist.artwork.credit && (
+                <div className="absolute bottom-3 left-3 right-3 flex justify-center">
+                  <span className="inline-flex items-center gap-2 bg-black/70 text-white text-xs px-3 py-2 rounded-full backdrop-blur">
+                    <Info className="w-3.5 h-3.5" />
+                    Image courtesy of {artist.artwork.credit}
+                  </span>
+                </div>
+              )}
             </div>
-            {/* NEW: Artwork Source Credit */}
             {artist.artwork.credit && (
-              <p className="text-xs text-muted-foreground text-center mt-2">
-                Image Source: {artist.artwork.credit}
-              </p>
+              <figcaption className="text-xs text-muted-foreground text-center mt-3 font-medium">
+                Image courtesy of {artist.artwork.credit}
+              </figcaption>
             )}
-          </div>
+            <div className="mt-2 flex justify-center">
+              <Badge variant="outline" className="text-[10px] uppercase tracking-wide">
+                Non-commercial / educational use
+              </Badge>
+            </div>
+          </figure>
 
           {/* Key Details Card */}
           <div className="rounded-xl border bg-card text-card-foreground shadow-sm p-6">
@@ -182,14 +194,21 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
 
               {/* NEW: Artist Portrait Display */}
               {artist.artist.portraitUrl && (
-                <div className="shrink-0 relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/20 shadow-sm">
-                  <Image 
-                    src={artist.artist.portraitUrl} 
-                    alt={artist.artist.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <figure className="shrink-0 flex flex-col items-center gap-2">
+                  <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/20 shadow-sm">
+                    <Image
+                      src={artist.artist.portraitUrl}
+                      alt={artist.artist.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  {artist.artist.portraitCredit && (
+                    <figcaption className="text-[11px] text-muted-foreground text-center">
+                      Portrait credit: {artist.artist.portraitCredit}
+                    </figcaption>
+                  )}
+                </figure>
               )}
             </div>
             
@@ -216,6 +235,30 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                 </p>
               </>
             )}
+
+            <div className="mt-8 p-4 bg-muted/30 rounded-xl border flex gap-3 items-start">
+              <Info className="w-5 h-5 text-primary mt-0.5" />
+              <div className="space-y-2">
+                <p className="text-sm font-semibold">Usage & attribution</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Please credit {artist.artist.name}
+                  {artist.artwork.credit && (
+                    <>
+                      {' '}
+                      — image courtesy of {artist.artwork.credit}
+                    </>
+                  )}{' '}
+                  when sharing or studying this work. For corrections or takedown requests, email{' '}
+                  <a
+                    href="mailto:contact@actinart.org?subject=Attribution%20or%20Takedown%20Request"
+                    className="font-medium text-primary hover:underline"
+                  >
+                    contact@actinart.org
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
 
             {/* Online Links & Contact Info */}
             <div className="mt-8 p-6 bg-muted/30 rounded-xl border">
@@ -347,6 +390,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
         <ImageLightbox
           src={artist.artwork.imageUrl || '/placeholder.svg?height=800&width=600'}
           alt={artist.artwork.alt || `Artwork by ${artist.artist.name}`}
+          credit={artist.artwork.credit}
           onClose={() => setShowLightbox(false)}
         />
       )}
