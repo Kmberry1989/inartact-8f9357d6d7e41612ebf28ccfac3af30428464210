@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  Geist,
+  Inter,
   Geist_Mono,
   Fraunces,
   Quicksand,
@@ -17,8 +17,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SmoothScroller } from "@/components/smooth-scroller"; // Import this
 // Default Fonts
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -96,7 +96,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "ACT.IN.ART. - Directory of Indiana Activism and Artistryiana Activism and Artistry",
+  title: "Act, Indiana Artistry",
   description: "A directory of artists and murals shaping social justice in Indiana.",
 };
 
@@ -109,7 +109,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`
-          ${geistSans.variable} ${geistMono.variable} 
+          ${inter.variable} ${geistMono.variable} 
           ${fraunces.variable} ${quicksand.variable} 
           ${playfair.variable} ${lato.variable}
           ${crimsonText.variable} ${sourceSans.variable}

@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    /* DEFAULT LIGHT (Geist) */
-    --font-sans: var(--font-geist-sans);
-    --font-heading: var(--font-geist-sans);
+    /* DEFAULT LIGHT (Inter) */
+    --font-sans: var(--font-inter);
+    --font-heading: var(--font-inter);
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -18,7 +18,8 @@
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 215.4 16.3% 30%;
+    /* Darkened for accessibility */
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
@@ -31,8 +32,8 @@
 
   .dark {
     /* DEFAULT DARK */
-    --font-sans: var(--font-geist-sans);
-    --font-heading: var(--font-geist-sans);
+    --font-sans: var(--font-inter);
+    --font-heading: var(--font-inter);
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -44,7 +45,8 @@
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 215 20.2% 80%;
+    /* Lightened for accessibility in dark mode */
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
@@ -218,6 +220,17 @@
     @apply border-border;
   }
 
+  html {
+    font-size: 16px;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 18px;
+      /* Scale up everything on desktop */
+    }
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
   }
@@ -231,6 +244,7 @@
     @apply font-heading;
   }
 }
+
 /* ... existing code ... */
 
 /* NOISE TEXTURE OVERLAY */
@@ -251,7 +265,8 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
