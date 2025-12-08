@@ -32,6 +32,15 @@ def fetch_csv(url):
         print(f"Error fetching CSV: {e}")
         sys.exit(1)
 
+def read_local_csv(file_path):
+    print(f"Reading data from: {file_path}")
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except Exception as e:
+        print(f"Error reading local CSV file: {e}")
+        sys.exit(1)
+
 def parse_csv(csv_text):
     # Use csv.DictReader to parse the CSV content
     lines = csv_text.splitlines()
@@ -122,15 +131,19 @@ def generate_ts_file(artists):
 def main():
     if len(sys.argv) < 2:
         # Check for env var
-        url = os.environ.get('GOOGLE_SHEET_URL')
-        if not url:
-            print("Usage: python scripts/sync_sheets.py <google_sheet_csv_url>")
+        path_or_url = os.environ.get('GOOGLE_SHEET_URL')
+        if not path_or_url:
+            print("Usage: python scripts/sync_sheets.py <google_sheet_csv_url_or_local_path>")
             print("Or set GOOGLE_SHEET_URL environment variable.")
             sys.exit(1)
     else:
-        url = sys.argv[1]
+        path_or_url = sys.argv[1]
 
-    csv_text = fetch_csv(url)
+    if path_or_url.startswith('http'):
+        csv_text = fetch_csv(path_or_url)
+    else:
+        csv_text = read_local_csv(path_or_url)
+
     artists = parse_csv(csv_text)
     
     ts_content = generate_ts_file(artists)
