@@ -41,7 +41,7 @@ export function HeroParallax() {
   return (
     <div
       ref={ref}
-      className="relative w-full h-[100vh] overflow-hidden bg-background flex flex-col items-center justify-start pt-20 lg:pt-32"
+      className="relative w-full h-[85vh] md:h-[100vh] overflow-hidden bg-background flex flex-col items-center justify-start pt-20 lg:pt-32"
     >
       {/* LAYER 1: Particle Background */}
       <motion.div
@@ -68,10 +68,10 @@ export function HeroParallax() {
       {/* LAYER 2.5: Indiana Flag */}
       <motion.div
         style={{ y: yFlag, scale: scaleFlag }}
-        className="absolute top-[10%] left-1/2 -translate-x-1/2 z-0 w-[80vw] h-[80vh] md:w-[800px] md:h-[600px] opacity-20 pointer-events-none"
+        className="absolute top-[5%] md:top-[18%] left-[35%] -translate-x-1/2 z-0 w-[80vw] h-[80vh] md:w-[800px] md:h-[600px] opacity-20 pointer-events-none"
       >
         <Image
-          src="/hero/Flag_of_Indiana.svg"
+          src="/hero/Flag_of_Indiana.png"
           alt="Indiana Flag"
           fill
           className="object-contain"
@@ -120,7 +120,7 @@ export function HeroParallax() {
       {/* LAYER 5: Cardinal (Floating Accent) */}
       <motion.div
         style={{ y: yCardinal, x: xCardinal, rotate: rotateCardinal }}
-        className="absolute top-[15%] right-[5%] md:right-[15%] z-20 w-32 h-32 md:w-64 md:h-64 pointer-events-none"
+        className="absolute top-[15%] right-[8%] md:right-[18%] z-20 w-32 h-32 md:w-64 md:h-64 pointer-events-none"
       >
         <Image
           src="/hero/cardinal.png"
