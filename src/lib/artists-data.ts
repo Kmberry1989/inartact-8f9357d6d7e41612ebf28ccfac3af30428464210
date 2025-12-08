@@ -28,7 +28,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Street Mural",
-      "description": "",
+      "description": "Racial Justice / BLM",
       "medium": "Street Paint",
       "date": "Aug. 2020",
       "location": "Indianapolis (Indiana Avenue)",
@@ -51,7 +51,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "We the People (Part of Murals for Racial Justice)",
-      "description": "",
+      "description": "Civil Rights / Police Brutality",
       "medium": "Acrylic / Spray Paint",
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: 32 E. Washington; Archived: Ind. State Museum)",
@@ -75,7 +75,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Blkkk Lives Don't Matter (Part of Murals for Racial Justice)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Acrylic",
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: Downtown; Archived: Ind. State Museum/Library)",
@@ -98,7 +98,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "American Duality (Part of Art & Activism exhibit)",
-      "description": "",
+      "description": "Racial Justice / Police Brutality",
       "medium": "Acrylic",
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: 140 W. Washington; Archived: Ind. State Museum)",
@@ -121,7 +121,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "E Pluribus Unum",
-      "description": "",
+      "description": "Social Justice (Representation)",
       "medium": "Sculpture (Digital Model)",
       "date": "2007–2011 (Cancelled)",
       "location": "Indianapolis (Proposed for Cultural Trail; Cancelled)",
@@ -144,7 +144,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Social Alchemy ",
-      "description": "",
+      "description": "Community Building / Utopia",
       "medium": "Social Practice",
       "date": "2005–Present",
       "location": "Indianapolis (Tube Factory / Garfield Park)",
@@ -167,7 +167,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Founding the Art Association of Indianapolis",
-      "description": "",
+      "description": "Women's Suffrage / Education",
       "medium": "Civic Leadership",
       "date": "1883",
       "location": "Indianapolis (Art Association / Herron / Newfields)",
@@ -191,7 +191,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "McMillen Park Basketball Court Murals",
-      "description": "",
+      "description": "Racial Justice / Community",
       "medium": "Mural / Court Paint",
       "date": "Oct. 2020",
       "location": "Fort Wayne (McMillen Park)",
@@ -214,7 +214,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Faces of the Fort: Southeast Mural",
-      "description": "",
+      "description": "Civil Rights / Immigrant Rights",
       "medium": "Acrylic Mural",
       "date": "June 2021",
       "location": "Fort Wayne (4335 S. Anthony Blvd)",
@@ -237,7 +237,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Faces of the Fort: Northeast Mural",
-      "description": "",
+      "description": "Inclusion / Community",
       "medium": "Acrylic Mural",
       "date": "June 2021",
       "location": "Fort Wayne (1514 St. Joseph Blvd)",
@@ -260,7 +260,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Faces of the Fort: Southwest Mural",
-      "description": "",
+      "description": "Breaking Barriers / Justice",
       "medium": "Acrylic Mural",
       "date": "June 2021",
       "location": "Fort Wayne (1818 Bluffton Road)",
@@ -283,7 +283,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "The Confederacy: Mississippi",
-      "description": "",
+      "description": "Civil Rights",
       "medium": "Oil",
       "date": "May 1905",
       "location": "Various Collections (e.g., Miami Univ. Art Museum)",
@@ -306,7 +306,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "HOPE ",
-      "description": "",
+      "description": "Political Change (Hope)",
       "medium": "Polychrome Aluminum",
       "date": "2008",
       "location": "Various Public Plazas (NYC, etc.)",
@@ -329,7 +329,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Poplar Trees (Diptych)",
-      "description": "",
+      "description": "Institutional Racism / Justice",
       "medium": "Deconstructed Books",
       "date": "July 1905",
       "location": "Indianapolis (Newfields / Eskenazi Museum)",
@@ -352,7 +352,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "McDoel Blooms",
-      "description": "",
+      "description": "Community Connection",
       "medium": "Street Mural",
       "date": "2025 (Upcoming)",
       "location": "Bloomington (Allen & Fairview Streets)",
@@ -376,7 +376,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Together",
-      "description": "",
+      "description": "Women's Suffrage / Unity",
       "medium": "Quilt (Embroidery/Screenprint)",
       "date": "",
       "location": "Indianapolis (Indiana Statehouse)",
@@ -399,7 +399,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "nINeteenth",
-      "description": "",
+      "description": "Women's Suffrage",
       "medium": "Acrylic / Mural",
       "date": "",
       "location": "Indianapolis (Indiana Statehouse)",
@@ -422,7 +422,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Her Flag (Indiana Stripe)",
-      "description": "",
+      "description": "Women's Suffrage",
       "medium": "Mixed Media / Textile",
       "date": "2020",
       "location": "Various (Travels Nationally)",
@@ -445,7 +445,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter C)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -468,7 +468,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Walk the Willow Sculptures",
-      "description": "",
+      "description": "Environmental Connection",
       "medium": "Willow Branches / Sculpture",
       "date": "Ongoing",
       "location": "Various (Nature Parks)",
@@ -491,7 +491,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Justice for Migrant Communities",
-      "description": "",
+      "description": "Gender & LGBTQ+ Rights",
       "medium": "Ink / Digital Illustration",
       "date": "2020",
       "location": "South Bend",
@@ -515,7 +515,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "\"Hope & Loss — A Border Elegy\" (Exhibition)",
-      "description": "",
+      "description": "Immigration Rights",
       "medium": "Papel Picado (Cut Paper)",
       "date": "2019",
       "location": "Indianapolis (Cultural Trail/Airport)",
@@ -539,7 +539,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Mother & Child / Breathe",
-      "description": "",
+      "description": "Multiculturalism / Migration",
       "medium": "Mixed Media",
       "date": "Contemporary",
       "location": "Indianapolis",
@@ -563,7 +563,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter R)",
-      "description": "",
+      "description": "Racial Justice / Black Joy",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -586,7 +586,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Fist)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint / Drywall",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -609,7 +609,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "The Mother of Us All",
-      "description": "",
+      "description": "Women's Suffrage",
       "medium": "Lithography / Set Design",
       "date": "1967 / 1976",
       "location": "Various Collections",
@@ -633,7 +633,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Written in Memory",
-      "description": "",
+      "description": "Social Justice / Holocaust Memory",
       "medium": "Photography with Text",
       "date": "1990s",
       "location": "Bloomington (IU / Various)",
@@ -657,7 +657,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter K)",
-      "description": "",
+      "description": "Racial Justice / Police Brutality",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -680,7 +680,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter L)",
-      "description": "",
+      "description": "Racial Justice / Voting Rights",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -703,7 +703,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter S)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -726,7 +726,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter M)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -749,7 +749,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter A)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -772,7 +772,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter V)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -795,7 +795,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Poetics of Place, BlackSpace Indianapolis (Co-Founder)/ Rokh (Founder)",
-      "description": "",
+      "description": "Racial Justice / Urban Design",
       "medium": "Architecture / Research",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -819,7 +819,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Solful Gardens (building family farms)",
-      "description": "",
+      "description": "Food Justice",
       "medium": "Social Practice / Agriculture",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -843,7 +843,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Truth Seekers",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Mural / Mixed Media",
       "date": "2020",
       "location": "Indianapolis",
@@ -867,7 +867,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter A)",
-      "description": "",
+      "description": "Racial Justice / Resilience",
       "medium": "Street Paint",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -890,7 +890,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter L)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint / Concrete",
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -913,7 +913,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Led the The Lynch Quilts Project (Quilt I: Her Name Was Laura Nelson)",
-      "description": "",
+      "description": "Racial Justice / History",
       "medium": "Quilting / Community Art",
       "date": "Ongoing (Since 2000s)",
       "location": "Indianapolis",
@@ -937,7 +937,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Intersections",
-      "description": "",
+      "description": "Gender & Cultural Intersectionality",
       "medium": "Laser-cut Steel / Light / Shadow",
       "date": "2014",
       "location": "Indianapolis / Global",
@@ -961,7 +961,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "I Am A Black Woman",
-      "description": "",
+      "description": "Civil Rights / Black Arts Movement",
       "medium": "Poetry / Literature",
       "date": "1970",
       "location": "Indianapolis (Mural of her on Mass Ave)",
@@ -985,7 +985,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Poems from Prison",
-      "description": "",
+      "description": "Prison Reform / Black Arts Movement",
       "medium": "Poetry",
       "date": "1968",
       "location": "Indianapolis (Buried in Crown Hill)",
@@ -1009,7 +1009,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "House of the Singing Winds",
-      "description": "",
+      "description": "Nature Conservation",
       "medium": "Oil Painting",
       "date": "Late 1800s/Early 1900s",
       "location": "Brown County (Historic Site)",
@@ -1033,7 +1033,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "US",
-      "description": "",
+      "description": "Community Arts",
       "medium": "Mixed Media",
       "date": "Contemporary",
       "location": "Indianapolis",
@@ -1057,7 +1057,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "The Women In Between",
-      "description": "",
+      "description": "Black Women's Stories",
       "medium": "Multimedia / Portraiture",
       "date": "2025",
       "location": "Indianapolis (Harrison Center)",
@@ -1081,7 +1081,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Ethnobotany Series",
-      "description": "",
+      "description": "Environmental Justice",
       "medium": "Painting / Textiles",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -1105,7 +1105,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Harvesting Knowledge",
-      "description": "",
+      "description": "Man vs. Nature / Motion",
       "medium": "Kinetic Sculpture",
       "date": "2004",
       "location": "Indianapolis (IUPUI Campus)",
@@ -1129,7 +1129,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "August 15 (Mural)",
-      "description": "",
+      "description": "Refugee Support / Social Justice",
       "medium": "Mural / Terrazzo",
       "date": "2021",
       "location": "Franklin / Camp Atterbury",
@@ -1153,7 +1153,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Cultural Cannibal",
-      "description": "",
+      "description": "Cultural Critique / History",
       "medium": "Digital Print / Mural",
       "date": "2022",
       "location": "Indianapolis (Gainbridge Fieldhouse)",
@@ -1177,7 +1177,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "FLOW: Can You See the River?",
-      "description": "",
+      "description": "Environmental Awareness (Water)",
       "medium": "Mirrors / Markers",
       "date": "2011",
       "location": "Indianapolis (White River)",
@@ -1201,7 +1201,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "\"The World's Fastest\" (Mural of Marshall \"Major\" Taylor)",
-      "description": "",
+      "description": "Racial Justice / History",
       "medium": "Oil / Mural",
       "date": "2020s",
       "location": "Indianapolis (Work often travels)",
@@ -1225,7 +1225,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Eva Kor Mural",
-      "description": "",
+      "description": "Civic Pride / History",
       "medium": "Mural",
       "date": "2018",
       "location": "Indianapolis (Downtown)",
@@ -1249,7 +1249,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "FLAVA FRESH",
-      "description": "",
+      "description": "Underrepresented Artists",
       "medium": "Sculpture / Curation",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -1273,7 +1273,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "What I Have Is What You Have",
-      "description": "",
+      "description": "Music History / Culture",
       "medium": "Assemblage / Collage",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -1297,7 +1297,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter B)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint",
       "date": "August 2020",
       "location": "Indianapolis (Indiana Ave - Archived)",
@@ -1320,7 +1320,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "RECLAIM Project",
-      "description": "",
+      "description": "Environmental Justice / Urban Renewal",
       "medium": "Landscape Arch. / Social Practice",
       "date": "Ongoing",
       "location": "Indianapolis (Riverside / various parks)",
@@ -1344,7 +1344,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Kings of the Castle",
-      "description": "",
+      "description": "Black History / Sports Legacy",
       "medium": "Mural / Illustration",
       "date": "2021",
       "location": "Indianapolis (Airport / Downtown)",
@@ -1368,7 +1368,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "No Shade (Tribute to Black Queer Joy)",
-      "description": "",
+      "description": "LGBTQ+ Rights / Black Joy",
       "medium": "Multimedia",
       "date": "2023",
       "location": "Indianapolis (Newfields)",
@@ -1392,7 +1392,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Fist)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint / Drywall",
       "date": "August 2020",
       "location": "Indianapolis (Indiana Ave)",
@@ -1415,7 +1415,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Storytelling Drawing Sessions / Making Martindale",
-      "description": "",
+      "description": "Neighborhood Preservation / Justice",
       "medium": "Illustration / Advocacy",
       "date": "2022",
       "location": "Indianapolis",
@@ -1439,7 +1439,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "I Can't Breathe",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Mural",
       "date": "2024",
       "location": "Indianapolis (38th & College)",
@@ -1463,7 +1463,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Mural (Letter T)",
-      "description": "",
+      "description": "Racial Justice",
       "medium": "Street Paint",
       "date": "August 2020",
       "location": "Indianapolis (Indiana Ave)",
@@ -1486,7 +1486,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Principio Obstate (Statue of Liberty)",
-      "description": "",
+      "description": "Democracy / Feminism",
       "medium": "Acrylic / Digital Layering",
       "date": "2017",
       "location": "Indianapolis",
@@ -1510,7 +1510,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Dept of Public Words - Public Mural Project",
-      "description": "",
+      "description": "Mental Health / Color Therapy",
       "medium": "Oil / Mural",
       "date": "Ongoing",
       "location": "Indianapolis (Edington Gallery)",
@@ -1534,7 +1534,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Our Ocean Installation",
-      "description": "",
+      "description": "Environmental Fragility",
       "medium": "Screenprint / Installation",
       "date": "2024",
       "location": "Houston (Formerly Indy)",
@@ -1558,7 +1558,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Indians, Alphabetically",
-      "description": "",
+      "description": "Play / Inclusive Design",
       "medium": "Design / Public Art",
       "date": "Ongoing",
       "location": "Indianapolis (Butler Univ)",
@@ -1582,7 +1582,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Cyanotype Nature Series (a soft spot in the sea ice)",
-      "description": "",
+      "description": "Nature Conservation / Surrealism",
       "medium": "Cyanotype / Chemical",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -1606,7 +1606,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Fissure at the Athenaeum",
-      "description": "",
+      "description": "Public Art Access / Science",
       "medium": "Sculpture / Light",
       "date": "Ongoing",
       "location": "Indianapolis (Various Sites)",
@@ -1630,7 +1630,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Up in Air",
-      "description": "",
+      "description": "STEAM Education / Physics",
       "medium": "Sculpture / Sound",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -1654,7 +1654,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Elemental Indiana",
-      "description": "",
+      "description": "Indiana Geology / History",
       "medium": "Sculpture",
       "date": "2008",
       "location": "Indianapolis (Airport)",
@@ -1678,7 +1678,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "NDY",
-      "description": "",
+      "description": "LGBTQ+ ",
       "medium": "Sculpture / Fabrication",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -1702,7 +1702,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "This Is Us",
-      "description": "",
+      "description": "Human Condition / Bias",
       "medium": "Conceptual Installation",
       "date": "2022",
       "location": "Indianapolis",
@@ -1726,7 +1726,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Hope Skip and Jump",
-      "description": "",
+      "description": "Black Experience / Family",
       "medium": "Collage / Mixed Media",
       "date": "2012",
       "location": "Indianapolis (Eskenazi Health)",

@@ -46,13 +46,13 @@ papa.parse(csvFileContent, {
         artist: {
           name: row['Artist Name'] || '',
           isAlive: row['Still Alive? (Check means yes)'] === 'TRUE',
-          bio: row['Notes:'] || '',
+          bio: row['Notes:'] || '', // Map Notes to Bio (primary rich text)
           website: row['Website'] || '',
           social_media: row['Handle/Link'] ? [row['Handle/Link']] : [],
         },
         artwork: {
           title: row['Title of Work'] || '',
-          description: '',
+          description: row['Social Cause Description'] || '', // Map Social Cause to description to ensure section appears
           medium: row['Medium'] || '',
           date: row['Date of Creation'] || '',
           location: row['Where Located in Indiana?'] || '',
