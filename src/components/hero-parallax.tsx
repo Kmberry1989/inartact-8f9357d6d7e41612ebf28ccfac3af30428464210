@@ -16,26 +16,31 @@ export function HeroParallax() {
   // 1. Particles: Slowest, background depth
   const yParticles = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
-  // 2. Indiana Outline: Very slow, anchors the scene
-  const yIndiana = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  // 2. Indiana Outline: Moves across the screen
+  const xIndiana = useTransform(scrollYProgress, [0, 1], ["-10%", "100%"]);
+  const yIndiana = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
-  // 3. Text: Drifts up at medium speed
+  // 3. Flag: Moves slightly faster than outline
+  const yFlag = useTransform(scrollYProgress, [0, 1], ["10%", "40%"]);
+
+  // 4. Text: Drifts up at medium speed
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
-  // 4. Crowd: Moves slightly faster than background
+  // 5. Crowd: Moves slightly faster than background
   const yCrowd = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
-  // 5. Fist: Foreground element, moves fast but stays lower
+  // 6. Fist: Foreground element, moves fast but stays lower
   const yFist = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
-  // 6. Cardinal: Flies off screen (up and right)
+  // 7. Cardinal: Flies off screen (up and right)
   const yCardinal = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
   const xCardinal = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const rotateCardinal = useTransform(scrollYProgress, [0, 1], [0, -20]);
 
   return (
     <div
       ref={ref}
-      className="relative w-full h-[130vh] overflow-hidden bg-background flex flex-col items-center justify-start pt-20 lg:pt-32"
+      className="relative w-full h-[100vh] overflow-hidden bg-background flex flex-col items-center justify-start pt-20 lg:pt-32"
     >
       {/* LAYER 1: Particle Background */}
       <motion.div
@@ -47,12 +52,26 @@ export function HeroParallax() {
 
       {/* LAYER 2: Indiana Outline (SVG or Image) */}
       <motion.div
-        style={{ y: yIndiana }}
-        className="absolute top-[10%] left-1/2 -translate-x-1/2 z-0 w-[90vw] h-[70vh] md:w-[700px] md:h-[900px] opacity-30 dark:opacity-40 pointer-events-none"
+        style={{ x: xIndiana, y: yIndiana }}
+        className="absolute top-[30%] -translate-y-1/2 left-[5%] z-0 w-[50vw] h-[40vh] md:w-[400px] md:h-[500px] opacity-30 dark:opacity-40 pointer-events-none"
       >
         <Image
           src="/hero/indiana-outline.png"
           alt="Indiana Outline"
+          fill
+          className="object-contain"
+          priority
+        />
+      </motion.div>
+
+      {/* LAYER 2.5: Indiana Flag */}
+      <motion.div
+        style={{ y: yFlag }}
+        className="absolute top-[20%] left-1/2 -translate-x-1/2 z-0 w-[80vw] h-[80vh] md:w-[800px] md:h-[600px] opacity-20 pointer-events-none"
+      >
+        <Image
+          src="/hero/Flag_of_Indiana.svg"
+          alt="Indiana Flag"
           fill
           className="object-contain"
           priority
@@ -99,7 +118,7 @@ export function HeroParallax() {
 
       {/* LAYER 5: Cardinal (Floating Accent) */}
       <motion.div
-        style={{ y: yCardinal, x: xCardinal }}
+        style={{ y: yCardinal, x: xCardinal, rotate: rotateCardinal }}
         className="absolute top-[15%] right-[5%] md:right-[15%] z-20 w-32 h-32 md:w-64 md:h-64 pointer-events-none"
       >
         <Image
@@ -113,7 +132,7 @@ export function HeroParallax() {
       {/* LAYER 6: Fist (Foreground) */}
       <motion.div
         style={{ y: yFist }}
-        className="absolute -bottom-[5%] left-[5%] md:left-[10%] z-20 w-[300px] h-[500px] md:w-[500px] md:h-[800px] pointer-events-none"
+        className="absolute -bottom-[5%] left-[15%] md:left-[20%] z-20 w-[300px] h-[500px] md:w-[500px] md:h-[800px] pointer-events-none"
       >
         <motion.div
           animate={{ y: [0, -15, 0] }}
