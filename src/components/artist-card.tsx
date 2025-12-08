@@ -10,9 +10,10 @@ import { Artist } from '@/lib/types';
 
 interface ArtistCardProps {
   artist: Artist;
+  priority?: boolean;
 }
 
-export function ArtistCard({ artist }: ArtistCardProps) {
+export function ArtistCard({ artist, priority = false }: ArtistCardProps) {
   const handleNavigate = () => {
     // Save current scroll position before navigating
     if (typeof window !== 'undefined') {
@@ -28,6 +29,7 @@ export function ArtistCard({ artist }: ArtistCardProps) {
             src={artist.artwork.imageUrl || "/placeholder.svg?height=400&width=600"}
             alt={`Work by ${artist.artist.name}`}
             fill
+            priority={priority}
             className="object-contain transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

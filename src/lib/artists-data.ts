@@ -20,6 +20,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "The Eighteen Art Collective",
       "isAlive": true,
+      "bio": "",
       "website": "18artcollective.com",
       "social_media": [
         "IG: @thexviii"
@@ -32,11 +33,9 @@ export const artists: Artist[] = [
       "date": "Aug. 2020",
       "location": "Indianapolis (Indiana Avenue)",
       "cause": "Racial Justice / BLM",
-      "imageUrl": "/artist-1.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "The Eighteen Art Collective Black Lives Matter Street Mural  Indianapolis (Indiana Avenue) Racial Justice / BLM"
+      "searchQuery": "The Eighteen Art Collective Black Lives Matter Street Mural Indianapolis (Indiana Avenue) Racial Justice / BLM"
     }
   },
   {
@@ -44,6 +43,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Gary Gee",
       "isAlive": true,
+      "bio": "",
       "website": "artbygarygee.com",
       "social_media": [
         "IG: @originalgarygee"
@@ -56,12 +56,10 @@ export const artists: Artist[] = [
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: 32 E. Washington; Archived: Ind. State Museum)",
       "cause": "Civil Rights / Police Brutality",
-      "imageUrl": "/artist-2.jpg",
+      "imageUrl": "/Images/GaryGee_WeThePeople .png",
       "credit": "The We The People mural installation in place at 32 E. Washington Street, 2020 (Courtesy of Indy Arts Council)",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Gary Gee We the People (Part of Murals for Racial Justice)  Indianapolis (Orig: 32 E. Washington; Archived: Ind. State Museum) Civil Rights / Police Brutality"
+      "searchQuery": "Gary Gee We the People (Part of Murals for Racial Justice) Indianapolis (Orig: 32 E. Washington; Archived: Ind. State Museum) Civil Rights / Police Brutality"
     }
   },
   {
@@ -69,6 +67,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Mechi Shakur (Demetrius Green)",
       "isAlive": true,
+      "bio": "",
       "website": "ganggangculture.com/artists/mechi-shakur",
       "social_media": [
         "IG: @mechishakur"
@@ -81,11 +80,9 @@ export const artists: Artist[] = [
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: Downtown; Archived: Ind. State Museum/Library)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-3.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/DemetriusGreen_BLKKK LivesDon_tMatter.jpg",
       "categories": [],
-      "searchQuery": "Mechi Shakur (Demetrius Green) Blkkk Lives Don't Matter (Part of Murals for Racial Justice)  Indianapolis (Orig: Downtown; Archived: Ind. State Museum/Library) Racial Justice"
+      "searchQuery": "Mechi Shakur (Demetrius Green) Blkkk Lives Don't Matter (Part of Murals for Racial Justice) Indianapolis (Orig: Downtown; Archived: Ind. State Museum/Library) Racial Justice"
     }
   },
   {
@@ -93,6 +90,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Israel Solomon",
       "isAlive": true,
+      "bio": "",
       "website": "israelsolomonart.com",
       "social_media": [
         "IG: @israelsoloart"
@@ -105,11 +103,9 @@ export const artists: Artist[] = [
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: 140 W. Washington; Archived: Ind. State Museum)",
       "cause": "Racial Justice / Police Brutality",
-      "imageUrl": "/artist-4.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/IsraelSolomon_AmericanDuality.png",
       "categories": [],
-      "searchQuery": "Israel Solomon American Duality (Part of Art & Activism exhibit)  Indianapolis (Orig: 140 W. Washington; Archived: Ind. State Museum) Racial Justice / Police Brutality"
+      "searchQuery": "Israel Solomon American Duality (Part of Art & Activism exhibit) Indianapolis (Orig: 140 W. Washington; Archived: Ind. State Museum) Racial Justice / Police Brutality"
     }
   },
   {
@@ -117,6 +113,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Fred Wilson",
       "isAlive": true,
+      "bio": "",
       "website": "pacegallery.com/artists/fred-wilson",
       "social_media": [
         "N/A (See Pace Gallery: @pacegallery)"
@@ -129,11 +126,9 @@ export const artists: Artist[] = [
       "date": "2007–2011 (Cancelled)",
       "location": "Indianapolis (Proposed for Cultural Trail; Cancelled)",
       "cause": "Social Justice (Representation)",
-      "imageUrl": "/artist-5.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/FredWilson_EPluribusUnum.jpeg",
       "categories": [],
-      "searchQuery": "Fred Wilson E Pluribus Unum  Indianapolis (Proposed for Cultural Trail; Cancelled) Social Justice (Representation)"
+      "searchQuery": "Fred Wilson E Pluribus Unum Indianapolis (Proposed for Cultural Trail; Cancelled) Social Justice (Representation)"
     }
   },
   {
@@ -141,6 +136,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Shauta Marsh & Jim Walker (Big Car Collaborative) ",
       "isAlive": true,
+      "bio": "",
       "website": "bigcar.org",
       "social_media": [
         "IG: @bigcarpix (Big Car Collaborative)"
@@ -153,11 +149,9 @@ export const artists: Artist[] = [
       "date": "2005–Present",
       "location": "Indianapolis (Tube Factory / Garfield Park)",
       "cause": "Community Building / Utopia",
-      "imageUrl": "/artist-6.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/BigCarCollaborative_SocialAlchemy.png",
       "categories": [],
-      "searchQuery": "Shauta Marsh & Jim Walker (Big Car Collaborative)  Social Alchemy   Indianapolis (Tube Factory / Garfield Park) Community Building / Utopia"
+      "searchQuery": "Shauta Marsh & Jim Walker (Big Car Collaborative)  Social Alchemy  Indianapolis (Tube Factory / Garfield Park) Community Building / Utopia"
     }
   },
   {
@@ -165,7 +159,8 @@ export const artists: Artist[] = [
     "artist": {
       "name": "May Wright Sewall",
       "isAlive": false,
-      "website": "N/A (Historical figure, died 1920). Bio at in.gov is appropriate)**",
+      "bio": "",
+      "website": "N/A (Historical figure, died 1920. Bio at in.gov is appropriate)**",
       "social_media": [
         "N/A (See @thepropylaeum for her legacy)"
       ]
@@ -179,10 +174,8 @@ export const artists: Artist[] = [
       "cause": "Women's Suffrage / Education",
       "imageUrl": "/artist-7.jpg",
       "credit": "Indiana Historical Society ",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "May Wright Sewall Founding the Art Association of Indianapolis  Indianapolis (Art Association / Herron / Newfields) Women's Suffrage / Education"
+      "searchQuery": "May Wright Sewall Founding the Art Association of Indianapolis Indianapolis (Art Association / Herron / Newfields) Women's Suffrage / Education"
     }
   },
   {
@@ -190,6 +183,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Andre Portee (AbsorbALL)",
       "isAlive": true,
+      "bio": "",
       "website": "andreportee.com",
       "social_media": [
         "IG: @absorball (Project) & @bodrega (Personal)"
@@ -203,10 +197,8 @@ export const artists: Artist[] = [
       "location": "Fort Wayne (McMillen Park)",
       "cause": "Racial Justice / Community",
       "imageUrl": "/artist-8.jpg",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Andre Portee (AbsorbALL) McMillen Park Basketball Court Murals  Fort Wayne (McMillen Park) Racial Justice / Community"
+      "searchQuery": "Andre Portee (AbsorbALL) McMillen Park Basketball Court Murals Fort Wayne (McMillen Park) Racial Justice / Community"
     }
   },
   {
@@ -214,6 +206,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kacy Jackson",
       "isAlive": true,
+      "bio": "",
       "website": "theartofkacy.com",
       "social_media": [
         "IG: @theartofkacy"
@@ -226,11 +219,9 @@ export const artists: Artist[] = [
       "date": "June 2021",
       "location": "Fort Wayne (4335 S. Anthony Blvd)",
       "cause": "Civil Rights / Immigrant Rights",
-      "imageUrl": "/artist-9.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/KacyJackson_SoutheastMural.png",
       "categories": [],
-      "searchQuery": "Kacy Jackson Faces of the Fort: Southeast Mural  Fort Wayne (4335 S. Anthony Blvd) Civil Rights / Immigrant Rights"
+      "searchQuery": "Kacy Jackson Faces of the Fort: Southeast Mural Fort Wayne (4335 S. Anthony Blvd) Civil Rights / Immigrant Rights"
     }
   },
   {
@@ -238,6 +229,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Benjamin Duke",
       "isAlive": true,
+      "bio": "",
       "website": "bendukeart.com",
       "social_media": [
         "IG: @4th_culture_art"
@@ -250,11 +242,9 @@ export const artists: Artist[] = [
       "date": "June 2021",
       "location": "Fort Wayne (1514 St. Joseph Blvd)",
       "cause": "Inclusion / Community",
-      "imageUrl": "/artist-10.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/BenjaminDuke_NortheastMural.png",
       "categories": [],
-      "searchQuery": "Benjamin Duke Faces of the Fort: Northeast Mural  Fort Wayne (1514 St. Joseph Blvd) Inclusion / Community"
+      "searchQuery": "Benjamin Duke Faces of the Fort: Northeast Mural Fort Wayne (1514 St. Joseph Blvd) Inclusion / Community"
     }
   },
   {
@@ -262,6 +252,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Mitchell Egly",
       "isAlive": true,
+      "bio": "",
       "website": "mitchellegly.art",
       "social_media": [
         "IG: @eglyillo"
@@ -274,11 +265,9 @@ export const artists: Artist[] = [
       "date": "June 2021",
       "location": "Fort Wayne (1818 Bluffton Road)",
       "cause": "Breaking Barriers / Justice",
-      "imageUrl": "/artist-11.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/MitchellEgly_FacesoftheFort.jpg",
       "categories": [],
-      "searchQuery": "Mitchell Egly Faces of the Fort: Southwest Mural  Fort Wayne (1818 Bluffton Road) Breaking Barriers / Justice"
+      "searchQuery": "Mitchell Egly Faces of the Fort: Southwest Mural Fort Wayne (1818 Bluffton Road) Breaking Barriers / Justice"
     }
   },
   {
@@ -286,6 +275,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Robert (Clark) Indiana",
       "isAlive": false,
+      "bio": "",
       "website": "robertindiana.com",
       "social_media": [
         "IG: @robertindiana (Legacy Initiative)"
@@ -299,10 +289,8 @@ export const artists: Artist[] = [
       "location": "Various Collections (e.g., Miami Univ. Art Museum)",
       "cause": "Civil Rights",
       "imageUrl": "/artist-12.jpg",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Robert (Clark) Indiana The Confederacy: Mississippi  Various Collections (e.g., Miami Univ. Art Museum) Civil Rights"
+      "searchQuery": "Robert (Clark) Indiana The Confederacy: Mississippi Various Collections (e.g., Miami Univ. Art Museum) Civil Rights"
     }
   },
   {
@@ -310,6 +298,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Robert (Clark) Indiana",
       "isAlive": false,
+      "bio": "",
       "website": "robertindiana.com",
       "social_media": [
         "IG: @samuellevijones"
@@ -322,11 +311,9 @@ export const artists: Artist[] = [
       "date": "2008",
       "location": "Various Public Plazas (NYC, etc.)",
       "cause": "Political Change (Hope)",
-      "imageUrl": "/artist-13.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/India Cruse-Griffin_HopeSkipandJump.png",
       "categories": [],
-      "searchQuery": "Robert (Clark) Indiana HOPE   Various Public Plazas (NYC, etc.) Political Change (Hope)"
+      "searchQuery": "Robert (Clark) Indiana HOPE  Various Public Plazas (NYC, etc.) Political Change (Hope)"
     }
   },
   {
@@ -334,6 +321,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Samuel Levi Jones",
       "isAlive": true,
+      "bio": "",
       "website": "samuellevijones.com",
       "social_media": [
         "@samuellevijones"
@@ -346,11 +334,9 @@ export const artists: Artist[] = [
       "date": "July 1905",
       "location": "Indianapolis (Newfields / Eskenazi Museum)",
       "cause": "Institutional Racism / Justice",
-      "imageUrl": "/artist-14.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/SamuelLeviJones_PoplarTrees.png",
       "categories": [],
-      "searchQuery": "Samuel Levi Jones Poplar Trees (Diptych)  Indianapolis (Newfields / Eskenazi Museum) Institutional Racism / Justice"
+      "searchQuery": "Samuel Levi Jones Poplar Trees (Diptych) Indianapolis (Newfields / Eskenazi Museum) Institutional Racism / Justice"
     }
   },
   {
@@ -358,6 +344,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Rachel Kavathe",
       "isAlive": true,
+      "bio": "",
       "website": "rachelkavathe.com",
       "social_media": [
         "@rachelkavathe_studio"
@@ -370,12 +357,10 @@ export const artists: Artist[] = [
       "date": "2025 (Upcoming)",
       "location": "Bloomington (Allen & Fairview Streets)",
       "cause": "Community Connection",
-      "imageUrl": "/artist-15.jpg",
+      "imageUrl": "/Images/RachelKavathe_McDoelBlooms.webp",
       "credit": "Drone Photography by Caleb Poer",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Rachel Kavathe McDoel Blooms  Bloomington (Allen & Fairview Streets) Community Connection"
+      "searchQuery": "Rachel Kavathe McDoel Blooms Bloomington (Allen & Fairview Streets) Community Connection"
     }
   },
   {
@@ -383,6 +368,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kassie Woodworth",
       "isAlive": true,
+      "bio": "",
       "website": "kassiewoodworth.com",
       "social_media": [
         "@kassiewoodworth"
@@ -395,11 +381,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Statehouse)",
       "cause": "Women's Suffrage / Unity",
-      "imageUrl": "/artist-16.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/KassieWoodworth_Together.png",
       "categories": [],
-      "searchQuery": "Kassie Woodworth Together  Indianapolis (Indiana Statehouse) Women's Suffrage / Unity"
+      "searchQuery": "Kassie Woodworth Together Indianapolis (Indiana Statehouse) Women's Suffrage / Unity"
     }
   },
   {
@@ -407,6 +391,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Shelby Nower",
       "isAlive": true,
+      "bio": "",
       "website": "shelbynower.com",
       "social_media": [
         "@shelbynower"
@@ -419,11 +404,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Statehouse)",
       "cause": "Women's Suffrage",
-      "imageUrl": "/artist-17.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/ShelbyNower_Nineteenth.webp",
       "categories": [],
-      "searchQuery": "Shelby Nower nINeteenth  Indianapolis (Indiana Statehouse) Women's Suffrage"
+      "searchQuery": "Shelby Nower nINeteenth Indianapolis (Indiana Statehouse) Women's Suffrage"
     }
   },
   {
@@ -431,6 +414,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Bonnie Fillenwarth",
       "isAlive": true,
+      "bio": "",
       "website": "bonniefillenwarth.com",
       "social_media": [
         "@bonniefillenwarth"
@@ -443,11 +427,9 @@ export const artists: Artist[] = [
       "date": "2020",
       "location": "Various (Travels Nationally)",
       "cause": "Women's Suffrage",
-      "imageUrl": "/artist-18.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/BonnieFillenwarth_HerFlag.webp",
       "categories": [],
-      "searchQuery": "Bonnie Fillenwarth Her Flag (Indiana Stripe)  Various (Travels Nationally) Women's Suffrage"
+      "searchQuery": "Bonnie Fillenwarth Her Flag (Indiana Stripe) Various (Travels Nationally) Women's Suffrage"
     }
   },
   {
@@ -455,6 +437,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Billy Hoodoo",
       "isAlive": true,
+      "bio": "",
       "website": "18artcollective.com",
       "social_media": [
         "@billyhoodoo"
@@ -467,11 +450,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-19.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Billy Hoodoo Black Lives Matter Mural (Letter C)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Billy Hoodoo Black Lives Matter Mural (Letter C) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -479,6 +460,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Justin Roberts & Shannon Davis-Roberts (Walk the Willow)",
       "isAlive": true,
+      "bio": "",
       "website": "artistsforclimateawareness.org",
       "social_media": [
         "FB: Walk the Willow"
@@ -492,10 +474,8 @@ export const artists: Artist[] = [
       "location": "Various (Nature Parks)",
       "cause": "Environmental Connection",
       "imageUrl": "/artist-20.jpg",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Justin Roberts & Shannon Davis-Roberts (Walk the Willow) Walk the Willow Sculptures  Various (Nature Parks) Environmental Connection"
+      "searchQuery": "Justin Roberts & Shannon Davis-Roberts (Walk the Willow) Walk the Willow Sculptures Various (Nature Parks) Environmental Connection"
     }
   },
   {
@@ -516,12 +496,10 @@ export const artists: Artist[] = [
       "date": "2020",
       "location": "South Bend",
       "cause": "Gender & LGBTQ+ Rights",
-      "imageUrl": "/artist-21.jpg",
+      "imageUrl": "/Images/AngelicaFrausto_JusticeforMigrantComm.jpg",
       "credit": "https://www.creativewildfire.org/poster-portfolio#migrantcommunities",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Angelica Frausto (Nerdy Brown Kid) Justice for Migrant Communities Justice for Migrant Communities South Bend Gender & LGBTQ+ Rights"
+      "searchQuery": "Angelica Frausto (Nerdy Brown Kid) Justice for Migrant Communities South Bend Gender & LGBTQ+ Rights"
     }
   },
   {
@@ -536,18 +514,16 @@ export const artists: Artist[] = [
       ]
     },
     "artwork": {
-      "title": \"Hope & Loss — A Border Elegy\" (Exhibition)",
+      "title": "\"Hope & Loss — A Border Elegy\" (Exhibition)",
       "description": "",
       "medium": "Papel Picado (Cut Paper)",
       "date": "2019",
       "location": "Indianapolis (Cultural Trail/Airport)",
       "cause": "Immigration Rights",
-      "imageUrl": "/artist-22.jpg",
+      "imageUrl": "/Images/Beatriz Vasquez.jpg",
       "credit": "https://directory.artsforlearningindiana.org/artists/BeatrizVasquez",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Beatriz Vasquez \"Hope & Loss — A Border Elegy\" (Exhibition) In this body of work, she used her papel picado (cut paper) technique to depict ICE detention centers and the border wall. Indianapolis (Cultural Trail/Airport) Immigration Rights"
+      "searchQuery": "Beatriz Vasquez \"Hope & Loss — A Border Elegy\" (Exhibition) Indianapolis (Cultural Trail/Airport) Immigration Rights"
     }
   },
   {
@@ -555,6 +531,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Nasreen Khan",
       "isAlive": true,
+      "bio": "",
       "website": "nasreen-khan.com",
       "social_media": [
         "@nasreenkhanart"
@@ -569,10 +546,8 @@ export const artists: Artist[] = [
       "cause": "Multiculturalism / Migration",
       "imageUrl": "/artist-23.jpg",
       "credit": "https://www.indystar.com/picture-gallery/news/2020/11/21/racial-justice-focus-art-display-indianapolis-central-library/6374181002/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Nasreen Khan Mother & Child / Breathe  Indianapolis Multiculturalism / Migration"
+      "searchQuery": "Nasreen Khan Mother & Child / Breathe Indianapolis Multiculturalism / Migration"
     }
   },
   {
@@ -580,6 +555,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Ashley Nora",
       "isAlive": true,
+      "bio": "",
       "website": "ashleynoraart.com",
       "social_media": [
         "@ashleynoraart"
@@ -592,11 +568,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice / Black Joy",
-      "imageUrl": "/artist-24.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Ashley Nora Black Lives Matter Mural (Letter R)  Indianapolis (Indiana Ave - Archived) Racial Justice / Black Joy"
+      "searchQuery": "Ashley Nora Black Lives Matter Mural (Letter R) Indianapolis (Indiana Ave - Archived) Racial Justice / Black Joy"
     }
   },
   {
@@ -604,6 +578,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kenneth Hordge (Fingercreations)",
       "isAlive": true,
+      "bio": "",
       "website": "ganggangculture.com",
       "social_media": [
         "@fingercreations"
@@ -616,11 +591,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-25.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Kenneth Hordge (Fingercreations) Black Lives Matter Mural (Fist)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Kenneth Hordge (Fingercreations) Black Lives Matter Mural (Fist) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -628,7 +601,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Robert Indiana",
       "isAlive": false,
-      "bio": "The opera itself centers on women’s suffrage via Susan B. Anthony, and Indiana’s designs visually amplify that political history. The most blunt proof is that his design materials include a scene explicitly titled \"Women of America Want To Vote\" with women carrying \"Vote\" signs.",
+      "bio": "The opera itself centers on women’s suffrage via Susan B. Anthony, and Indiana’s designs visually amplify that political history. The most blunt proof is that his design materials include a scene explicitly titled “Women of America Want To Vote” with women carrying “Vote” signs.",
       "website": "robertindiana.com",
       "social_media": [
         "@robertindiana"
@@ -641,12 +614,10 @@ export const artists: Artist[] = [
       "date": "1967 / 1976",
       "location": "Various Collections",
       "cause": "Women's Suffrage",
-      "imageUrl": "/artist-26.jpg",
+      "imageUrl": "/Images/RobertIndiana_Hope.jpg",
       "credit": "https://www.artsy.net/artist-series/robert-indiana-mother-of-us-all",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Robert Indiana The Mother of Us All The opera itself centers on women’s suffrage via Susan B. Anthony, and Indiana’s designs visually amplify that political history. The most blunt proof is that his design materials include a scene explicitly titled \"Women of America Want To Vote\" with women carrying \"Vote\" signs. Various Collections Women's Suffrage"
+      "searchQuery": "Robert Indiana The Mother of Us All Various Collections Women's Suffrage"
     }
   },
   {
@@ -667,12 +638,10 @@ export const artists: Artist[] = [
       "date": "1990s",
       "location": "Bloomington (IU / Various)",
       "cause": "Social Justice / Holocaust Memory",
-      "imageUrl": "/artist-27.jpg",
+      "imageUrl": "/Images/JeffreyA.Wolin_Written in Memory.jpg",
       "credit": "https://www.jeffreywolin.com/jakob-schwartz/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Jeffrey A. Wolin Written in Memory Holocaust memory / anti-erasure activism. Bloomington (IU / Various) Social Justice / Holocaust Memory"
+      "searchQuery": "Jeffrey A. Wolin Written in Memory Bloomington (IU / Various) Social Justice / Holocaust Memory"
     }
   },
   {
@@ -680,6 +649,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kevin West",
       "isAlive": true,
+      "bio": "",
       "website": "artlafayette.org",
       "social_media": [
         "@kevinwestart"
@@ -692,11 +662,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice / Police Brutality",
-      "imageUrl": "/artist-28.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Kevin West Black Lives Matter Mural (Letter K)  Indianapolis (Indiana Ave - Archived) Racial Justice / Police Brutality"
+      "searchQuery": "Kevin West Black Lives Matter Mural (Letter K) Indianapolis (Indiana Ave - Archived) Racial Justice / Police Brutality"
     }
   },
   {
@@ -704,6 +672,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "John G. Moore",
       "isAlive": true,
+      "bio": "",
       "website": "blcklst.com",
       "social_media": [
         "@johngmoorejr"
@@ -716,11 +685,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice / Voting Rights",
-      "imageUrl": "/artist-29.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "John G. Moore Black Lives Matter Mural (Letter L)  Indianapolis (Indiana Ave - Archived) Racial Justice / Voting Rights"
+      "searchQuery": "John G. Moore Black Lives Matter Mural (Letter L) Indianapolis (Indiana Ave - Archived) Racial Justice / Voting Rights"
     }
   },
   {
@@ -728,7 +695,8 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Ess McKee",
       "isAlive": true,
-      "website": "ganggangculture.com/artists/ess-mckee",
+      "bio": "",
+      "website": "ganggangculture.com",
       "social_media": [
         "@essmckee"
       ]
@@ -740,11 +708,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-30.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Ess McKee Black Lives Matter Mural (Letter S)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Ess McKee Black Lives Matter Mural (Letter S) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -752,6 +718,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Wavy Blayne",
       "isAlive": true,
+      "bio": "",
       "website": "18artcollective.com",
       "social_media": [
         "@wavyblayne"
@@ -764,11 +731,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-31.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Wavy Blayne Black Lives Matter Mural (Letter M)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Wavy Blayne Black Lives Matter Mural (Letter M) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -776,6 +741,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Harriet Watson",
       "isAlive": true,
+      "bio": "",
       "website": "harrietwatsonart.com",
       "social_media": [
         "@harrietwatsonart"
@@ -788,11 +754,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-32.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Harriet Watson Black Lives Matter Mural (Letter A)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Harriet Watson Black Lives Matter Mural (Letter A) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -800,6 +764,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Deonna Craig",
       "isAlive": true,
+      "bio": "",
       "website": "deonnacraigart.com",
       "social_media": [
         "@deonna_craig"
@@ -812,11 +777,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-33.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Deonna Craig Black Lives Matter Mural (Letter V)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Deonna Craig Black Lives Matter Mural (Letter V) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -824,6 +787,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Danicia Monét (Danicia Malone)",
       "isAlive": true,
+      "bio": "",
       "website": "https://indianahumanities.org/danicia-monet-malone/",
       "social_media": [
         "@daniciamonet"
@@ -837,18 +801,17 @@ export const artists: Artist[] = [
       "location": "Indianapolis",
       "cause": "Racial Justice / Urban Design",
       "imageUrl": "/artist-34.jpg",
-      "credit": "https://www.instagram.com/p/DMFqRA_sALO/",
-      "latitude": null,
-      "longitude": null,
+      "credit": " https://www.instagram.com/p/DMFqRA_sALO/",
       "categories": [],
-      "searchQuery": "Danicia Monét (Danicia Malone) Black Poetics of Place, BlackSpace Indianapolis (Co-Founder)/ Rokh (Founder)  Indianapolis Racial Justice / Urban Design"
+      "searchQuery": "Danicia Monét (Danicia Malone) Black Poetics of Place, BlackSpace Indianapolis (Co-Founder)/ Rokh (Founder) Indianapolis Racial Justice / Urban Design"
     }
   },
   {
     "id": "35",
     "artist": {
       "name": "Dr. Jarrod Dortch",
-      "isAlive": true,
+      "isAlive": false,
+      "bio": "",
       "website": "digitaleducationhub.community",
       "social_media": [
         "@solfulgardens"
@@ -861,12 +824,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Food Justice",
-      "imageUrl": "/artist-35.jpg",
+      "imageUrl": "/Images/Dr. Jarrod Dortch_Solful Gardens.jpg",
       "credit": "https://farmflavor.com/indiana/solful-gardens-offers-community-a-new-source-for-fresh-produce/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Dr. Jarrod Dortch Solful Gardens (building family farms)  Indianapolis Food Justice"
+      "searchQuery": "Dr. Jarrod Dortch Solful Gardens (building family farms) Indianapolis Food Justice"
     }
   },
   {
@@ -874,6 +835,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Matthew Cooper",
       "isAlive": true,
+      "bio": "",
       "website": "debutart.com (Rep)",
       "social_media": [
         "N/A"
@@ -886,12 +848,10 @@ export const artists: Artist[] = [
       "date": "2020",
       "location": "Indianapolis",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-36.jpg",
+      "imageUrl": "/Images/Matthew Cooper_Truth Seekers.webp",
       "credit": "https://www.indystar.com/picture-gallery/news/2020/11/21/racial-justice-focus-art-display-indianapolis-central-library/6374181002/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Matthew Cooper Truth Seekers  Indianapolis Racial Justice"
+      "searchQuery": "Matthew Cooper Truth Seekers Indianapolis Racial Justice"
     }
   },
   {
@@ -899,6 +859,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Amiah Mims",
       "isAlive": true,
+      "bio": "",
       "website": "worksbymimsy.com",
       "social_media": [
         "@worksbymimsy"
@@ -911,11 +872,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice / Resilience",
-      "imageUrl": "/artist-37.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Amiah Mims Black Lives Matter Mural (Letter A)  Indianapolis (Indiana Ave - Archived) Racial Justice / Resilience"
+      "searchQuery": "Amiah Mims Black Lives Matter Mural (Letter A) Indianapolis (Indiana Ave - Archived) Racial Justice / Resilience"
     }
   },
   {
@@ -923,6 +882,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Rebecca Robinson",
       "isAlive": true,
+      "bio": "",
       "website": "psnob.com",
       "social_media": [
         "@psnob"
@@ -935,11 +895,9 @@ export const artists: Artist[] = [
       "date": "",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-38.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Rebecca Robinson Black Lives Matter Mural (Letter L)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Rebecca Robinson Black Lives Matter Mural (Letter L) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -960,12 +918,10 @@ export const artists: Artist[] = [
       "date": "Ongoing (Since 2000s)",
       "location": "Indianapolis",
       "cause": "Racial Justice / History",
-      "imageUrl": "/artist-39.jpg",
+      "imageUrl": "/Images/LaShawndaCroweStorm_LedLynchQuiltingProj.jpg",
       "credit": "https://indynow2010ls.wixsite.com/website-5/our-story",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "LaShawnda Crowe Storm Led the The Lynch Quilts Project (Quilt I: Her Name Was Laura Nelson) They are Co-Founder of The RECLAIM Project with Phyllis Boyd. Indianapolis Racial Justice / History"
+      "searchQuery": "LaShawnda Crowe Storm Led the The Lynch Quilts Project (Quilt I: Her Name Was Laura Nelson) Indianapolis Racial Justice / History"
     }
   },
   {
@@ -986,12 +942,10 @@ export const artists: Artist[] = [
       "date": "2014",
       "location": "Indianapolis / Global",
       "cause": "Gender & Cultural Intersectionality",
-      "imageUrl": "/artist-40.jpg",
+      "imageUrl": "/Images/Anila Quayyum Agha_Intersections.jpg",
       "credit": "https://www.anilaagha.com/intersections",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Anila Quayyum Agha Intersections Co-exsistance in sacred spaces Indianapolis / Global Gender & Cultural Intersectionality"
+      "searchQuery": "Anila Quayyum Agha Intersections Indianapolis / Global Gender & Cultural Intersectionality"
     }
   },
   {
@@ -1012,12 +966,10 @@ export const artists: Artist[] = [
       "date": "1970",
       "location": "Indianapolis (Mural of her on Mass Ave)",
       "cause": "Civil Rights / Black Arts Movement",
-      "imageUrl": "/artist-41.jpg",
+      "imageUrl": "/Images/Mari Evans_I Am A Black Woman.jpg",
       "credit": "https://www.poemhunter.com/poem/i-am-a-black-woman/#google_vignette",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Mari Evans I Am A Black Woman Also started the show \"The Black Experiance\"  Indianapolis (Mural of her on Mass Ave) Civil Rights / Black Arts Movement"
+      "searchQuery": "Mari Evans I Am A Black Woman Indianapolis (Mural of her on Mass Ave) Civil Rights / Black Arts Movement"
     }
   },
   {
@@ -1038,12 +990,10 @@ export const artists: Artist[] = [
       "date": "1968",
       "location": "Indianapolis (Buried in Crown Hill)",
       "cause": "Prison Reform / Black Arts Movement",
-      "imageUrl": "/artist-42.jpg",
+      "imageUrl": "/Images/Etheridge Knight.jpg",
       "credit": "https://www.poetryfoundation.org/poets/etheridge-knight",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Etheridge Knight Poems from Prison Humanizing Inmates was his key activism  Indianapolis (Buried in Crown Hill) Prison Reform / Black Arts Movement"
+      "searchQuery": "Etheridge Knight Poems from Prison Indianapolis (Buried in Crown Hill) Prison Reform / Black Arts Movement"
     }
   },
   {
@@ -1066,10 +1016,8 @@ export const artists: Artist[] = [
       "cause": "Nature Conservation",
       "imageUrl": "/artist-43.jpg",
       "credit": "https://trail.tcsteele.org/singing-winds/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "T.C. Steele House of the Singing Winds T.C. Steele’s \"activism\" was the visual argument for conservation. He didn't write laws; he painted the reason why the laws were needed. Steele (and the artists who followed him) painted the hills, the haze, and the changing seasons with such reverence that he completely rebranded the region. *Key in Brown County, Indiana's Reframing \"Worthless\" Land as \"Priceless\" Art. Brown County (Historic Site) Nature Conservation"
+      "searchQuery": "T.C. Steele House of the Singing Winds Brown County (Historic Site) Nature Conservation"
     }
   },
   {
@@ -1078,6 +1026,7 @@ export const artists: Artist[] = [
       "name": "Teresa Dunn",
       "isAlive": true,
       "bio": "Visibility in the \"Flyover\" States - activism through identity",
+      "website": "",
       "social_media": [
         "N/A"
       ]
@@ -1089,12 +1038,10 @@ export const artists: Artist[] = [
       "date": "Contemporary",
       "location": "Indianapolis",
       "cause": "Community Arts",
-      "imageUrl": "/artist-44.jpg",
+      "imageUrl": "/Images/AngelicaFrausto_JusticeforMigrantComm.jpg",
       "credit": "https://teresa-dunn.com/about",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Teresa Dunn US Visibility in the \"Flyover\" States - activism through identity Indianapolis Community Arts"
+      "searchQuery": "Teresa Dunn US Indianapolis Community Arts"
     }
   },
   {
@@ -1115,12 +1062,10 @@ export const artists: Artist[] = [
       "date": "2025",
       "location": "Indianapolis (Harrison Center)",
       "cause": "Black Women's Stories",
-      "imageUrl": "/artist-45.jpg",
+      "imageUrl": "/Images/Boxx the Artist.jpg",
       "credit": "https://www.indystar.com/story/entertainment/arts/2024/02/02/art-and-soul-indianapolis-boxx-the-artist-has-built-a-business-with-talent-and-entrepreneurship/72370950007/?gnt-cfr=1&gca-cat=p&gca-uir=true&gca-epti=z115450d00----v115450d--61--b--61--&gca-ft=47&gca-ds=sophi",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Boxx the Artist The Women In Between social activist for black women leaders that are dark skinned Indianapolis (Harrison Center) Black Women's Stories"
+      "searchQuery": "Boxx the Artist The Women In Between Indianapolis (Harrison Center) Black Women's Stories"
     }
   },
   {
@@ -1141,12 +1086,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Environmental Justice",
-      "imageUrl": "/artist-46.jpg",
+      "imageUrl": "/Images/Shamira Wilson_ Ethnobotany Series.jpg",
       "credit": "https://shamirawilson.com/about",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Shamira Wilson Ethnobotany Series Her activism isn't just in the painting; it is in the process. She manages a research plot at White River State Park where she grows over 140 Okra plants.The \"Closed Loop\": She doesn't just buy canvas and paint: She harvests the fiber from the Okra stalks to weave her own textiles. She uses the flowers to make her own dyes/pigments. She saves the seeds to give away to the community. Why it's Impactful: This is Environmental Justice. In a world of fast fashion and toxic art materials, she is proving that an artist can be self-sustaining. She is modeling a \"non-extractive\" relationship with the earth. Indianapolis Environmental Justice"
+      "searchQuery": "Shamira Wilson Ethnobotany Series Indianapolis Environmental Justice"
     }
   },
   {
@@ -1167,12 +1110,10 @@ export const artists: Artist[] = [
       "date": "2004",
       "location": "Indianapolis (IUPUI Campus)",
       "cause": "Man vs. Nature / Motion",
-      "imageUrl": "/artist-47.jpg",
+      "imageUrl": "/Images/Brose Partington_Harvesting Knowledge.jpg",
       "credit": "https://www.thepubliccollection.org/artists/brose-partington/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Brose Partington Harvesting Knowledge This piece was part of a specific campaign (\"The Public Collection\") to eradicate \"book deserts\" in Indianapolis. It didn't just complain about lack of access to education; it fixed it by distributing free books to thousands of people. Indianapolis (IUPUI Campus) Man vs. Nature / Motion"
+      "searchQuery": "Brose Partington Harvesting Knowledge Indianapolis (IUPUI Campus) Man vs. Nature / Motion"
     }
   },
   {
@@ -1193,12 +1134,10 @@ export const artists: Artist[] = [
       "date": "2021",
       "location": "Franklin / Camp Atterbury",
       "cause": "Refugee Support / Social Justice",
-      "imageUrl": "/artist-48.jpg",
+      "imageUrl": "/Images/Tiffany Black_August 15 (Mural).jpg",
       "credit": "https://www.tblack.co/august15",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Tiffany Black August 15 (Mural) The date \"August 15\" is painted in the center of the mural. For the world, that date was just a headline. For the people painting it, it was the day their lives ended and restarted. The mural serves as a primary historical document created by the witnesses themselves, ensuring their story wasn't erased or rewritten by American media. Franklin / Camp Atterbury Refugee Support / Social Justice"
+      "searchQuery": "Tiffany Black August 15 (Mural) Franklin / Camp Atterbury Refugee Support / Social Justice"
     }
   },
   {
@@ -1219,12 +1158,10 @@ export const artists: Artist[] = [
       "date": "2022",
       "location": "Indianapolis (Gainbridge Fieldhouse)",
       "cause": "Cultural Critique / History",
-      "imageUrl": "/artist-49.jpg",
+      "imageUrl": "/Images/Artur Silva_Cultural Cannibal.jpg",
       "credit": "https://culturalcannibals.wordpress.com/about/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Artur Silva/ Kyle Long Cultural Cannibal Culture War: \"Decolonizing the Midwest through music and visual art. Remapping Indiana history to include the voices you weren't taught in school.\" Indianapolis (Gainbridge Fieldhouse) Cultural Critique / History"
+      "searchQuery": "Artur Silva/ Kyle Long Cultural Cannibal Indianapolis (Gainbridge Fieldhouse) Cultural Critique / History"
     }
   },
   {
@@ -1233,6 +1170,7 @@ export const artists: Artist[] = [
       "name": "Mary Miss",
       "isAlive": true,
       "bio": "it argued that \"nature is essential infrastructure.\" It helped pave the way for current efforts in Indianapolis to clean up and redevelop the White River.",
+      "website": "",
       "social_media": [
         "@cityaslivinglab"
       ]
@@ -1244,12 +1182,10 @@ export const artists: Artist[] = [
       "date": "2011",
       "location": "Indianapolis (White River)",
       "cause": "Environmental Awareness (Water)",
-      "imageUrl": "/artist-50.jpg",
+      "imageUrl": "/Images/Mary Miss_FLOW.jpg",
       "credit": "https://www.cityaslivinglab.org/flow",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Mary Miss FLOW: Can You See the River? it argued that \"nature is essential infrastructure.\" It helped pave the way for current efforts in Indianapolis to clean up and redevelop the White River. Indianapolis (White River) Environmental Awareness (Water)"
+      "searchQuery": "Mary Miss FLOW: Can You See the River? Indianapolis (White River) Environmental Awareness (Water)"
     }
   },
   {
@@ -1264,18 +1200,16 @@ export const artists: Artist[] = [
       ]
     },
     "artwork": {
-      "title": \"The World's Fastest\" (Mural of Marshall \"Major\" Taylor)",
+      "title": "\"The World's Fastest\" (Mural of Marshall \"Major\" Taylor)",
       "description": "",
       "medium": "Oil / Mural",
       "date": "2020s",
       "location": "Indianapolis (Work often travels)",
       "cause": "Racial Justice / History",
-      "imageUrl": "/artist-51.jpg",
+      "imageUrl": "/Images/Shawn Michael Warren_The Words Fastest.jpg",
       "credit": "https://www.shawnmichaelwarren.com/murals",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Shawn Michael Warren \"The World's Fastest\" (Mural of Marshall \"Major\" Taylor) restorative justice Indianapolis (Work often travels) Racial Justice / History"
+      "searchQuery": "Shawn Michael Warren \"The World's Fastest\" (Mural of Marshall \"Major\" Taylor) Indianapolis (Work often travels) Racial Justice / History"
     }
   },
   {
@@ -1296,12 +1230,10 @@ export const artists: Artist[] = [
       "date": "2018",
       "location": "Indianapolis (Downtown)",
       "cause": "Civic Pride / History",
-      "imageUrl": "/artist-52.jpg",
+      "imageUrl": "/Images/PamelaBliss_EvaKorMural.webp",
       "credit": "https://www.indystar.com/story/news/local/indianapolis/2020/10/12/larger-than-life-mural-holocaust-survivor-eva-kor-coming-downtown/5936019002/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Pamela Bliss Eva Kor Mural Pamela has many important murals. This is the best example of activism. Key to do fight against black history earasure Indianapolis (Downtown) Civic Pride / History"
+      "searchQuery": "Pamela Bliss Eva Kor Mural Indianapolis (Downtown) Civic Pride / History"
     }
   },
   {
@@ -1322,12 +1254,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Underrepresented Artists",
-      "imageUrl": "/artist-53.jpg",
+      "imageUrl": "/Images/D. Del Reverda-Jennings’_FlavaFresh.jpg",
       "credit": "https://artsmidwest.org/stories/indiana-artist-champions-spaces-for-underrepresented-creatives/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "D. Del Reverda-Jennings FLAVA FRESH D. Del Reverda-Jennings’ activism is Structural.She built a pipeline (FLAVA FRESH !) to ensure that hundreds of other artists could follow her. Indianapolis Underrepresented Artists"
+      "searchQuery": "D. Del Reverda-Jennings FLAVA FRESH Indianapolis Underrepresented Artists"
     }
   },
   {
@@ -1348,12 +1278,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Music History / Culture",
-      "imageUrl": "/artist-54.jpg",
+      "imageUrl": "/Images/LobynHamilton_What I Have Is What You Have.jpg",
       "credit": "https://www.instagram.com/p/C7E8rv4OuhR/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Lobyn Hamilton (Walter \"Lobyn\" Hamilton) What I Have Is What You Have Based on your interest in how art can be used to build actual infrastructure for a community (like Phyllis Boyd's parks or Lobyn Hamilton's real estate), the \"top form\" of art activism that Lobyn Hamilton practices is Social Practice Art—specifically a project called the B-SIDE Creative Campus. While he is famous for his vinyl portraits, he considers his real estate development to be an extension of his art practice. Here is the breakdown of his \"top form\" (the campus) and his \"top piece\" (the exhibition that defines his philosophy). 1. The \"Top Form\" of Activism: B-SIDE Creative Campus What it is: This is not a painting or a sculpture; it is a neighborhood revitalization project in the Brookside area of Indianapolis (where Hamilton grew up). The Activist Act: Hamilton buys blighted, abandoned properties (like old churches or storefronts) and renovates them into subsidized live/work studios for other artists. Why it is Activism: This is Anti-Gentrification Activism. The Problem: Usually, when artists make a neighborhood \"cool,\" developers move in, raise the rent, and kick the artists out. The Solution: By owning the land and controlling the rent, Hamilton creates a \"safe zone\" (what he calls \"Creative Care\") where local Black artists can afford to stay and build wealth in their own community. He is using art proceeds to buy back the block. Indianapolis Music History / Culture"
+      "searchQuery": "Lobyn Hamilton (Walter “Lobyn” Hamilton) What I Have Is What You Have Indianapolis Music History / Culture"
     }
   },
   {
@@ -1361,6 +1289,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kyng Rhodes (Nathaniel Rhodes)",
       "isAlive": true,
+      "bio": "",
       "website": "kyngrhodes.com",
       "social_media": [
         "@kyngrhodes"
@@ -1373,11 +1302,9 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Ave - Archived)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-55.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Kyng Rhodes (Nathaniel Rhodes) Black Lives Matter Mural (Letter B)  Indianapolis (Indiana Ave - Archived) Racial Justice"
+      "searchQuery": "Kyng Rhodes (Nathaniel Rhodes) Black Lives Matter Mural (Letter B) Indianapolis (Indiana Ave - Archived) Racial Justice"
     }
   },
   {
@@ -1385,6 +1312,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Phyllis Boyd",
       "isAlive": true,
+      "bio": "",
       "website": "ganggangculture.com/artists/phyllis-viola-boyd",
       "social_media": [
         "@phyllisviolaboyd"
@@ -1397,12 +1325,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis (Riverside / various parks)",
       "cause": "Environmental Justice / Urban Renewal",
-      "imageUrl": "/artist-56.jpg",
+      "imageUrl": "/Images/Phyllis Viola Boyd_RECLAIM Project.jpg",
       "credit": "https://indynow2010ls.wixsite.com/website-5/projects",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Phyllis Boyd RECLAIM Project  Indianapolis (Riverside / various parks) Environmental Justice / Urban Renewal"
+      "searchQuery": "Phyllis Boyd RECLAIM Project Indianapolis (Riverside / various parks) Environmental Justice / Urban Renewal"
     }
   },
   {
@@ -1410,6 +1336,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kevin Wilson",
       "isAlive": true,
+      "bio": "",
       "website": "saatchiart.com/kevinjameswilson",
       "social_media": [
         "Kevin James Wilson"
@@ -1422,12 +1349,10 @@ export const artists: Artist[] = [
       "date": "2021",
       "location": "Indianapolis (Airport / Downtown)",
       "cause": "Black History / Sports Legacy",
-      "imageUrl": "/artist-57.jpg",
+      "imageUrl": "/Images/KevinWilson_Kings of the Castle.jpg",
       "credit": "https://www.blackartinamerica.com/products/wilson-kevin-the-kings-of-the-castle",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Kevin Wilson Kings of the Castle  Indianapolis (Airport / Downtown) Black History / Sports Legacy"
+      "searchQuery": "Kevin Wilson Kings of the Castle Indianapolis (Airport / Downtown) Black History / Sports Legacy"
     }
   },
   {
@@ -1435,6 +1360,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Rae Parker",
       "isAlive": true,
+      "bio": "",
       "website": "raeparkerart.com",
       "social_media": [
         "@rpartdesigns"
@@ -1447,12 +1373,10 @@ export const artists: Artist[] = [
       "date": "2023",
       "location": "Indianapolis (Newfields)",
       "cause": "LGBTQ+ Rights / Black Joy",
-      "imageUrl": "/artist-58.jpg",
+      "imageUrl": "/Images/RaeParker_No Shade.jpg",
       "credit": "raeparkerart.com",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Rae Parker No Shade (Tribute to Black Queer Joy)  Indianapolis (Newfields) LGBTQ+ Rights / Black Joy"
+      "searchQuery": "Rae Parker No Shade (Tribute to Black Queer Joy) Indianapolis (Newfields) LGBTQ+ Rights / Black Joy"
     }
   },
   {
@@ -1460,6 +1384,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Fingers (Graffiti Artist)",
       "isAlive": true,
+      "bio": "",
       "website": "N/A",
       "social_media": [
         "@fingercreations"
@@ -1472,11 +1397,9 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Ave)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-59.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Fingers (Graffiti Artist) Black Lives Matter Mural (Fist)  Indianapolis (Indiana Ave) Racial Justice"
+      "searchQuery": "Fingers (Graffiti Artist) Black Lives Matter Mural (Fist) Indianapolis (Indiana Ave) Racial Justice"
     }
   },
   {
@@ -1484,6 +1407,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Cierra Johnson",
       "isAlive": true,
+      "bio": "",
       "website": "cjcrtv.com",
       "social_media": [
         "@cjcrtv"
@@ -1496,12 +1420,10 @@ export const artists: Artist[] = [
       "date": "2022",
       "location": "Indianapolis",
       "cause": "Neighborhood Preservation / Justice",
-      "imageUrl": "/artist-60.jpg",
+      "imageUrl": "/Images/CierraJohnson_Storytelling Drawing Sessions _ Making Martindale.png",
       "credit": "https://cjcrtv.com/storytelling-drawing-sessions   (anti-erasure)",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Cierra Johnson Storytelling Drawing Sessions / Making Martindale  Indianapolis Neighborhood Preservation / Justice"
+      "searchQuery": "Cierra Johnson Storytelling Drawing Sessions / Making Martindale Indianapolis Neighborhood Preservation / Justice"
     }
   },
   {
@@ -1509,6 +1431,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kwazar Martin",
       "isAlive": true,
+      "bio": "",
       "website": "kwazarmartinart.com",
       "social_media": [
         "@kwazarmartin"
@@ -1521,12 +1444,10 @@ export const artists: Artist[] = [
       "date": "2024",
       "location": "Indianapolis (38th & College)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-61.jpg",
+      "imageUrl": "/Images/Kwazar Martin_I Can_t Breathe.jpg",
       "credit": "https://indyencyclopedia.org/exhibit/i-cant-breathe/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Kwazar Martin I Can't Breathe  Indianapolis (38th & College) Racial Justice"
+      "searchQuery": "Kwazar Martin I Can't Breathe Indianapolis (38th & College) Racial Justice"
     }
   },
   {
@@ -1534,6 +1455,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Shane Young (FITZ)",
       "isAlive": true,
+      "bio": "",
       "website": "artbyfitz.org",
       "social_media": [
         "@artbyfitz"
@@ -1546,11 +1468,9 @@ export const artists: Artist[] = [
       "date": "August 2020",
       "location": "Indianapolis (Indiana Ave)",
       "cause": "Racial Justice",
-      "imageUrl": "/artist-62.jpg",
-      "latitude": null,
-      "longitude": null,
+      "imageUrl": "/Images/18ArtCollective_BlackLivesMatterStreetMural.jpg",
       "categories": [],
-      "searchQuery": "Shane Young (FITZ) Black Lives Matter Mural (Letter T)  Indianapolis (Indiana Ave) Racial Justice"
+      "searchQuery": "Shane Young (FITZ) Black Lives Matter Mural (Letter T) Indianapolis (Indiana Ave) Racial Justice"
     }
   },
   {
@@ -1558,6 +1478,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Lisa Sears",
       "isAlive": true,
+      "bio": "",
       "website": "lisasearsart.com",
       "social_media": [
         "@lisasearsart"
@@ -1570,12 +1491,10 @@ export const artists: Artist[] = [
       "date": "2017",
       "location": "Indianapolis",
       "cause": "Democracy / Feminism",
-      "imageUrl": "/artist-63.jpg",
+      "imageUrl": "/Images/Lisa Sears_Principio Obstate.jpg",
       "credit": "https://www.lisasearsart.com/principioobstate.html",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Lisa Sears Principio Obstate (Statue of Liberty)  Indianapolis Democracy / Feminism"
+      "searchQuery": "Lisa Sears Principio Obstate (Statue of Liberty) Indianapolis Democracy / Feminism"
     }
   },
   {
@@ -1583,6 +1502,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Megan Jefferson",
       "isAlive": true,
+      "bio": "",
       "website": "indyarts.org/artist/megan-jefferson",
       "social_media": [
         "@meganjeffersonart"
@@ -1595,12 +1515,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis (Edington Gallery)",
       "cause": "Mental Health / Color Therapy",
-      "imageUrl": "/artist-64.jpg",
+      "imageUrl": "/Images/MeganJefferson_Ms.Pink.jpeg",
       "credit": "https://www.jeffersonartstudio.com/murals",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Megan Jefferson Dept of Public Words - Public Mural Project  Indianapolis (Edington Gallery) Mental Health / Color Therapy"
+      "searchQuery": "Megan Jefferson Dept of Public Words - Public Mural Project Indianapolis (Edington Gallery) Mental Health / Color Therapy"
     }
   },
   {
@@ -1608,7 +1526,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Lauren Kussro",
       "isAlive": true,
-      "bio": "The Piece: This is a series of six massive \"flags\" (some over 15 feet wide) made entirely from thousands of jagged shards of broken vinyl records and album covers.",
+      "bio": "",
       "website": "laurenkussro.com",
       "social_media": [
         "@laurenkussro"
@@ -1621,12 +1539,10 @@ export const artists: Artist[] = [
       "date": "2024",
       "location": "Houston (Formerly Indy)",
       "cause": "Environmental Fragility",
-      "imageUrl": "/artist-65.jpg",
+      "imageUrl": "/Images/LaurenKussro_OurOceanInstallation.jpg",
       "credit": "https://www.laurenkussro.com/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Lauren Kussro Our Ocean Installation The Piece: This is a series of six massive \"flags\" (some over 15 feet wide) made entirely from thousands of jagged shards of broken vinyl records and album covers. Houston (Formerly Indy) Environmental Fragility"
+      "searchQuery": "Lauren Kussro Our Ocean Installation Houston (Formerly Indy) Environmental Fragility"
     }
   },
   {
@@ -1634,7 +1550,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Gautam Rao",
       "isAlive": true,
-      "bio": "The Activism: This is Cultural Memory Activism.",
+      "bio": "",
       "website": "gautamraoart.net",
       "social_media": [
         "@gautamrao"
@@ -1647,12 +1563,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis (Butler Univ)",
       "cause": "Play / Inclusive Design",
-      "imageUrl": "/artist-66.jpg",
+      "imageUrl": "/Images/GautamRao_Indians, Alphabetically.jpg",
       "credit": "gautamraoart.net",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Gautam Rao Indians, Alphabetically The Activism: This is Cultural Memory Activism. Indianapolis (Butler Univ) Play / Inclusive Design"
+      "searchQuery": "Gautam Rao Indians, Alphabetically Indianapolis (Butler Univ) Play / Inclusive Design"
     }
   },
   {
@@ -1660,7 +1574,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Casey Roberts",
       "isAlive": true,
-      "bio": "Visualizing Shared History: Hamilton uses albums from the 70s, 80s, and 90s to trigger a collective memory. He argues that music is the one thing that truly connects us across racial and political lines.",
+      "bio": "",
       "website": "wildernessoverload.com",
       "social_media": [
         "@caseyrobertsart"
@@ -1673,12 +1587,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Nature Conservation / Surrealism",
-      "imageUrl": "/artist-67.jpg",
+      "imageUrl": "/Images/CaseyRoberts_A Soft Spot in the Sea Ice.jpg",
       "credit": "https://www.artsy.net/artwork/casey-roberts-a-soft-spot-in-the-sea-ice",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Casey Roberts Cyanotype Nature Series (a soft spot in the sea ice) Visualizing Shared History: Hamilton uses albums from the 70s, 80s, and 90s to trigger a collective memory. He argues that music is the one thing that truly connects us across racial and political lines. Indianapolis Nature Conservation / Surrealism"
+      "searchQuery": "Casey Roberts Cyanotype Nature Series (a soft spot in the sea ice) Indianapolis Nature Conservation / Surrealism"
     }
   },
   {
@@ -1686,6 +1598,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Quincy Owens",
       "isAlive": true,
+      "bio": "",
       "website": "owensandcrawley.com",
       "social_media": [
         "@quincyowens"
@@ -1698,12 +1611,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis (Various Sites)",
       "cause": "Public Art Access / Science",
-      "imageUrl": "/artist-68.jpg",
+      "imageUrl": "/Images/QuincyOwens_Fissureatthe Athenaeum.jpg",
       "credit": "https://www.owensandcrawley.com/fissure.html",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Quincy Owens Fissure at the Athenaeum  Indianapolis (Various Sites) Public Art Access / Science"
+      "searchQuery": "Quincy Owens Fissure at the Athenaeum Indianapolis (Various Sites) Public Art Access / Science"
     }
   },
   {
@@ -1711,7 +1622,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Luke Crawley",
       "isAlive": true,
-      "bio": "The \"Flag\" Metaphor: By turning records (pop culture) into Flags (national symbols), he is arguing that culture is our true country. He creates a \"Hip Hop Flag,\" a \"Rock Flag,\" etc., forcing the viewer to ask: Which flag do I pledge allegiance to?",
+      "bio": "",
       "website": "owensandcrawley.com",
       "social_media": [
         "@lukecrawley"
@@ -1724,12 +1635,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "STEAM Education / Physics",
-      "imageUrl": "/artist-69.jpg",
+      "imageUrl": "/Images/LukeCrawley_Up in Air..jpg",
       "credit": "https://artinoddplaces.org/artists/crawley-luke/",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Luke Crawley Up in Air The \"Flag\" Metaphor: By turning records (pop culture) into Flags (national symbols), he is arguing that culture is our true country. He creates a \"Hip Hop Flag,\" a \"Rock Flag,\" etc., forcing the viewer to ask: Which flag do I pledge allegiance to? Indianapolis STEAM Education / Physics"
+      "searchQuery": "Luke Crawley Up in Air Indianapolis STEAM Education / Physics"
     }
   },
   {
@@ -1750,12 +1659,10 @@ export const artists: Artist[] = [
       "date": "2008",
       "location": "Indianapolis (Airport)",
       "cause": "Indiana Geology / History",
-      "imageUrl": "/artist-70.jpg",
+      "imageUrl": "/Images/Dale Enochs_Elemental Indiana.png",
       "credit": "https://www.daleenochs.com/julien-clarke",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Dale Enochs Elemental Indiana While it is not \"protest art\" in the traditional sense (it doesn't explicitly protest a policy or event), it functions as activism through cultural reclamation, visibility, and decolonization. About Indigneous people Indianapolis (Airport) Indiana Geology / History"
+      "searchQuery": "Dale Enochs Elemental Indiana Indianapolis (Airport) Indiana Geology / History"
     }
   },
   {
@@ -1776,12 +1683,10 @@ export const artists: Artist[] = [
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "LGBTQ+ ",
-      "imageUrl": "/artist-71.jpg",
+      "imageUrl": "/Images/Brian McCutcheon_NDY.png",
       "credit": "https://www.ignitionarts.com/projects/ndy",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Brian McCutcheon NDY While Brian McCutcheon's NDY sculpture began as a branding tool, it functioned as civic activism. It provided a physical platform for residents to visually protest the RFRA controversy and reassert an identity of inclusivity during a political crisis. Indianapolis LGBTQ+ "
+      "searchQuery": "Brian McCutcheon NDY Indianapolis LGBTQ+"
     }
   },
   {
@@ -1789,6 +1694,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Katrina Murray",
       "isAlive": true,
+      "bio": "",
       "website": "katrinajmurray.com",
       "social_media": [
         "@katrinajmurray"
@@ -1801,12 +1707,10 @@ export const artists: Artist[] = [
       "date": "2022",
       "location": "Indianapolis",
       "cause": "Human Condition / Bias",
-      "imageUrl": "/artist-72.jpg",
+      "imageUrl": "/Images/Katrina Murray_This Is Us.png",
       "credit": "https://katrinajmurray.com/pdfs.html",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "Katrina Murray This Is Us  Indianapolis Human Condition / Bias"
+      "searchQuery": "Katrina Murray This Is Us Indianapolis Human Condition / Bias"
     }
   },
   {
@@ -1814,6 +1718,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "India Cruse-Griffin",
       "isAlive": true,
+      "bio": "",
       "website": "indiacruse-griffin.org",
       "social_media": [
         "@indiacrusegriffin"
@@ -1826,12 +1731,10 @@ export const artists: Artist[] = [
       "date": "2012",
       "location": "Indianapolis (Eskenazi Health)",
       "cause": "Black Experience / Family",
-      "imageUrl": "/artist-73.jpg",
+      "imageUrl": "/Images/India Cruse-Griffin_HopeSkipandJump.png",
       "credit": "https://publicartarchive.org/art/Hope-Skip-and-Jump/ca85f4e7",
-      "latitude": null,
-      "longitude": null,
       "categories": [],
-      "searchQuery": "India Cruse-Griffin Hope Skip and Jump  Indianapolis (Eskenazi Health) Black Experience / Family"
+      "searchQuery": "India Cruse-Griffin Hope Skip and Jump Indianapolis (Eskenazi Health) Black Experience / Family"
     }
   }
-]
+];

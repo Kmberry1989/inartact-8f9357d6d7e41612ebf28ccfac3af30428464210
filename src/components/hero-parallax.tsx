@@ -20,8 +20,9 @@ export function HeroParallax() {
   const xIndiana = useTransform(scrollYProgress, [0, 1], ["-10%", "100%"]);
   const yIndiana = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
-  // 3. Flag: Moves slightly faster than outline
+  // 3. Flag: Moves slightly faster than outline and scales
   const yFlag = useTransform(scrollYProgress, [0, 1], ["10%", "40%"]);
+  const scaleFlag = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
 
   // 4. Text: Drifts up at medium speed
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
@@ -66,8 +67,8 @@ export function HeroParallax() {
 
       {/* LAYER 2.5: Indiana Flag */}
       <motion.div
-        style={{ y: yFlag }}
-        className="absolute top-[20%] left-1/2 -translate-x-1/2 z-0 w-[80vw] h-[80vh] md:w-[800px] md:h-[600px] opacity-20 pointer-events-none"
+        style={{ y: yFlag, scale: scaleFlag }}
+        className="absolute top-[10%] left-1/2 -translate-x-1/2 z-0 w-[80vw] h-[80vh] md:w-[800px] md:h-[600px] opacity-20 pointer-events-none"
       >
         <Image
           src="/hero/Flag_of_Indiana.svg"
@@ -101,7 +102,7 @@ export function HeroParallax() {
       {/* LAYER 4: Crowd (Mid-ground) */}
       <motion.div
         style={{ y: yCrowd }}
-        className="absolute bottom-0 left-0 right-0 z-10 w-full flex justify-center items-end pointer-events-none opacity-80 mix-blend-multiply dark:mix-blend-screen"
+        className="absolute bottom-0 left-0 right-0 z-10 w-full flex justify-center items-end pointer-events-none opacity-40 mix-blend-multiply dark:mix-blend-screen"
       >
         <div className="relative w-full h-[400px] md:h-[600px]">
           {/* Fallback gradient if image is missing */}

@@ -43,3 +43,7 @@ Thumbs.db
 # Temp files
 *.tmp
 *.temp
+
+# Large source files
+*.zip
+public/Images/MeganJefferson_MuralMap_DeptOfPublicWords.pdf

@@ -35,9 +35,7 @@ export function ArtistGallery({ artists }: ArtistGalleryProps) {
             transition={{ duration: 0.5, delay: index * 0.05 }} // Staggered delay
             className="mb-4"
           >
-            <Link href={`/artists/${artist.id}`} className="block group h-full">
-              <ArtistCard artist={artist} />
-            </Link>
+            <ArtistCard artist={artist} priority={index < 8} />
           </motion.div>
         ))}
       </Masonry>

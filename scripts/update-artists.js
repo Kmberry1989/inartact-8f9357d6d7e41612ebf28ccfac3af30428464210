@@ -15,6 +15,32 @@ papa.parse(csvFileContent, {
       if (!row['Artist Name']) {
         return null;
       }
+      // Image matching logic
+      const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const artistName = row['Artist Name'] || '';
+      const title = row['Title of Work'] || '';
+      const normalizedArtist = normalize(artistName);
+      const normalizedTitle = normalize(title);
+
+      // Find matching image in public/Images
+      const imagesDir = path.join(__dirname, '..', 'public', 'Images');
+      let matchedImage = null;
+
+      if (fs.existsSync(imagesDir)) {
+        const files = fs.readdirSync(imagesDir);
+        // Try strict match first: ArtistName_Title
+        matchedImage = files.find(file => {
+          const normFile = normalize(file);
+          return normFile.includes(normalizedArtist) || (normalizedTitle && normFile.includes(normalizedTitle.substring(0, 15))); // Partial title match
+        });
+
+        // Specific manual overrides or smarter matching could go here
+        if (!matchedImage) {
+          // Try matching just artist name if it's unique-ish
+          matchedImage = files.find(file => normalize(file).includes(normalizedArtist));
+        }
+      }
+
       const artist = {
         id: (index + 1).toString(),
         artist: {
@@ -31,10 +57,10 @@ papa.parse(csvFileContent, {
           date: row['Date of Creation'] || '',
           location: row['Where Located in Indiana?'] || '',
           cause: row['Social Cause Description'] || '',
-          imageUrl: `/artist-${index + 1}.jpg`, // Placeholder, will need to be updated
-          credit: row['Photo Credit'] || null,
-          latitude: null,
-          longitude: null,
+          imageUrl: matchedImage ? `/Images/${matchedImage}` : `/artist-${index + 1}.jpg`,
+          credit: row['Photo Credit'] || undefined,
+          latitude: undefined,
+          longitude: undefined,
           categories: [],
           searchQuery: `${row['Artist Name'] || ''} ${row['Title of Work'] || ''} ${row['Where Located in Indiana?'] || ''} ${row['Social Cause Description'] || ''}`.trim(),
         },
