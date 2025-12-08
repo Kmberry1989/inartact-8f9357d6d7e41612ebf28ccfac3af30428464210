@@ -45,8 +45,9 @@ export function ArtistCard({ artist }: ArtistCardProps) {
           </div>
 
           {artist.artwork.credit && (
-            <div className="absolute bottom-0 right-0 bg-black/60 text-white text-[10px] px-2 py-1 rounded-tl-md backdrop-blur-sm z-10">
-              Source: {artist.artwork.credit}
+            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-[11px] px-3 py-2 backdrop-blur-md z-10 flex items-center justify-center gap-1">
+              <span className="font-semibold">Image credit:</span>
+              <span className="truncate">{artist.artwork.credit}</span>
             </div>
           )}
         </div>

@@ -109,7 +109,7 @@ export default function AboutPage() {
                         <div className="p-6 rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow">
                             <div className="text-4xl mb-4">⏳</div>
                             <h3 className="font-bold text-xl mb-2">Browse Timeline</h3>
-                            <p className="text-muted-foreground text-sm">See how artistic movements align with historical events in Indiana's history.</p>
+                            <p className="text-muted-foreground text-sm">See how artistic movements align with historical events in Indiana’s history.</p>
                         </div>
                         <div className="p-6 rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow">
                             <div className="text-4xl mb-4">🖨️</div>
