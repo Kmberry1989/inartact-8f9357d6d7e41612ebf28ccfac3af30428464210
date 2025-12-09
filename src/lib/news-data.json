@@ -34,17 +34,6 @@
   },
   {
     "id": "news-3",
-    "title": "Plan unveiled to help strengthen Southwestern Indiana’s arts and culture identity",
-    "date": "December 1, 2025",
-    "organization": "msn.com",
-    "category": "News",
-    "summary": "Click to read full story.",
-    "imageUrl": "",
-    "link": "https://www.msn.com/en-us/travel/news/plan-unveiled-to-help-strengthen-southwestern-indiana-s-arts-and-culture-identity/ar-AA1RvEr6",
-    "credit": "msn.com"
-  },
-  {
-    "id": "news-4",
     "title": "Threat to arts funding a reminder of how much they contribute to us",
     "date": "September 25, 2025",
     "organization": "journalgazette.net",
@@ -55,7 +44,7 @@
     "credit": "journalgazette.net"
   },
   {
-    "id": "news-5",
+    "id": "news-4",
     "title": "Downtown Indiana to fill Saturday with annual Arts Walk, Spring Ladies Day Out",
     "date": "April 28, 2025",
     "organization": "indianagazette.com",
@@ -66,7 +55,7 @@
     "credit": "indianagazette.com"
   },
   {
-    "id": "news-6",
+    "id": "news-5",
     "title": "Indiana Art Association to hold annual art sale",
     "date": "December 3, 2025",
     "organization": "indianagazette.com",
@@ -77,14 +66,25 @@
     "credit": "indianagazette.com"
   },
   {
-    "id": "news-7",
-    "title": "New $1.5 million READI grants will support arts and culture projects in Indiana",
-    "date": "July 2, 2024",
-    "organization": "dailyjournal.net",
+    "id": "news-6",
+    "title": "40 northeast Indiana arts organizations, projects receive more than $284,000 in grants",
+    "date": "September 23, 2025",
+    "organization": "journalgazette.net",
     "category": "News",
     "summary": "Click to read full story.",
-    "imageUrl": "",
-    "link": "https://dailyjournal.net/2024/07/03/new-1-5-million-readi-grants-will-support-arts-and-culture-projects-in-indiana/",
-    "credit": "dailyjournal.net"
+    "imageUrl": "https://bloximages.chicago2.vip.townnews.com/journalgazette.net/content/tncms/assets/v3/editorial/a/4f/a4f1df7e-261b-400c-96b0-7585249a0c1b/68d482599355e.preview.jpg?crop=1200%2C630%2C0%2C22",
+    "link": "https://www.journalgazette.net/living/local-arts/40-northeast-indiana-arts-organizations-projects-receive-more-than-284-000-in-grants/article_a4f1df7e-261b-400c-96b0-7585249a0c1b.html",
+    "credit": "journalgazette.net"
+  },
+  {
+    "id": "news-7",
+    "title": "Arts Illiana announces smallART 2024 Exhibition",
+    "date": "November 11, 2024",
+    "organization": "yahoo.com",
+    "category": "News",
+    "summary": "Click to read full story.",
+    "imageUrl": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+    "link": "https://www.yahoo.com/lifestyle/arts-illiana-announces-smallart-2024-045900821.html",
+    "credit": "yahoo.com"
   }
 ]

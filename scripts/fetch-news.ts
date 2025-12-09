@@ -15,21 +15,24 @@ async function fetchNews() {
 
     const newsItems = [];
 
-    console.log(`Found ${items.length} items. Processing top 8...`);
+    console.log(`Found ${items.length} items. Processing candidates...`);
 
-    for (let i = 0; i < Math.min(items.length, 8); i++) {
+    // Process more candidates to find ones with valid images
+    for (let i = 0; i < Math.min(items.length, 20); i++) {
+        if (newsItems.length >= 8) break; // Stop once we have 8 good items
+
         const item = items[i];
         const titleMatch = item.match(/<title>(.*?)<\/title>/);
         const linkMatch = item.match(/<link>(.*?)<\/link>/);
         const pubDateMatch = item.match(/<pubDate>(.*?)<\/pubDate>/);
-        const sourceMatch = item.match(/<source url=".*?">(.*?)<\/source>/); // Bing might not have source tag same way
+
+        // ... (regex parsing matches original) ...
 
         let title = titleMatch ? titleMatch[1] : 'News Update';
         let link = linkMatch ? linkMatch[1] : '';
         const date = pubDateMatch ? new Date(pubDateMatch[1]).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : 'Recent';
 
         // Extract real URL from Bing link
-        // Link format: http://www.bing.com/news/apiclick.aspx?...&url=https%3a%2f%2f...&...
         let realUrl = link;
         const urlParamMatch = link.match(/url=(.*?)(&|$)/);
         if (urlParamMatch) {
@@ -40,14 +43,12 @@ async function fetchNews() {
             }
         }
 
-        // Bing doesn't always provide <source>, so we might need to extract domain from realUrl
         let source = 'News Source';
         try {
             source = new URL(realUrl).hostname.replace('www.', '');
         } catch (e) { }
 
-        console.log(`[${i}] Processing: ${title}`);
-        console.log(`    -> Real URL: ${realUrl}`);
+        console.log(`[${i}] Checking candidate: ${title}`);
 
         let imageUrl = '';
 
@@ -56,25 +57,36 @@ async function fetchNews() {
                 const { result } = await ogs({ url: realUrl });
                 if (result.success && result.ogImage && result.ogImage.length > 0) {
                     imageUrl = result.ogImage[0].url;
-                    console.log(`    -> Found OG Image: ${imageUrl}`);
+                    // Check if URL is valid (basic check)
+                    if (!imageUrl.startsWith('http')) {
+                        console.log(`    -> Invalid image URL format: ${imageUrl}`);
+                        imageUrl = '';
+                    } else {
+                        console.log(`    -> Found Valid OG Image: ${imageUrl}`);
+                    }
                 }
             } catch (e) {
-                const errorMessage = e instanceof Error ? e.message : String(e);
-                console.log(`    -> Failed to fetch OG image: ${errorMessage}`);
+                console.log(`    -> Failed to fetch OG image`);
             }
         }
 
-        newsItems.push({
-            id: `news-${i}`,
-            title,
-            date,
-            organization: source,
-            category: 'News',
-            summary: 'Click to read full story.',
-            imageUrl: imageUrl || '',
-            link: realUrl, // Use real URL for the link too
-            credit: source
-        });
+        // ONLY add if we have a valid image
+        if (imageUrl) {
+            newsItems.push({
+                id: `news-${newsItems.length}`,
+                title,
+                date,
+                organization: source,
+                category: 'News',
+                summary: 'Click to read full story.',
+                imageUrl: imageUrl,
+                link: realUrl,
+                credit: source
+            });
+            console.log(`    -> ADDED to list (Total: ${newsItems.length})`);
+        } else {
+            console.log(`    -> SKIPPED (No valid image)`);
+        }
     }
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(newsItems, null, 2));
