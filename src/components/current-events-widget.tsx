@@ -1,5 +1,4 @@
-'use client';
-
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, ExternalLink, Megaphone, Newspaper, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
@@ -22,6 +21,7 @@ type EventItem = {
 };
 
 export function CurrentEventsWidget() {
+  const [visibleCount, setVisibleCount] = useState(4);
   const events = newsData as EventItem[];
 
   if (events.length === 0) {
@@ -52,7 +52,7 @@ export function CurrentEventsWidget() {
 
         {/* Events Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {events.slice(0, 4).map((item, index) => (
+          {events.slice(0, visibleCount).map((item, index) => (
             <motion.div
               key={item.id}
               initial={{ opacity: 0, y: 20 }}
@@ -113,6 +113,14 @@ export function CurrentEventsWidget() {
             </motion.div>
           ))}
         </div>
+
+        {visibleCount < events.length && (
+          <div className="mt-8 flex justify-center">
+            <Button variant="secondary" size="lg" onClick={() => setVisibleCount(prev => prev + 4)}>
+              Load More
+            </Button>
+          </div>
+        )}
 
         <div className="mt-8 md:hidden">
           <Button variant="outline" className="w-full gap-2" asChild>

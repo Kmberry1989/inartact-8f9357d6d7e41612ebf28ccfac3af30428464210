@@ -16,6 +16,22 @@ const bioLines = bioCsvContent.split('\n')
   .filter(line => line && line !== 'bio') // Filter header and empty lines
   .map(line => line.replace(/^"(.*)"$/, '$1').trim()); // Remove surrounding quotes
 
+// Parse new final_artist_data for description overrides
+const finalDataPath = path.join(__dirname, '..', 'Artists Publish - final_artist_data (2).csv');
+const finalDataContent = fs.existsSync(finalDataPath) ? fs.readFileSync(finalDataPath, 'utf8') : '';
+let descriptionMap = {};
+
+if (finalDataContent) {
+  const parsedFinal = papa.parse(finalDataContent, { header: true });
+  parsedFinal.data.forEach(row => {
+    if (row.artwork_title && row.description) {
+      // Create a lookup key based on normalized title or direct match logic
+      const key = row.artwork_title.trim().toLowerCase();
+      descriptionMap[key] = row.description;
+    }
+  });
+}
+
 papa.parse(csvFileContent, {
   header: true,
   complete: (results) => {
@@ -62,6 +78,22 @@ papa.parse(csvFileContent, {
       // Special case for Robert Indiana if needed, or fallback to Notes
       const bio = matchedBio || row['Notes:'] || row['Bio'] || '';
 
+      // Description matching from new CSV
+      // Try exact or normalized match
+      let finalDescription = row['Social Cause Description'] || '';
+      const lookupKey = title.trim().toLowerCase();
+
+      // Override if found in new CSV
+      if (descriptionMap[lookupKey]) {
+        finalDescription = descriptionMap[lookupKey];
+      } else {
+        // Try fuzzy match if exact fails (e.g. ignoring case or small punctuation)
+        const foundKey = Object.keys(descriptionMap).find(k => k.includes(lookupKey) || lookupKey.includes(k));
+        if (foundKey) {
+          finalDescription = descriptionMap[foundKey];
+        }
+      }
+
       const artist = {
         id: (index + 1).toString(),
         artist: {
@@ -73,7 +105,7 @@ papa.parse(csvFileContent, {
         },
         artwork: {
           title: row['Title of Work'] || '',
-          description: row['Social Cause Description'] || '', // Map Social Cause to description to ensure section appears
+          description: finalDescription, // Use integrated description
           medium: row['Medium'] || '',
           date: row['Date of Creation'] || '',
           location: row['Where Located in Indiana?'] || '',

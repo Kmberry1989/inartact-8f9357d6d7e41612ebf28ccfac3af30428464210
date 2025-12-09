@@ -170,7 +170,7 @@ export default function Home() {
       <Header hideNav={hideNav} />
       <main className="flex-1">
         <HeroParallax />
-        <CurrentEventsWidget />
+        {/* Widget moved to bottom */}
 
         <section id="directory-section" ref={directorySectionRef} className="py-12 md:py-20 bg-muted/20">
           <div className="container mx-auto px-4">
@@ -300,6 +300,8 @@ export default function Home() {
             )}
           </div>
         </section>
+
+        <CurrentEventsWidget />
       </main>
       <Footer />
     </div>

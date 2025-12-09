@@ -1,6 +1,17 @@
 [
   {
     "id": "news-0",
+    "title": "Indiana Art Association to hold annual art sale",
+    "date": "December 3, 2025",
+    "organization": "indianagazette.com",
+    "category": "News",
+    "summary": "Click to read full story.",
+    "imageUrl": "https://bloximages.newyork1.vip.townnews.com/indianagazette.com/content/tncms/assets/v3/editorial/0/4e/04e1f9a9-fb7e-5877-bcf1-8741ddee1697/629e9adf770f1.image.png?crop=335%2C335%2C58%2C0&resize=200%2C200&order=crop%2Cresize",
+    "link": "https://www.indianagazette.com/community/indiana-art-association-to-hold-annual-art-sale/article_3fe3e991-4cab-40cb-835d-b4e8f053e5f9.html",
+    "credit": "indianagazette.com"
+  },
+  {
+    "id": "news-1",
     "title": "The Best Arts And Entertainment Of 2025",
     "date": "December 2, 2025",
     "organization": "indianapolismonthly.com",
@@ -11,26 +22,15 @@
     "credit": "indianapolismonthly.com"
   },
   {
-    "id": "news-1",
-    "title": "PRESS RELEASE: Traditional Arts Indiana Celebrates Indiana Heritage Fellowship Winners, Apprenticeship Pairs",
-    "date": "September 24, 2024",
-    "organization": "idsnews.com",
-    "category": "News",
-    "summary": "Click to read full story.",
-    "imageUrl": "https://snworksceo.imgix.net/ids/8f0d55dc-ee79-4009-b531-157d4d352df4.sized-1000x1000.jpg?w=800&h=600",
-    "link": "https://www.idsnews.com/article/2024/09/pr-indiana-heritage-09-24-24",
-    "credit": "idsnews.com"
-  },
-  {
     "id": "news-2",
-    "title": "Traditional Arts Indiana honors artists celebrating Hoosier heritage",
-    "date": "October 10, 2024",
-    "organization": "idsnews.com",
+    "title": "IPS plans to use $1.2M from sale of paintings on arts education",
+    "date": "October 26, 2025",
+    "organization": "ibj.com",
     "category": "News",
     "summary": "Click to read full story.",
-    "imageUrl": "https://snworksceo.imgix.net/ids/56213ce1-0b96-4096-8ace-5d617edd3747.sized-1000x1000.png?w=800&h=600",
-    "link": "https://www.idsnews.com/article/2024/10/traditional-arts-indiana-awards-ceremony-2024",
-    "credit": "idsnews.com"
+    "imageUrl": "https://www.ibj.com/wp-content/uploads/2020/03/og-logo.jpg",
+    "link": "https://www.ibj.com/articles/ips-plans-to-use-1-2m-from-sale-of-paintings-on-arts-education",
+    "credit": "ibj.com"
   },
   {
     "id": "news-3",
@@ -45,28 +45,6 @@
   },
   {
     "id": "news-4",
-    "title": "Downtown Indiana to fill Saturday with annual Arts Walk, Spring Ladies Day Out",
-    "date": "April 28, 2025",
-    "organization": "indianagazette.com",
-    "category": "News",
-    "summary": "Click to read full story.",
-    "imageUrl": "https://bloximages.newyork1.vip.townnews.com/indianagazette.com/content/tncms/assets/v3/editorial/a/cf/acf7321b-e479-5aad-bf41-757647df12e5/662727d587bf9.image.jpg?crop=1745%2C916%2C0%2C135&resize=1200%2C630&order=crop%2Cresize",
-    "link": "https://www.indianagazette.com/news/downtown-indiana-to-fill-saturday-with-annual-arts-walk-spring-ladies-day-out/article_c298105c-2122-452a-a0ae-c01093210172.html",
-    "credit": "indianagazette.com"
-  },
-  {
-    "id": "news-5",
-    "title": "Indiana Art Association to hold annual art sale",
-    "date": "December 3, 2025",
-    "organization": "indianagazette.com",
-    "category": "News",
-    "summary": "Click to read full story.",
-    "imageUrl": "https://bloximages.newyork1.vip.townnews.com/indianagazette.com/content/tncms/assets/v3/editorial/0/4e/04e1f9a9-fb7e-5877-bcf1-8741ddee1697/629e9adf770f1.image.png?crop=335%2C335%2C58%2C0&resize=200%2C200&order=crop%2Cresize",
-    "link": "https://www.indianagazette.com/community/indiana-art-association-to-hold-annual-art-sale/article_3fe3e991-4cab-40cb-835d-b4e8f053e5f9.html",
-    "credit": "indianagazette.com"
-  },
-  {
-    "id": "news-6",
     "title": "40 northeast Indiana arts organizations, projects receive more than $284,000 in grants",
     "date": "September 23, 2025",
     "organization": "journalgazette.net",
@@ -77,14 +55,14 @@
     "credit": "journalgazette.net"
   },
   {
-    "id": "news-7",
-    "title": "Arts Illiana announces smallART 2024 Exhibition",
-    "date": "November 11, 2024",
-    "organization": "yahoo.com",
+    "id": "news-5",
+    "title": "Downtown Indiana to fill Saturday with annual Arts Walk, Spring Ladies Day Out",
+    "date": "April 28, 2025",
+    "organization": "indianagazette.com",
     "category": "News",
     "summary": "Click to read full story.",
-    "imageUrl": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-    "link": "https://www.yahoo.com/lifestyle/arts-illiana-announces-smallart-2024-045900821.html",
-    "credit": "yahoo.com"
+    "imageUrl": "https://bloximages.newyork1.vip.townnews.com/indianagazette.com/content/tncms/assets/v3/editorial/a/cf/acf7321b-e479-5aad-bf41-757647df12e5/662727d587bf9.image.jpg?crop=1745%2C916%2C0%2C135&resize=1200%2C630&order=crop%2Cresize",
+    "link": "https://www.indianagazette.com/news/downtown-indiana-to-fill-saturday-with-annual-arts-walk-spring-ladies-day-out/article_c298105c-2122-452a-a0ae-c01093210172.html",
+    "credit": "indianagazette.com"
   }
 ]

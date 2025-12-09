@@ -28,7 +28,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Black Lives Matter Street Mural",
-      "description": "Racial Justice / BLM",
+      "description": "A massive street mural where each of the 18 artists was assigned one letter of the phrase 'Black Lives Matter.' The mural is a vibrant affirmation of Black life and culture, located on a street with deep historical significance to Indianapolis's Black community.",
       "medium": "Street Paint",
       "date": "Aug. 2020",
       "location": "Indianapolis (Indiana Avenue)",
@@ -51,7 +51,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "We the People (Part of Murals for Racial Justice)",
-      "description": "Civil Rights / Police Brutality",
+      "description": "Part of the 'Murals for Racial Justice', this panel depicts a diverse group of protesters demanding justice. The work contrasts the constitutional ideal of 'We the People' with the reality of police brutality and systemic inequality faced by marginalized communities.",
       "medium": "Acrylic / Spray Paint",
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: 32 E. Washington; Archived: Ind. State Museum)",
@@ -75,7 +75,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Blkkk Lives Don't Matter (Part of Murals for Racial Justice)",
-      "description": "Racial Justice",
+      "description": "A powerful, eight-panel work created on boarded-up windows during the 2020 protests. The provocative title and imagery serve as a direct confrontation of the violence against Black bodies, challenging the viewer to acknowledge the disparity in how lives are valued.",
       "medium": "Acrylic",
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: Downtown; Archived: Ind. State Museum/Library)",
@@ -98,7 +98,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "American Duality (Part of Art & Activism exhibit)",
-      "description": "Racial Justice / Police Brutality",
+      "description": "This piece explores the split experience of American life, highlighting the stark differences in safety, policing, and opportunity faced by Black Americans versus their white counterparts.",
       "medium": "Acrylic",
       "date": "Aug. 2020",
       "location": "Indianapolis (Orig: 140 W. Washington; Archived: Ind. State Museum)",
@@ -121,7 +121,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "E Pluribus Unum",
-      "description": "Social Justice (Representation)",
+      "description": "This controversial project proposed remixing the Soldiers' and Sailors' Monument by isolating the sole African American figure (a formerly enslaved man) and elevating him on a new pedestal holding a flag of the African diaspora. The project was cancelled due to public controversy.",
       "medium": "Sculpture (Digital Model)",
       "date": "2007–2011 (Cancelled)",
       "location": "Indianapolis (Proposed for Cultural Trail; Cancelled)",
@@ -144,7 +144,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Social Alchemy ",
-      "description": "Community Building / Utopia",
+      "description": "Social Alchemy' is a multi-year project exploring the concepts of utopia and dystopia, drawing inspiration from New Harmony, Indiana. It uses art, radio, and design to facilitate social connection and reimagine how communities can live better together.",
       "medium": "Social Practice",
       "date": "2005–Present",
       "location": "Indianapolis (Tube Factory / Garfield Park)",
@@ -167,7 +167,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Founding the Art Association of Indianapolis",
-      "description": "Women's Suffrage / Education",
+      "description": "While not a visual artwork, her 'work' was the creation of the institutions themselves. She leveraged her influence to create spaces where women could organize, learn, and engage with the arts, laying the cultural foundation of Indianapolis.",
       "medium": "Civic Leadership",
       "date": "1883",
       "location": "Indianapolis (Art Association / Herron / Newfields)",
@@ -191,7 +191,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "McMillen Park Basketball Court Murals",
-      "description": "Racial Justice / Community",
+      "description": "A massive, vibrant mural painted directly onto the basketball courts of McMillen Park. The project revitalized a gray, neglected space into a colorful destination, celebrating Black culture and providing a beautiful, dignified space for youth recreation.",
       "medium": "Mural / Court Paint",
       "date": "Oct. 2020",
       "location": "Fort Wayne (McMillen Park)",
@@ -214,7 +214,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Faces of the Fort: Southeast Mural",
-      "description": "Civil Rights / Immigrant Rights",
+      "description": "This mural honors local figures Irene Paxia, who supports refugees, and William E. Warfield, a historic Black real estate investor. It celebrates the contributions of immigrants and Black leaders to the fabric of Fort Wayne.",
       "medium": "Acrylic Mural",
       "date": "June 2021",
       "location": "Fort Wayne (4335 S. Anthony Blvd)",
@@ -237,7 +237,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Faces of the Fort: Northeast Mural",
-      "description": "Inclusion / Community",
+      "description": "The mural depicts Glynn Hines, a long-time advocate for racial justice, and Genevieve Meyer, a crusader against child marriage in Indiana. It highlights the ongoing fight for legislative and social protection of vulnerable groups.",
       "medium": "Acrylic Mural",
       "date": "June 2021",
       "location": "Fort Wayne (1514 St. Joseph Blvd)",
@@ -260,7 +260,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Faces of the Fort: Southwest Mural",
-      "description": "Breaking Barriers / Justice",
+      "description": "A tribute to diverse local leaders who have shaped the community's history. The mural serves as a visual history lesson, ensuring that the contributions of civil rights leaders and community builders are not forgotten.",
       "medium": "Acrylic Mural",
       "date": "June 2021",
       "location": "Fort Wayne (1818 Bluffton Road)",
@@ -283,7 +283,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "The Confederacy: Mississippi",
-      "description": "Civil Rights",
+      "description": "Part of his 'Confederacy' series, this work is a blunt critique of Southern racism during the Civil Rights era. It features a map of Mississippi and references the 1964 murders of civil rights workers, condemning the state's violent resistance to justice.",
       "medium": "Oil",
       "date": "May 1905",
       "location": "Various Collections (e.g., Miami Univ. Art Museum)",
@@ -306,7 +306,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "HOPE ",
-      "description": "Political Change (Hope)",
+      "description": "Created for Barack Obama's 2008 presidential campaign, the 'HOPE' sculpture utilizes Indiana's signature stacked typography. Proceeds from the print sales were donated to the campaign, marking a direct intersection of Pop Art and political activism.",
       "medium": "Polychrome Aluminum",
       "date": "2008",
       "location": "Various Public Plazas (NYC, etc.)",
@@ -329,7 +329,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Poplar Trees (Diptych)",
-      "description": "Institutional Racism / Justice",
+      "description": "A diptych made from the skins of deconstructed books. The title references the song 'Strange Fruit' and the history of lynching (poplar trees), using the medium itself to critique how history and law have been used to oppress rather than protect.",
       "medium": "Deconstructed Books",
       "date": "July 1905",
       "location": "Indianapolis (Newfields / Eskenazi Museum)",
@@ -352,7 +352,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "McDoel Blooms",
-      "description": "Community Connection",
+      "description": "A street mural project designed to calm traffic and beautify the McDoel Gardens neighborhood. The design features native flora and garden imagery, reflecting the neighborhood's history and the shared values of its residents.",
       "medium": "Street Mural",
       "date": "2025 (Upcoming)",
       "location": "Bloomington (Allen & Fairview Streets)",
@@ -376,7 +376,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Together",
-      "description": "Women's Suffrage / Unity",
+      "description": "Commissioned for the 19th Amendment Centennial, this quilt commemorates the suffrage movement while explicitly acknowledging the racial divide within it. It honors the women of color whose fight for voting rights continued long after 1920.",
       "medium": "Quilt (Embroidery/Screenprint)",
       "date": "",
       "location": "Indianapolis (Indiana Statehouse)",
@@ -399,7 +399,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "nINeteenth",
-      "description": "Women's Suffrage",
+      "description": "A celebratory painting depicting women triumphantly casting their first votes. Nower integrated the names of prominent Indiana suffragists into the clothing of the figures, turning the painting into a historical document of the movement's leaders.",
       "medium": "Acrylic / Mural",
       "date": "",
       "location": "Indianapolis (Indiana Statehouse)",
@@ -422,7 +422,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Her Flag (Indiana Stripe)",
-      "description": "Women's Suffrage",
+      "description": "Created as Indiana's contribution to the national 'Her Flag' collaborative project. The stripe illustrates key Hoosier suffragists, visually weaving Indiana's specific history into the larger national tapestry of the 19th Amendment ratification.",
       "medium": "Mixed Media / Textile",
       "date": "2020",
       "location": "Various (Travels Nationally)",
@@ -468,7 +468,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Walk the Willow Sculptures",
-      "description": "Environmental Connection",
+      "description": "Whimsical, large-scale woven sculptures (often figures or structures) that demonstrate how public art can be created with a zero-waste footprint. Their work emphasizes the beauty of natural, renewable materials.",
       "medium": "Willow Branches / Sculpture",
       "date": "Ongoing",
       "location": "Various (Nature Parks)",
@@ -515,7 +515,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "\"Hope & Loss — A Border Elegy\" (Exhibition)",
-      "description": "Immigration Rights",
+      "description": "Created for Barack Obama's 2008 presidential campaign, the 'HOPE' sculpture utilizes Indiana's signature stacked typography. Proceeds from the print sales were donated to the campaign, marking a direct intersection of Pop Art and political activism.",
       "medium": "Papel Picado (Cut Paper)",
       "date": "2019",
       "location": "Indianapolis (Cultural Trail/Airport)",
@@ -539,7 +539,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Mother & Child / Breathe",
-      "description": "Multiculturalism / Migration",
+      "description": "An installation that mimics the rhythm of breathing, connecting the viewer to the biological rhythms of life and subtly advocating for mindfulness and environmental awareness.",
       "medium": "Mixed Media",
       "date": "Contemporary",
       "location": "Indianapolis",
@@ -609,7 +609,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "The Mother of Us All",
-      "description": "Women's Suffrage",
+      "description": "Indiana created the set design and costumes for the Virgil Thomson/Gertrude Stein opera 'The Mother of Us All', which chronicles the life of Susan B. Anthony. His pop-art aesthetic brought a modern, graphic energy to the story of the suffrage movement.",
       "medium": "Lithography / Set Design",
       "date": "1967 / 1976",
       "location": "Various Collections",
@@ -633,7 +633,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Written in Memory",
-      "description": "Social Justice / Holocaust Memory",
+      "description": "This series documents the stories of Holocaust survivors. By combining portraits with the survivors' own written memories, Wolin ensures these personal histories are preserved and witnesses to the atrocities of the past are honored.",
       "medium": "Photography with Text",
       "date": "1990s",
       "location": "Bloomington (IU / Various)",
@@ -913,7 +913,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Led the The Lynch Quilts Project (Quilt I: Her Name Was Laura Nelson)",
-      "description": "Racial Justice / History",
+      "description": "A community-based quilting project that explores the history and legacy of lynching in America. By using the comforting medium of quilting to address horrific violence, Storm fosters communal healing and historical reckoning.",
       "medium": "Quilting / Community Art",
       "date": "Ongoing (Since 2000s)",
       "location": "Indianapolis",
@@ -937,7 +937,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Intersections",
-      "description": "Gender & Cultural Intersectionality",
+      "description": "A laser-cut cube suspended from the ceiling with a single light source, casting intricate shadows that cover the entire room. The work creates a shared space where no one is excluded, challenging the gender-based exclusion she experienced in Pakistan.",
       "medium": "Laser-cut Steel / Light / Shadow",
       "date": "2014",
       "location": "Indianapolis / Global",
@@ -1009,7 +1009,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "House of the Singing Winds",
-      "description": "Nature Conservation",
+      "description": "Steele's home and studio in Brown County. His landscapes celebrated the beauty of the Indiana wilderness, playing a crucial role in the state's early conservation movement and the eventual establishment of Brown County State Park.",
       "medium": "Oil Painting",
       "date": "Late 1800s/Early 1900s",
       "location": "Brown County (Historic Site)",
@@ -1033,7 +1033,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "US",
-      "description": "Community Arts",
+      "description": "This controversial project proposed remixing the Soldiers' and Sailors' Monument by isolating the sole African American figure (a formerly enslaved man) and elevating him on a new pedestal holding a flag of the African diaspora. The project was cancelled due to public controversy.",
       "medium": "Mixed Media",
       "date": "Contemporary",
       "location": "Indianapolis",
@@ -1439,7 +1439,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "I Can't Breathe",
-      "description": "Racial Justice",
+      "description": "An installation that mimics the rhythm of breathing, connecting the viewer to the biological rhythms of life and subtly advocating for mindfulness and environmental awareness.",
       "medium": "Mural",
       "date": "2024",
       "location": "Indianapolis (38th & College)",
@@ -1678,7 +1678,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "NDY",
-      "description": "LGBTQ+ ",
+      "description": "Community-led design projects that transform vacant lots into parks and green spaces. Her work treats the landscape itself as a medium for social justice and equity.",
       "medium": "Sculpture / Fabrication",
       "date": "Ongoing",
       "location": "Indianapolis",
@@ -1726,7 +1726,7 @@ export const artists: Artist[] = [
     },
     "artwork": {
       "title": "Hope Skip and Jump",
-      "description": "Black Experience / Family",
+      "description": "A mixed-media collage work located at Eskenazi Health. The piece captures the energy and optimism of childhood, using layered paper and bright colors to convey a narrative of hope and the importance of play in community health.",
       "medium": "Collage / Mixed Media",
       "date": "2012",
       "location": "Indianapolis (Eskenazi Health)",
