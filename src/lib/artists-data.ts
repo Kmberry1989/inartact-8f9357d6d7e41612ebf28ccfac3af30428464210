@@ -20,7 +20,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "The Eighteen Art Collective",
       "isAlive": true,
-      "bio": "",
+      "bio": "The Eighteen Art Collective is a group of 18 Indianapolis-based Black artists who came together in 2020 to paint the 'Black Lives Matter' mural on Indiana Avenue. They have since formalized as a collective to advocate for equity, civic engagement, and the support of Black creatives in the city.",
       "website": "18artcollective.com",
       "social_media": [
         "IG: @thexviii"
@@ -43,7 +43,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Gary Gee",
       "isAlive": true,
-      "bio": "",
+      "bio": "Gary Gee is a multidisciplinary artist from Indianapolis who bridges the gap between street art and fine art. His work often incorporates ceramics, mixed media, and bold graphic styles to explore themes of urban life, hip-hop culture, and social justice.",
       "website": "artbygarygee.com",
       "social_media": [
         "IG: @originalgarygee"
@@ -67,7 +67,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Mechi Shakur (Demetrius Green)",
       "isAlive": true,
-      "bio": "",
+      "bio": "Mechi Shakur (Demetrius Green) is a self-taught visual artist whose work is characterized by raw emotion and intense social commentary. He often uses his art to challenge comfort zones and confront viewers with the harsh realities of racial violence and systemic oppression.",
       "website": "ganggangculture.com/artists/mechi-shakur",
       "social_media": [
         "IG: @mechishakur"
@@ -90,7 +90,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Israel Solomon",
       "isAlive": true,
-      "bio": "",
+      "bio": "Israel Solomon is a visual artist and educator known for his geometric, cubist-inspired style and vibrant use of color. His work frequently focuses on community, family, and the Black experience, often creating portraits that elevate everyday people to icons.",
       "website": "israelsolomonart.com",
       "social_media": [
         "IG: @israelsoloart"
@@ -113,7 +113,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Fred Wilson",
       "isAlive": true,
-      "bio": "",
+      "bio": "Fred Wilson is a world-renowned conceptual artist known for his practice of 'mining the museum,' where he rearranges and recontextualizes objects to reveal hidden histories of racism and exclusion. He represented the U.S. at the Venice Biennale in 2003.",
       "website": "pacegallery.com/artists/fred-wilson",
       "social_media": [
         "N/A (See Pace Gallery: @pacegallery)"
@@ -159,7 +159,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "May Wright Sewall",
       "isAlive": false,
-      "bio": "",
+      "bio": "May Wright Sewall was a legendary suffragist, educator, and peace activist. A close ally of Susan B. Anthony, she believed that access to culture and education was essential for women's liberation, leading her to found the Art Association (now Newfields) and the Propylaeum.",
       "website": "N/A (Historical figure, died 1920. Bio at in.gov is appropriate)**",
       "social_media": [
         "N/A (See @thepropylaeum for her legacy)"
@@ -183,7 +183,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Andre Portee (AbsorbALL)",
       "isAlive": true,
-      "bio": "",
+      "bio": "Andre Portee is a Fort Wayne-based creative and the founder of AbsorbALL. He focuses on using art as a tool for community revitalization, specifically targeting public spaces in underserved neighborhoods to instill pride and ownership.",
       "website": "andreportee.com",
       "social_media": [
         "IG: @absorball (Project) & @bodrega (Personal)"
@@ -206,7 +206,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kacy Jackson",
       "isAlive": true,
-      "bio": "",
+      "bio": "Kacy Jackson, founder of 'The Art of Kacy', is a muralist known for his photorealistic portraits and ability to capture the human spirit. His work is dedicated to storytelling and uplifting community heroes through large-scale public art.",
       "website": "theartofkacy.com",
       "social_media": [
         "IG: @theartofkacy"
@@ -229,7 +229,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Benjamin Duke",
       "isAlive": true,
-      "bio": "",
+      "bio": "Benjamin Duke is a painter and professor at Michigan State University. His studio work often involves complex, figurative narratives, which translates into his murals as dynamic, multi-layered compositions that tackle history and social justice.",
       "website": "bendukeart.com",
       "social_media": [
         "IG: @4th_culture_art"
@@ -252,7 +252,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Mitchell Egly",
       "isAlive": true,
-      "bio": "",
+      "bio": "Mitchell Egly is a Fort Wayne native and artist who specializes in large-scale public works that engage with local history. He returned to his hometown to contribute to its artistic renaissance, focusing on themes of civic pride and history.",
       "website": "mitchellegly.art",
       "social_media": [
         "IG: @eglyillo"
@@ -321,7 +321,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Samuel Levi Jones",
       "isAlive": true,
-      "bio": "",
+      "bio": "Samuel Levi Jones is an artist who challenges the authority of established history by physically deconstructing institutional materials like encyclopedias and law books. He strips the covers and reassembles them into abstract grids, visually dismantling the systems that have historically excluded marginalized voices.",
       "website": "samuellevijones.com",
       "social_media": [
         "@samuellevijones"
@@ -344,7 +344,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Rachel Kavathe",
       "isAlive": true,
-      "bio": "",
+      "bio": "Rachel Kavathe is an artist and landscape architect whose work lies at the intersection of nature, community, and urban design. She creates site-specific installations that highlight the identity of neighborhoods and the natural ecosystems they inhabit.",
       "website": "rachelkavathe.com",
       "social_media": [
         "@rachelkavathe_studio"
@@ -368,7 +368,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kassie Woodworth",
       "isAlive": true,
-      "bio": "",
+      "bio": "Kassie Woodworth is an Indianapolis-based sculptor and fiber artist. Her work often utilizes traditional 'domestic' crafts like quilting and embroidery to elevate women's history and explore themes of labor, memory, and social connectivity.",
       "website": "kassiewoodworth.com",
       "social_media": [
         "@kassiewoodworth"
@@ -391,7 +391,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Shelby Nower",
       "isAlive": true,
-      "bio": "",
+      "bio": "Shelby Nower is a fine artist and muralist from Decatur, Indiana. She is known for her colorful, illustrative style and character-driven works that often bring historical figures or community narratives to life.",
       "website": "shelbynower.com",
       "social_media": [
         "@shelbynower"
@@ -414,7 +414,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Bonnie Fillenwarth",
       "isAlive": true,
-      "bio": "",
+      "bio": "Bonnie Fillenwarth is an Indiana artist who works in painting and mixed media. She is deeply interested in women's history and uses her art to tell the stories of forgotten or underappreciated female figures.",
       "website": "bonniefillenwarth.com",
       "social_media": [
         "@bonniefillenwarth"
@@ -483,7 +483,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Angelica Frausto (Nerdy Brown Kid)",
       "isAlive": true,
-      "bio": "Justice for Migrant Communities",
+      "bio": "Angelica Frausto, known as 'Nerdy Brown Kid,' is a Xicana artist and social scientist. Her work is deeply rooted in the experiences of women of color and immigrants, often serving as visual advocacy for the abolition of immigration detention.",
       "website": "nerdybrownkid.com",
       "social_media": [
         "@nerdybrownkid"
@@ -507,7 +507,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Beatriz Vasquez",
       "isAlive": true,
-      "bio": "In this body of work, she used her papel picado (cut paper) technique to depict ICE detention centers and the border wall.",
+      "bio": "Beatriz Vasquez is a Mexican-American 'artivist' who specializes in papel picado (cut paper). She transforms this delicate folk art tradition into large-scale, political statements about border culture, human rights, and the realities of the immigrant experience.",
       "website": "beatrizvasquezart.com",
       "social_media": [
         "@beatrizvasquezart"
@@ -531,7 +531,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Nasreen Khan",
       "isAlive": true,
-      "bio": "",
+      "bio": "Nasreen Khan is a queer, biracial, immigrant artist and writer. Living in the Haughville neighborhood, she uses art to explore 'the margins'—of race, gender, and geography—often using scavenged urban wood to highlight the resilience of nature in the city.",
       "website": "nasreen-khan.com",
       "social_media": [
         "@nasreenkhanart"
@@ -601,7 +601,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Robert Indiana",
       "isAlive": false,
-      "bio": "The opera itself centers on women’s suffrage via Susan B. Anthony, and Indiana’s designs visually amplify that political history. The most blunt proof is that his design materials include a scene explicitly titled “Women of America Want To Vote” with women carrying “Vote” signs.",
+      "bio": "Robert Indiana was a preeminent figure in the Pop Art movement, best known for his iconic 'LOVE' series. Born in Indiana, his work often used bold text and hard-edge painting to critique American politics, identity, and the deceptive nature of the 'American Dream'.",
       "website": "robertindiana.com",
       "social_media": [
         "@robertindiana"
@@ -625,7 +625,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Jeffrey A. Wolin",
       "isAlive": true,
-      "bio": "Holocaust memory / anti-erasure activism.",
+      "bio": "Jeffrey A. Wolin is a photographer and professor known for his unique combination of portraiture and hand-written text. His work gives voice to his subjects, allowing them to write their own stories directly onto the photographic prints.",
       "website": "jeffreywolin.com",
       "social_media": [
         "N/A"
@@ -649,7 +649,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kevin West",
       "isAlive": true,
-      "bio": "",
+      "bio": "Kevin West is a founding member of the Eighteen Art Collective. His vibrant, often abstract portraits focus on Black identity and strength, contributing to the cultural revitalization of Indiana Avenue.",
       "website": "artlafayette.org",
       "social_media": [
         "@kevinwestart"
@@ -672,7 +672,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "John G. Moore",
       "isAlive": true,
-      "bio": "",
+      "bio": "John G. Moore, known as 'The Jas,' is an artist and preacher whose work often blends spiritual themes with social commentary. He is a member of the Eighteen Art Collective and uses his art to uplift the Black community.",
       "website": "blcklst.com",
       "social_media": [
         "@johngmoorejr"
@@ -695,7 +695,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Ess McKee",
       "isAlive": true,
-      "bio": "",
+      "bio": "Ess McKee is a multimedia artist and member of the Eighteen Art Collective. Her work often incorporates hip-hop culture and graphic design elements to challenge stereotypes and celebrate Black creativity.",
       "website": "ganggangculture.com",
       "social_media": [
         "@essmckee"
@@ -718,7 +718,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Wavy Blayne",
       "isAlive": true,
-      "bio": "",
+      "bio": "Wavy Blayne is a visual artist known for his graffiti-inspired style. As part of the Eighteen Art Collective, his work brings a raw, street-level energy to the conversation about racial justice in Indianapolis.",
       "website": "18artcollective.com",
       "social_media": [
         "@wavyblayne"
@@ -741,7 +741,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Harriet Watson",
       "isAlive": true,
-      "bio": "",
+      "bio": "Harriet Watson is an artist and educator whose work often features portraiture and historical themes. A member of the Eighteen Art Collective, she uses art to teach and preserve Black history.",
       "website": "harrietwatsonart.com",
       "social_media": [
         "@harrietwatsonart"
@@ -764,7 +764,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Deonna Craig",
       "isAlive": true,
-      "bio": "",
+      "bio": "Deonna Craig is an Indianapolis-based artist and entrepreneur. Her vibrant, expressive works often focus on Black womanhood and community empowerment. She is a key member of the Eighteen Art Collective.",
       "website": "deonnacraigart.com",
       "social_media": [
         "@deonna_craig"
@@ -787,7 +787,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Danicia Monét (Danicia Malone)",
       "isAlive": true,
-      "bio": "",
+      "bio": "Danicia Monét is an arts administrator, planner, and artist. Her work focuses on the intersection of art, urban planning, and equity, using creativity to redesign public spaces for marginalized communities.",
       "website": "https://indianahumanities.org/danicia-monet-malone/",
       "social_media": [
         "@daniciamonet"
@@ -811,7 +811,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Dr. Jarrod Dortch",
       "isAlive": false,
-      "bio": "",
+      "bio": "Dr. Jarrod Dortch is an artist, professor, and urban farmer. He combines his passion for agriculture with visual art to address food deserts and environmental justice in Black communities.",
       "website": "digitaleducationhub.community",
       "social_media": [
         "@solfulgardens"
@@ -835,7 +835,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Matthew Cooper",
       "isAlive": true,
-      "bio": "",
+      "bio": "Matthew Cooper is a muralist whose work often features bold typography and graphic elements. A member of the Eighteen Art Collective, he uses his skills to broadcast messages of solidarity and strength.",
       "website": "debutart.com (Rep)",
       "social_media": [
         "N/A"
@@ -859,7 +859,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Amiah Mims",
       "isAlive": true,
-      "bio": "",
+      "bio": "Amiah Mims is a graphic designer and muralist. Her work is characterized by fluid lines and organic shapes, often depicting Black figures in states of grace and power.",
       "website": "worksbymimsy.com",
       "social_media": [
         "@worksbymimsy"
@@ -882,7 +882,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Rebecca Robinson",
       "isAlive": true,
-      "bio": "",
+      "bio": "Rebecca Robinson is a mixed-media artist known for using unconventional materials like cement and tar. Her work 'Concrete Jungle' explores the harsh realities of urban life while finding beauty in resilience.",
       "website": "psnob.com",
       "social_media": [
         "@psnob"
@@ -905,7 +905,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "LaShawnda Crowe Storm",
       "isAlive": true,
-      "bio": "They are Co-Founder of The RECLAIM Project with Phyllis Boyd.",
+      "bio": "LaShawnda Crowe Storm is a mixed media artist, activist, and community organizer. Her work creates spaces for dialogue around difficult topics like racial violence and gender justice.",
       "website": "lashawndacrowestorm.com",
       "social_media": [
         "@lashawndacrowestorm"
@@ -929,7 +929,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Anila Quayyum Agha",
       "isAlive": true,
-      "bio": "Co-exsistance in sacred spaces",
+      "bio": "Anila Quayyum Agha is a Pakistani-American artist based in Indianapolis. Her large-scale light installations explore themes of gender, exclusion, and cultural intersectionality, drawing from Islamic architectural motifs.",
       "website": "anilaagha.com",
       "social_media": [
         "@anila_quayyum_agha"
@@ -953,7 +953,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Mari Evans",
       "isAlive": false,
-      "bio": "Also started the show \"The Black Experiance\" ",
+      "bio": "Mari Evans was a poet, writer, and activist associated with the Black Arts Movement. While primarily a writer, her image and words have been immortalized in public art across Indianapolis, serving as a visual conscience for the city.",
       "website": "marievans.org (Archived)",
       "social_media": [
         "N/A"
@@ -977,7 +977,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Etheridge Knight",
       "isAlive": false,
-      "bio": "Humanizing Inmates was his key activism ",
+      "bio": "Etheridge Knight was a major African American poet who began writing while incarcerated at the Indiana State Prison. His work addressed the brutality of the prison system and the realities of Black life in America.",
       "website": "poetryfoundation.org",
       "social_media": [
         "N/A"
@@ -1049,7 +1049,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Boxx the Artist",
       "isAlive": true,
-      "bio": "social activist for black women leaders that are dark skinned",
+      "bio": "Boxx the Artist is a visual artist and community leader. Her work focuses on community engagement, mental health awareness, and creating safe spaces for creative expression in Indianapolis.",
       "website": "ganggangculture.com/artists/bbox",
       "social_media": [
         "@boxxtheartist"
@@ -1073,7 +1073,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Shamira Wilson",
       "isAlive": true,
-      "bio": "Her activism isn't just in the painting; it is in the process. She manages a research plot at White River State Park where she grows over 140 Okra plants.The \"Closed Loop\": She doesn't just buy canvas and paint: She harvests the fiber from the Okra stalks to weave her own textiles. She uses the flowers to make her own dyes/pigments. She saves the seeds to give away to the community. Why it's Impactful: This is Environmental Justice. In a world of fast fashion and toxic art materials, she is proving that an artist can be self-sustaining. She is modeling a \"non-extractive\" relationship with the earth.",
+      "bio": "Shamira Wilson is an interdisciplinary visual artist. Her work explores ethnobotany and the relationship between humans and the environment, advocating for a more sustainable and connected way of living.",
       "website": "shamirawilson.com",
       "social_media": [
         "@shamirawilson"
@@ -1097,7 +1097,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Brose Partington",
       "isAlive": true,
-      "bio": "This piece was part of a specific campaign (\"The Public Collection\") to eradicate \"book deserts\" in Indianapolis. It didn't just complain about lack of access to education; it fixed it by distributing free books to thousands of people.",
+      "bio": "Brose Partington creates kinetic sculptures that often deal with themes of surveillance, consumerism, and the precariousness of modern life. His work moves and interacts with the viewer, creating a physical dialogue about control.",
       "website": "brosepartington.com",
       "social_media": [
         "@brosepartington"
@@ -1121,7 +1121,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Tiffany Black",
       "isAlive": true,
-      "bio": "The date \"August 15\" is painted in the center of the mural. For the world, that date was just a headline. For the people painting it, it was the day their lives ended and restarted. The mural serves as a primary historical document created by the witnesses themselves, ensuring their story wasn't erased or rewritten by American media.",
+      "bio": "Tiffany Black is a muralist and community artist. She specializes in collaborative mural projects that involve local residents in the design and painting process, ensuring the art reflects the people who live there.",
       "website": "tblack.co",
       "social_media": [
         "@tiffanyblackart"
@@ -1169,7 +1169,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Mary Miss",
       "isAlive": true,
-      "bio": "it argued that \"nature is essential infrastructure.\" It helped pave the way for current efforts in Indianapolis to clean up and redevelop the White River.",
+      "bio": "Mary Miss is a pioneer of environmental art. While based in NY, her project 'City Goes to the Water' in Indianapolis was a landmark effort to reconnect the city to its waterways, advocating for water access and ecology.",
       "website": "",
       "social_media": [
         "@cityaslivinglab"
@@ -1193,7 +1193,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Shawn Michael Warren",
       "isAlive": true,
-      "bio": "restorative justice",
+      "bio": "Shawn Michael Warren is a painter and muralist known for his hyper-realistic historical narratives. He uses his art to correct historical omissions, painting Black figures into the prominence they deserve.",
       "website": "shawnmichaelwarren.com",
       "social_media": [
         "@shawnmichaelwarren"
@@ -1217,7 +1217,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Pamela Bliss",
       "isAlive": true,
-      "bio": "Pamela has many important murals. This is the best example of activism. Key to do fight against black history earasure",
+      "bio": "Pamela Bliss is one of Indianapolis's most prolific muralists. Her work often focuses on local icons and jazz history, preserving the cultural memory of the city's musical heritage.",
       "website": "pamelabliss.gallery",
       "social_media": [
         "FB: Pamela Bliss"
@@ -1241,7 +1241,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "D. Del Reverda-Jennings",
       "isAlive": true,
-      "bio": "D. Del Reverda-Jennings’ activism is Structural.She built a pipeline (FLAVA FRESH !) to ensure that hundreds of other artists could follow her.",
+      "bio": "D. Del Reverda-Jennings is a self-taught artist, curator, and author. Her abstract and symbolic work explores African and Caribbean spirituality and the Black female experience.",
       "website": "indyarts.org/artist/d-del-reverda-jennings",
       "social_media": [
         "@ddelreverdajennings"
@@ -1265,7 +1265,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Lobyn Hamilton (Walter “Lobyn” Hamilton)",
       "isAlive": true,
-      "bio": "Based on your interest in how art can be used to build actual infrastructure for a community (like Phyllis Boyd's parks or Lobyn Hamilton's real estate), the \"top form\" of art activism that Lobyn Hamilton practices is Social Practice Art—specifically a project called the B-SIDE Creative Campus. While he is famous for his vinyl portraits, he considers his real estate development to be an extension of his art practice. Here is the breakdown of his \"top form\" (the campus) and his \"top piece\" (the exhibition that defines his philosophy). 1. The \"Top Form\" of Activism: B-SIDE Creative Campus What it is: This is not a painting or a sculpture; it is a neighborhood revitalization project in the Brookside area of Indianapolis (where Hamilton grew up). The Activist Act: Hamilton buys blighted, abandoned properties (like old churches or storefronts) and renovates them into subsidized live/work studios for other artists. Why it is Activism: This is Anti-Gentrification Activism. The Problem: Usually, when artists make a neighborhood \"cool,\" developers move in, raise the rent, and kick the artists out. The Solution: By owning the land and controlling the rent, Hamilton creates a \"safe zone\" (what he calls \"Creative Care\") where local Black artists can afford to stay and build wealth in their own community. He is using art proceeds to buy back the block.",
+      "bio": "Lobyn Hamilton creates art using crushed vinyl records. His portraits of musical icons address themes of cultural memory, the music industry, and the recycling of culture.",
       "website": "lobynhamilton.com",
       "social_media": [
         "@lobynhamilton"
@@ -1289,7 +1289,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kyng Rhodes (Nathaniel Rhodes)",
       "isAlive": true,
-      "bio": "",
+      "bio": "Kyng Rhodes is a young artist and muralist. His work addresses contemporary social issues like gun violence and racial equity through a bold, illustrative style.",
       "website": "kyngrhodes.com",
       "social_media": [
         "@kyngrhodes"
@@ -1312,7 +1312,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Phyllis Boyd",
       "isAlive": true,
-      "bio": "",
+      "bio": "Phyllis Boyd is a landscape architect and artist, currently leading Indy Parks. Her career has been defined by using design to address environmental racism and lack of green space in urban neighborhoods.",
       "website": "ganggangculture.com/artists/phyllis-viola-boyd",
       "social_media": [
         "@phyllisviolaboyd"
@@ -1336,7 +1336,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kevin Wilson",
       "isAlive": true,
-      "bio": "",
+      "bio": "Kevin Wilson is a muralist whose work often focuses on community pride and local history. He uses public art to beautify neglected spaces and instill a sense of ownership in residents.",
       "website": "saatchiart.com/kevinjameswilson",
       "social_media": [
         "Kevin James Wilson"
@@ -1384,7 +1384,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Fingers (Graffiti Artist)",
       "isAlive": true,
-      "bio": "",
+      "bio": "Fingers is a legendary graffiti artist in Indianapolis. His work challenges the legal boundaries of art, reclaiming public space and questioning who has the right to author the city's visual landscape.",
       "website": "N/A",
       "social_media": [
         "@fingercreations"
@@ -1407,7 +1407,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Cierra Johnson",
       "isAlive": true,
-      "bio": "",
+      "bio": "Cierra Johnson is a visual artist whose work explores identity and self-perception. She often uses vibrant colors and surreal imagery to depict the internal worlds of her subjects.",
       "website": "cjcrtv.com",
       "social_media": [
         "@cjcrtv"
@@ -1431,7 +1431,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Kwazar Martin",
       "isAlive": true,
-      "bio": "",
+      "bio": "Kwazar Martin is a painter and muralist. His work often features realistic portraits of Black figures, celebrating their beauty and dignity in a society that often undervalues them.",
       "website": "kwazarmartinart.com",
       "social_media": [
         "@kwazarmartin"
@@ -1478,7 +1478,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Lisa Sears",
       "isAlive": true,
-      "bio": "",
+      "bio": "Lisa Sears is a painter and muralist. Her work often features botanical themes, advocating for the preservation of nature and bringing the calming influence of plants into the city.",
       "website": "lisasearsart.com",
       "social_media": [
         "@lisasearsart"
@@ -1502,7 +1502,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Megan Jefferson",
       "isAlive": true,
-      "bio": "",
+      "bio": "Megan Jefferson is an abstract painter and muralist. Her colorful, atmospheric works create spaces of joy and respite in the public realm, advocating for mental well-being through color.",
       "website": "indyarts.org/artist/megan-jefferson",
       "social_media": [
         "@meganjeffersonart"
@@ -1526,7 +1526,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Lauren Kussro",
       "isAlive": true,
-      "bio": "",
+      "bio": "Lauren Kussro is a printmaker and installation artist. Her work often involves creating immersive environments from paper and print, exploring themes of nature and fragility.",
       "website": "laurenkussro.com",
       "social_media": [
         "@laurenkussro"
@@ -1550,7 +1550,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Gautam Rao",
       "isAlive": true,
-      "bio": "",
+      "bio": "Gautam Rao is an artist and designer. He is the creator of 'Color Code,' a project that uses algorithms to create patterns. He advocates for the intersection of art, technology, and design.",
       "website": "gautamraoart.net",
       "social_media": [
         "@gautamrao"
@@ -1574,7 +1574,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Casey Roberts",
       "isAlive": true,
-      "bio": "",
+      "bio": "Casey Roberts creates large-scale cyanotypes. His work features silhouettes of nature and animals, often with a surreal or humorous twist, advocating for a connection to the wild.",
       "website": "wildernessoverload.com",
       "social_media": [
         "@caseyrobertsart"
@@ -1598,7 +1598,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Quincy Owens",
       "isAlive": true,
-      "bio": "",
+      "bio": "Quincy Owens is a sculptor known for his colorful, light-based installations. He often collaborates with Luke Crawley to create works that explore science and the human experience.",
       "website": "owensandcrawley.com",
       "social_media": [
         "@quincyowens"
@@ -1622,7 +1622,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Luke Crawley",
       "isAlive": true,
-      "bio": "",
+      "bio": "Luke Crawley is a science teacher and artist. His work with Quincy Owens combines scientific principles (like sound waves or DNA) with visual art to educate and inspire.",
       "website": "owensandcrawley.com",
       "social_media": [
         "@lukecrawley"
@@ -1646,7 +1646,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Dale Enochs",
       "isAlive": true,
-      "bio": "While it is not \"protest art\" in the traditional sense (it doesn't explicitly protest a policy or event), it functions as activism through cultural reclamation, visibility, and decolonization. About Indigneous people",
+      "bio": "Dale Enochs is a limestone sculptor. He works with Indiana's native stone, advocating for the use of local materials and celebrating the geological history of the state.",
       "website": "daleenochs.com",
       "social_media": [
         "@daleenochs"
@@ -1670,7 +1670,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Brian McCutcheon",
       "isAlive": true,
-      "bio": "While Brian McCutcheon's NDY sculpture began as a branding tool, it functioned as civic activism. It provided a physical platform for residents to visually protest the RFRA controversy and reassert an identity of inclusivity during a political crisis.",
+      "bio": "Brian McCutcheon is a sculptor whose work recontextualizes everyday objects to explore themes of masculinity, labor, and memory.",
       "website": "brianmccutcheon.com",
       "social_media": [
         "@brianmccutcheon"
@@ -1694,7 +1694,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "Katrina Murray",
       "isAlive": true,
-      "bio": "",
+      "bio": "Katrina Murray is a painter and sculptor. Her work features organic, biomorphic forms that explore the interconnectedness of life and the body.",
       "website": "katrinajmurray.com",
       "social_media": [
         "@katrinajmurray"
@@ -1718,7 +1718,7 @@ export const artists: Artist[] = [
     "artist": {
       "name": "India Cruse-Griffin",
       "isAlive": true,
-      "bio": "",
+      "bio": "India Cruse-Griffin is an Indiana-based collage artist and educator. Her vibrant, mixed-media works often depict scenes of Black life, family, and community, celebrating the resilience and joy of the African American experience.",
       "website": "indiacruse-griffin.org",
       "social_media": [
         "@indiacrusegriffin"

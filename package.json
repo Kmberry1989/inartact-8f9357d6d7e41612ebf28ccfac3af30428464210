@@ -37,7 +37,7 @@
     "papaparse": "^5.5.3",
     "radix-ui": "^1.4.3",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dialog": "^1.0.2",
+    "react-dialog": "^0.1.0",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-leaflet": "^5.0.0",
     "react-masonry-css": "^1.0.16",

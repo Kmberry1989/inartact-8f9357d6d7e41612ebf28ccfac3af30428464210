@@ -7,6 +7,15 @@ const csvFilePath = path.join(__dirname, '..', 'Art Activist Inventory Sheet - I
 const outputFilePath = path.join(__dirname, '..', 'src', 'lib', 'artists-data.ts');
 const csvFileContent = fs.readFileSync(csvFilePath, 'utf8');
 
+const bioCsvFilePath = path.join(__dirname, '..', 'bio info.csv');
+const bioCsvContent = fs.existsSync(bioCsvFilePath) ? fs.readFileSync(bioCsvFilePath, 'utf8') : '';
+
+// Parse bio info manually since it's just lines of text with "bio" header
+const bioLines = bioCsvContent.split('\n')
+  .map(line => line.trim())
+  .filter(line => line && line !== 'bio') // Filter header and empty lines
+  .map(line => line.replace(/^"(.*)"$/, '$1').trim()); // Remove surrounding quotes
+
 papa.parse(csvFileContent, {
   header: true,
   complete: (results) => {
@@ -41,12 +50,24 @@ papa.parse(csvFileContent, {
         }
       }
 
+      // Bio matching logic
+      const cleanName = artistName.replace(/\s*\(.*?\)\s*/g, '').trim(); // Remove () parts for matching
+      // Find bio that starts with the artist name (either full or clean)
+      let matchedBio = bioLines.find(line => {
+        const lowerLine = line.toLowerCase();
+        return lowerLine.startsWith(artistName.toLowerCase()) ||
+          (cleanName.length > 3 && lowerLine.startsWith(cleanName.toLowerCase()));
+      });
+
+      // Special case for Robert Indiana if needed, or fallback to Notes
+      const bio = matchedBio || row['Notes:'] || row['Bio'] || '';
+
       const artist = {
         id: (index + 1).toString(),
         artist: {
           name: row['Artist Name'] || '',
           isAlive: row['Still Alive? (Check means yes)'] === 'TRUE',
-          bio: row['Notes:'] || '', // Map Notes to Bio (primary rich text)
+          bio: bio, // Use matched bio or fallback
           website: row['Website'] || '',
           social_media: row['Handle/Link'] ? [row['Handle/Link']] : [],
         },
