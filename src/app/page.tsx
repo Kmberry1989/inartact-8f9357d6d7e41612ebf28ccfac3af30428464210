@@ -127,9 +127,18 @@ export default function Home() {
 
     result.sort((a, b) => {
       switch (sortOption) {
-        case 'name_asc': return a.artist.name.localeCompare(b.artist.name);
-        case 'name_desc': return b.artist.name.localeCompare(a.artist.name);
+        case 'name_first': return a.artist.name.localeCompare(b.artist.name);
+        case 'name_last': {
+          // Simple last name extraction: split by space, take last part.
+          // Clean up suffixes like (Artist) or [Group] if necessary, but data seems clean enough or heuristic is fine.
+          const getLastName = (name: string) => {
+            const parts = name.trim().split(' ');
+            return parts[parts.length - 1]; // Use last word as last name
+          };
+          return getLastName(a.artist.name).localeCompare(getLastName(b.artist.name));
+        }
         case 'oldest': return Number(a.id) - Number(b.id);
+        case 'newest': // Fallthrough to default
         default: return Number(b.id) - Number(a.id); // newest
       }
     });
@@ -218,8 +227,8 @@ export default function Home() {
                       <SelectContent>
                         <SelectItem value="newest">Newest</SelectItem>
                         <SelectItem value="oldest">Oldest</SelectItem>
-                        <SelectItem value="name_asc">A-Z</SelectItem>
-                        <SelectItem value="name_desc">Z-A</SelectItem>
+                        <SelectItem value="name_first">A-Z (First Name)</SelectItem>
+                        <SelectItem value="name_last">A-Z (Last Name)</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -236,11 +245,36 @@ export default function Home() {
               </div>
 
               {/* Alphabet */}
-              <div className="w-full overflow-x-auto no-scrollbar pb-2">
-                <div className="flex space-x-1 min-w-max px-1">
-                  <Button variant={selectedLetter === null ? "default" : "ghost"} size="sm" onClick={() => setSelectedLetter(null)} className="rounded-full text-xs h-7">All</Button>
+              {/* Alphabet Control */}
+              {/* Desktop: Horizontal | Mobile: Vertical Sidebar (absolute/fixed style or just vertical list) */}
+
+              {/* Wrap container to allow side-by-side on mobile if needed, or just change the alphabet layout */}
+              <div className="md:w-full overflow-x-auto no-scrollbar pb-2 mt-4">
+                {/* Mobile: Vertical list on side OR Horizontal wrap. User asked for vertical along side perhaps. 
+                     Let's make it a horizontal scroll on desktop and a purely wrapped list or sticky vertical on mobile.
+                     Actually, "vertically along the side" implies a sidebar. 
+                     Let's implement a responsive design: 
+                     - Desktop: Standard horizontal bar.
+                     - Mobile: A fixed/sticky right sidebar might be too intrusive or block content. 
+                     Let's try a distinct vertical bar on the right side of the screen on mobile, 
+                     OR just a wrapped list to ensure "all letters A-to-Z fitting the screen somehow".
+                     
+                     User said: "Make sure the manual letter selector displays all letters A-to-Z fitting the screen somehow. On mobile, do this vertically along the side perhaps"
+                 */}
+
+                {/* Desktop Implementation: Horizontal Row */}
+                <div className="hidden md:flex flex-wrap justify-center gap-1">
+                  <Button variant={selectedLetter === null ? "default" : "ghost"} size="sm" onClick={() => setSelectedLetter(null)} className="rounded-full text-xs h-8 px-3">All</Button>
                   {alphabet.map((letter) => (
-                    <Button key={letter} variant={selectedLetter === letter ? "default" : "ghost"} size="sm" onClick={() => setSelectedLetter(selectedLetter === letter ? null : letter)} className="rounded-full text-xs h-7 w-7 p-0">{letter}</Button>
+                    <Button key={letter} variant={selectedLetter === letter ? "default" : "ghost"} size="sm" onClick={() => setSelectedLetter(selectedLetter === letter ? null : letter)} className="rounded-full text-xs h-8 w-8 p-0">{letter}</Button>
+                  ))}
+                </div>
+
+                {/* Mobile Implementation: Vertical Sidebar (Sticky Right) */}
+                <div className="md:hidden fixed right-0 top-[20%] z-40 bg-background/90 backdrop-blur-md rounded-l-lg shadow-lg border-y border-l border-border py-2 flex flex-col items-center gap-0.5 overflow-y-auto max-h-[60vh] w-10">
+                  <Button variant={selectedLetter === null ? "default" : "ghost"} size="sm" onClick={() => setSelectedLetter(null)} className="rounded-md text-[10px] h-6 w-8 p-0 mb-1">ALL</Button>
+                  {alphabet.map((letter) => (
+                    <Button key={letter} variant={selectedLetter === letter ? "default" : "ghost"} size="sm" onClick={() => setSelectedLetter(selectedLetter === letter ? null : letter)} className="rounded-md text-[10px] h-6 w-8 p-0">{letter}</Button>
                   ))}
                 </div>
               </div>

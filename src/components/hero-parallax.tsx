@@ -22,7 +22,8 @@ export function HeroParallax() {
 
   // 3. Flag: Moves slightly faster than outline and scales
   const yFlag = useTransform(scrollYProgress, [0, 1], ["10%", "40%"]);
-  const scaleFlag = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
+  const xFlag = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]); // Slide left
+  const scaleFlag = useTransform(scrollYProgress, [0, 1], [1, 1.6]); // Zoom in
 
   // 4. Text: Drifts up at medium speed
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
@@ -67,8 +68,8 @@ export function HeroParallax() {
 
       {/* LAYER 2.5: Indiana Flag */}
       <motion.div
-        style={{ y: yFlag, scale: scaleFlag }}
-        className="absolute top-[5%] md:top-[18%] left-[35%] -translate-x-1/2 z-0 w-[80vw] h-[80vh] md:w-[800px] md:h-[600px] opacity-20 pointer-events-none"
+        style={{ y: yFlag, x: xFlag, scale: scaleFlag }}
+        className="absolute top-[5%] md:top-[18%] left-[35%] -translate-x-1/2 z-0 w-[80vw] h-[80vh] md:w-[800px] md:h-[600px] opacity-20 pointer-events-none origin-center"
       >
         <Image
           src="/hero/Flag_of_Indiana.png"
@@ -82,18 +83,21 @@ export function HeroParallax() {
       {/* LAYER 3: Text (Behind the crowd slightly) */}
       <motion.div
         style={{ y: yText }}
-        className="relative z-30 flex flex-col items-center justify-center w-full text-center mt-10 md:mt-20"
+        className="relative z-30 flex flex-col items-center justify-center w-full text-center mt-0 md:mt-10"
       >
-        <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary animate-gradient-x pb-2 bg-[length:200%_auto] drop-shadow-2xl flex gap-4 md:gap-8 flex-wrap justify-center">
-          <SplitText word="ACT." delay={0} />
-          <SplitText word="IN." delay={0.2} />
-          <SplitText word="ART." delay={0.4} />
+        <h1 className="flex gap-4 md:gap-8 flex-wrap justify-center font-black tracking-tighter">
+          {/* Apply effects to wrapper or individually */}
+          <div className="text-6xl md:text-9xl hero-text-glow text-foreground drop-shadow-2xl flex gap-4 md:gap-8">
+            <SplitText word="ACT." delay={0} />
+            <SplitText word="IN." delay={0.2} />
+            <SplitText word="ART." delay={0.4} />
+          </div>
         </h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="mt-6 text-lg md:text-2xl font-medium text-muted-foreground max-w-2xl px-4"
+          className="mt-6 text-2xl md:text-4xl font-medium text-muted-foreground max-w-4xl px-4 leading-tight"
         >
           Advocacy through creativity. Change through expression.
         </motion.p>
@@ -215,8 +219,10 @@ function ParticleEffect() {
       const accent = style.getPropertyValue('--accent').trim() || primary;
 
       return {
-        primary: primary ? `hsla(${primary}, 0.5)` : 'rgba(0,0,0,0.2)',
-        accent: accent ? `hsla(${accent}, 0.8)` : 'rgba(255,0,0,0.5)',
+        // Retrieve HSL values directly and construct valid HSLA strings
+        // Assuming --primary is format like "222.2 47.4% 11.2%"
+        primary: primary ? `hsla(${primary.split(' ').join(',')}, 0.5)` : 'rgba(0,0,0,0.5)',
+        accent: accent ? `hsla(${accent.split(' ').join(',')}, 0.8)` : 'rgba(255,0,0,0.5)',
       };
     };
 
