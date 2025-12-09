@@ -87,7 +87,7 @@ export function HeroParallax() {
       >
         <h1 className="flex gap-4 md:gap-8 flex-wrap justify-center font-black tracking-tighter">
           {/* Apply effects to wrapper or individually */}
-          <div className="text-6xl md:text-9xl hero-text-glow text-foreground drop-shadow-2xl flex gap-4 md:gap-8">
+          <div className="text-6xl md:text-9xl hero-text-glow text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary animate-gradient-x bg-[length:200%_auto] drop-shadow-2xl flex gap-4 md:gap-8">
             <SplitText word="ACT." delay={0} />
             <SplitText word="IN." delay={0.2} />
             <SplitText word="ART." delay={0.4} />
@@ -216,17 +216,19 @@ function ParticleEffect() {
     const getThemeColor = () => {
       const style = getComputedStyle(document.body);
       const primary = style.getPropertyValue('--primary').trim();
+      const secondary = style.getPropertyValue('--secondary').trim(); // Add secondary
       const accent = style.getPropertyValue('--accent').trim() || primary;
 
       return {
-        // Retrieve HSL values directly and construct valid HSLA strings
-        // Assuming --primary is format like "222.2 47.4% 11.2%"
-        primary: primary ? `hsla(${primary.split(' ').join(',')}, 0.5)` : 'rgba(0,0,0,0.5)',
-        accent: accent ? `hsla(${accent.split(' ').join(',')}, 0.8)` : 'rgba(255,0,0,0.5)',
+        colors: [
+          primary ? `hsla(${primary.split(' ').join(',')}, 0.6)` : 'rgba(100,100,100,0.5)',
+          secondary ? `hsla(${secondary.split(' ').join(',')}, 0.6)` : 'rgba(200,200,200,0.5)',
+          accent ? `hsla(${accent.split(' ').join(',')}, 0.8)` : 'rgba(255,0,0,0.5)',
+        ]
       };
     };
 
-    let colors = getThemeColor();
+    let themeColors = getThemeColor();
 
     class Particle {
       x: number;
@@ -235,42 +237,58 @@ function ParticleEffect() {
       speedX: number;
       speedY: number;
       color: string;
-      life: number;
+      opacity: number;
+      fadeDir: number; // 1 for fade in, -1 for fade out
 
       constructor() {
         this.x = Math.random() * canvas!.width;
-        this.y = canvas!.height + Math.random() * 100;
+        this.y = Math.random() * canvas!.height; // Start anywhere on screen
         this.size = Math.random() * 3 + 1;
-        this.speedX = Math.random() * 1 - 0.5;
-        this.speedY = Math.random() * -2 - 0.5;
-        this.life = 1.0;
-        this.color = Math.random() > 0.5 ? colors.primary : colors.accent;
+        this.speedX = Math.random() * 0.5 - 0.25;
+        this.speedY = Math.random() * -0.5 - 0.2; // Slow upward drift
+        this.opacity = Math.random(); // Start at random opacity
+        this.fadeDir = Math.random() > 0.5 ? 0.01 : -0.01; // Randomize fade direction
+        this.color = themeColors.colors[Math.floor(Math.random() * themeColors.colors.length)];
       }
 
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
-        this.life -= 0.005;
 
-        if (this.life <= 0 || this.y < 0) {
+        // Oscillate opacity for "fade in/out" feel
+        this.opacity += this.fadeDir;
+        if (this.opacity >= 1) {
+          this.opacity = 1;
+          this.fadeDir = -0.005 - Math.random() * 0.01; // Fade out slowly
+        } else if (this.opacity <= 0) {
+          // Respawn when fully faded out
+          this.opacity = 0;
+          this.fadeDir = 0.005 + Math.random() * 0.01; // Fade in
           this.x = Math.random() * canvas!.width;
           this.y = canvas!.height + 10;
-          this.life = 1.0;
-          this.speedY = Math.random() * -2 - 0.5;
-          this.color = Math.random() > 0.5 ? colors.primary : colors.accent;
+          this.speedY = Math.random() * -0.5 - 0.2;
+          this.color = themeColors.colors[Math.floor(Math.random() * themeColors.colors.length)];
+        }
+
+        // Wrap around if it goes too high (though fading usually catches it)
+        if (this.y < -10) {
+          this.y = canvas!.height + 10;
         }
       }
 
       draw() {
         if (!ctx) return;
-        ctx.fillStyle = this.color.replace(/[\d.]+\)$/g, `${this.life})`);
+        // Replace the alpha value in the hsla string
+        // Assumes format hsla(..., 0.X) or similar. 
+        // We will just replace the last number before closing parenthesis
+        ctx.fillStyle = this.color.replace(/[\d.]+\)$/g, `${this.opacity.toFixed(2)})`);
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
       }
     }
 
-    const particleCount = 60;
+    const particleCount = 80; // Slightly more particles
     const particles: Particle[] = [];
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle());
@@ -288,7 +306,7 @@ function ParticleEffect() {
     animate();
 
     const observer = new MutationObserver(() => {
-      colors = getThemeColor();
+      themeColors = getThemeColor();
     });
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class', 'style'] });
 
