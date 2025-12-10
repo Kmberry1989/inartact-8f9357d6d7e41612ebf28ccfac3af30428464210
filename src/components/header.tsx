@@ -15,7 +15,7 @@ const navigation = [
   { name: "Map", href: "/activists/map", icon: Map },
   { name: "Timeline", href: "/activists/timeline", icon: Clock },
   { name: "Zine", href: "/activists/zine", icon: BookOpen },
-  { name: "Analytics", href: "/activists/analytics", icon: BarChart },
+
   { name: "About", href: "/about", icon: Info },
 ]
 

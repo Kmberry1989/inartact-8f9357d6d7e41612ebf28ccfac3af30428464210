@@ -66,11 +66,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                 </div>
               )}
             </div>
-            {artist.artwork.credit && (
-              <figcaption className="text-xs text-muted-foreground text-center mt-3 font-medium">
-                Image courtesy of {artist.artwork.credit}
-              </figcaption>
-            )}
+
             <div className="mt-2 flex justify-center">
               <Badge variant="outline" className="text-[10px] uppercase tracking-wide">
                 Non-commercial / educational use
