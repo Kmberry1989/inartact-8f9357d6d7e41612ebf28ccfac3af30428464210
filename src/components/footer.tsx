@@ -10,7 +10,7 @@ export function Footer() {
             Educational, non-profit student project. Respecting artists is core to our mission—please reach out with corrections or concerns.
           </p>
           <a
-            href="mailto:contact@actinart.org?subject=Takedown%20Request"
+            href="mailto:activismindianaart@gmail.com?subject=Takedown%20Request"
             className="text-sm font-semibold text-primary hover:underline"
           >
             Contact / Takedown Request

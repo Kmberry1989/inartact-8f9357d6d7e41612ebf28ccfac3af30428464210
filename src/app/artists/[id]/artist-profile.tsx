@@ -23,11 +23,9 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
   const [showLightbox, setShowLightbox] = useState(false);
 
   // Combine text for the screen reader
-  const readableText = `Artist Profile for ${artist.artist.name}. ${
-    artist.artist.isAlive ? '' : `Born ${artist.artist.born}, Died ${artist.artist.died}.`
-  } ${artist.artist.bio || ''} . The Work: ${artist.artwork.title}. ${
-    artist.artwork.description || ''
-  }`;
+  const readableText = `Artist Profile for ${artist.artist.name}. ${artist.artist.isAlive ? '' : `Born ${artist.artist.born}, Died ${artist.artist.died}.`
+    } ${artist.artist.bio || ''} . The Work: ${artist.artwork.title}. ${artist.artwork.description || ''
+    }`;
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-5xl">
@@ -178,7 +176,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                 </Badge>
               )}
             </div>
-            
+
             {/* NEW: Flex Container for Name + Portrait */}
             <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
               <div>
@@ -211,7 +209,7 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
                 </figure>
               )}
             </div>
-            
+
             <div className="mt-4">
               <TextToSpeech text={readableText} label="Listen to Profile" />
             </div>
@@ -262,45 +260,47 @@ export function ArtistProfile({ artist }: ArtistProfileProps) {
 
             {/* Online Links & Contact Info */}
             <div className="mt-8 p-6 bg-muted/30 rounded-xl border">
-               <h4 className="text-sm font-semibold mb-4 uppercase tracking-wider flex items-center text-primary">
-                  <Globe className="mr-2 h-4 w-4" />
-                  Connect & Explore
-               </h4>
-               <div className="flex flex-wrap gap-3">
-                  {artist.artist.website && (
-                    <Button variant="default" size="sm" asChild>
-                      <a href={artist.artist.website} target="_blank" rel="noopener noreferrer">
-                        Official Website
-                      </a>
-                    </Button>
-                  )}
-                  
-                  {artist.artwork.portfolio_url && (
-                    <Button variant="secondary" size="sm" asChild>
-                      <a href={artist.artwork.portfolio_url} target="_blank" rel="noopener noreferrer">
-                        View Portfolio
-                      </a>
-                    </Button>
-                  )}
+              <h4 className="text-sm font-semibold mb-4 uppercase tracking-wider flex items-center text-primary">
+                <Globe className="mr-2 h-4 w-4" />
+                Connect & Explore
+              </h4>
+              <div className="flex flex-wrap gap-3">
+                {artist.artist.website && (
+                  <Button variant="default" size="sm" asChild>
+                    <a href={artist.artist.website} target="_blank" rel="noopener noreferrer">
+                      Official Website
+                    </a>
+                  </Button>
+                )}
 
-                  {artist.artist.social_media && artist.artist.social_media.map((link, index) => {
-                    const socialLink = parseSocialMediaLink(link);
-                    const IconComponent =
-                      socialLink.icon === 'instagram'
-                        ? Instagram
-                        : socialLink.icon === 'facebook'
+                {artist.artwork.portfolio_url && (
+                  <Button variant="secondary" size="sm" asChild>
+                    <a href={artist.artwork.portfolio_url} target="_blank" rel="noopener noreferrer">
+                      View Portfolio
+                    </a>
+                  </Button>
+                )}
+
+                {artist.artist.social_media && artist.artist.social_media.map((link, index) => {
+                  const socialLink = parseSocialMediaLink(link);
+                  if (!socialLink.url) return null; // Skip invalid or N/A links
+
+                  const IconComponent =
+                    socialLink.icon === 'instagram'
+                      ? Instagram
+                      : socialLink.icon === 'facebook'
                         ? Facebook
                         : Globe;
-                    return (
-                      <Button key={index} variant="outline" size="sm" asChild>
-                        <a href={link} target="_blank" rel="noopener noreferrer">
-                          <IconComponent className="mr-2 h-3 w-3" />
-                          {socialLink.handle}
-                        </a>
-                      </Button>
-                    );
-                  })}
-               </div>
+                  return (
+                    <Button key={index} variant="outline" size="sm" asChild>
+                      <a href={socialLink.url} target="_blank" rel="noopener noreferrer">
+                        <IconComponent className="mr-2 h-3 w-3" />
+                        {socialLink.handle}
+                      </a>
+                    </Button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Media Coverage Section */}

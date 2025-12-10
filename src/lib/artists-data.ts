@@ -818,7 +818,7 @@ export const artists: Artist[] = [
       ]
     },
     "artwork": {
-      "title": "Solful Gardens (building family farms)",
+      "title": "Solful Gardens ",
       "description": "Food Justice",
       "medium": "Social Practice / Agriculture",
       "date": "Ongoing",
@@ -827,7 +827,7 @@ export const artists: Artist[] = [
       "imageUrl": "/Images/Dr. Jarrod Dortch_Solful Gardens.jpg",
       "credit": "https://farmflavor.com/indiana/solful-gardens-offers-community-a-new-source-for-fresh-produce/",
       "categories": [],
-      "searchQuery": "Dr. Jarrod Dortch Solful Gardens (building family farms) Indianapolis Food Justice"
+      "searchQuery": "Dr. Jarrod Dortch Solful Gardens  Indianapolis Food Justice"
     }
   },
   {
@@ -999,33 +999,9 @@ export const artists: Artist[] = [
   {
     "id": "43",
     "artist": {
-      "name": "T.C. Steele",
-      "isAlive": false,
-      "bio": "T.C. Steele’s \"activism\" was the visual argument for conservation. He didn't write laws; he painted the reason why the laws were needed. Steele (and the artists who followed him) painted the hills, the haze, and the changing seasons with such reverence that he completely rebranded the region. *Key in Brown County, Indiana's Reframing \"Worthless\" Land as \"Priceless\" Art.",
-      "website": "tcsteele.org",
-      "social_media": [
-        "N/A"
-      ]
-    },
-    "artwork": {
-      "title": "House of the Singing Winds",
-      "description": "Steele's home and studio in Brown County. His landscapes celebrated the beauty of the Indiana wilderness, playing a crucial role in the state's early conservation movement and the eventual establishment of Brown County State Park.",
-      "medium": "Oil Painting",
-      "date": "Late 1800s/Early 1900s",
-      "location": "Brown County (Historic Site)",
-      "cause": "Nature Conservation",
-      "imageUrl": "/artist-43.jpg",
-      "credit": "https://trail.tcsteele.org/singing-winds/",
-      "categories": [],
-      "searchQuery": "T.C. Steele House of the Singing Winds Brown County (Historic Site) Nature Conservation"
-    }
-  },
-  {
-    "id": "44",
-    "artist": {
       "name": "Teresa Dunn",
       "isAlive": true,
-      "bio": "Visibility in the \"Flyover\" States - activism through identity",
+      "bio": "",
       "website": "",
       "social_media": [
         "N/A"
@@ -1045,7 +1021,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "45",
+    "id": "44",
     "artist": {
       "name": "Boxx the Artist",
       "isAlive": true,
@@ -1069,7 +1045,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "46",
+    "id": "45",
     "artist": {
       "name": "Shamira Wilson",
       "isAlive": true,
@@ -1082,7 +1058,7 @@ export const artists: Artist[] = [
     "artwork": {
       "title": "Ethnobotany Series",
       "description": "Environmental Justice",
-      "medium": "Painting / Textiles",
+      "medium": "",
       "date": "Ongoing",
       "location": "Indianapolis",
       "cause": "Environmental Justice",
@@ -1093,7 +1069,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "47",
+    "id": "46",
     "artist": {
       "name": "Brose Partington",
       "isAlive": true,
@@ -1117,7 +1093,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "48",
+    "id": "47",
     "artist": {
       "name": "Tiffany Black",
       "isAlive": true,
@@ -1141,11 +1117,11 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "49",
+    "id": "48",
     "artist": {
       "name": "Artur Silva/ Kyle Long",
       "isAlive": true,
-      "bio": "Culture War: \"Decolonizing the Midwest through music and visual art. Remapping Indiana history to include the voices you weren't taught in school.\"",
+      "bio": "",
       "website": "artursilva.com",
       "social_media": [
         "@artur_silva"
@@ -1154,7 +1130,7 @@ export const artists: Artist[] = [
     "artwork": {
       "title": "Cultural Cannibal",
       "description": "Cultural Critique / History",
-      "medium": "Digital Print / Mural",
+      "medium": "",
       "date": "2022",
       "location": "Indianapolis (Gainbridge Fieldhouse)",
       "cause": "Cultural Critique / History",
@@ -1165,7 +1141,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "50",
+    "id": "49",
     "artist": {
       "name": "Mary Miss",
       "isAlive": true,
@@ -1189,7 +1165,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "51",
+    "id": "50",
     "artist": {
       "name": "Shawn Michael Warren",
       "isAlive": true,
@@ -1200,7 +1176,7 @@ export const artists: Artist[] = [
       ]
     },
     "artwork": {
-      "title": "\"The World's Fastest\" (Mural of Marshall \"Major\" Taylor)",
+      "title": "The World's Fastest",
       "description": "Racial Justice / History",
       "medium": "Oil / Mural",
       "date": "2020s",
@@ -1209,11 +1185,11 @@ export const artists: Artist[] = [
       "imageUrl": "/Images/Shawn Michael Warren_The Words Fastest.jpg",
       "credit": "https://www.shawnmichaelwarren.com/murals",
       "categories": [],
-      "searchQuery": "Shawn Michael Warren \"The World's Fastest\" (Mural of Marshall \"Major\" Taylor) Indianapolis (Work often travels) Racial Justice / History"
+      "searchQuery": "Shawn Michael Warren The World's Fastest Indianapolis (Work often travels) Racial Justice / History"
     }
   },
   {
-    "id": "52",
+    "id": "51",
     "artist": {
       "name": "Pamela Bliss",
       "isAlive": true,
@@ -1237,7 +1213,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "53",
+    "id": "52",
     "artist": {
       "name": "D. Del Reverda-Jennings",
       "isAlive": true,
@@ -1261,7 +1237,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "54",
+    "id": "53",
     "artist": {
       "name": "Lobyn Hamilton (Walter “Lobyn” Hamilton)",
       "isAlive": true,
@@ -1285,7 +1261,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "55",
+    "id": "54",
     "artist": {
       "name": "Kyng Rhodes (Nathaniel Rhodes)",
       "isAlive": true,
@@ -1308,7 +1284,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "56",
+    "id": "55",
     "artist": {
       "name": "Phyllis Boyd",
       "isAlive": true,
@@ -1332,7 +1308,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "57",
+    "id": "56",
     "artist": {
       "name": "Kevin Wilson",
       "isAlive": true,
@@ -1356,7 +1332,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "58",
+    "id": "57",
     "artist": {
       "name": "Rae Parker",
       "isAlive": true,
@@ -1380,7 +1356,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "59",
+    "id": "58",
     "artist": {
       "name": "Fingers (Graffiti Artist)",
       "isAlive": true,
@@ -1403,7 +1379,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "60",
+    "id": "59",
     "artist": {
       "name": "Cierra Johnson",
       "isAlive": true,
@@ -1427,7 +1403,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "61",
+    "id": "60",
     "artist": {
       "name": "Kwazar Martin",
       "isAlive": true,
@@ -1451,7 +1427,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "62",
+    "id": "61",
     "artist": {
       "name": "Shane Young (FITZ)",
       "isAlive": true,
@@ -1474,7 +1450,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "63",
+    "id": "62",
     "artist": {
       "name": "Lisa Sears",
       "isAlive": true,
@@ -1498,7 +1474,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "64",
+    "id": "63",
     "artist": {
       "name": "Megan Jefferson",
       "isAlive": true,
@@ -1522,7 +1498,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "65",
+    "id": "64",
     "artist": {
       "name": "Lauren Kussro",
       "isAlive": true,
@@ -1535,7 +1511,7 @@ export const artists: Artist[] = [
     "artwork": {
       "title": "Our Ocean Installation",
       "description": "Environmental Fragility",
-      "medium": "Screenprint / Installation",
+      "medium": "",
       "date": "2024",
       "location": "Houston (Formerly Indy)",
       "cause": "Environmental Fragility",
@@ -1546,7 +1522,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "66",
+    "id": "65",
     "artist": {
       "name": "Gautam Rao",
       "isAlive": true,
@@ -1570,7 +1546,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "67",
+    "id": "66",
     "artist": {
       "name": "Casey Roberts",
       "isAlive": true,
@@ -1581,7 +1557,7 @@ export const artists: Artist[] = [
       ]
     },
     "artwork": {
-      "title": "Cyanotype Nature Series (a soft spot in the sea ice)",
+      "title": "Cyanotype Nature Series (A Soft Spot In The Sea)",
       "description": "Nature Conservation / Surrealism",
       "medium": "Cyanotype / Chemical",
       "date": "Ongoing",
@@ -1590,11 +1566,11 @@ export const artists: Artist[] = [
       "imageUrl": "/Images/CaseyRoberts_A Soft Spot in the Sea Ice.jpg",
       "credit": "https://www.artsy.net/artwork/casey-roberts-a-soft-spot-in-the-sea-ice",
       "categories": [],
-      "searchQuery": "Casey Roberts Cyanotype Nature Series (a soft spot in the sea ice) Indianapolis Nature Conservation / Surrealism"
+      "searchQuery": "Casey Roberts Cyanotype Nature Series (A Soft Spot In The Sea) Indianapolis Nature Conservation / Surrealism"
     }
   },
   {
-    "id": "68",
+    "id": "67",
     "artist": {
       "name": "Quincy Owens",
       "isAlive": true,
@@ -1618,7 +1594,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "69",
+    "id": "68",
     "artist": {
       "name": "Luke Crawley",
       "isAlive": true,
@@ -1642,7 +1618,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "70",
+    "id": "69",
     "artist": {
       "name": "Dale Enochs",
       "isAlive": true,
@@ -1666,7 +1642,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "71",
+    "id": "70",
     "artist": {
       "name": "Brian McCutcheon",
       "isAlive": true,
@@ -1690,7 +1666,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "72",
+    "id": "71",
     "artist": {
       "name": "Katrina Murray",
       "isAlive": true,
@@ -1714,7 +1690,7 @@ export const artists: Artist[] = [
     }
   },
   {
-    "id": "73",
+    "id": "72",
     "artist": {
       "name": "India Cruse-Griffin",
       "isAlive": true,
